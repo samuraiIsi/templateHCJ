@@ -1,0 +1,85 @@
+{
+	"btnBkAr": {
+		"divClass": "btn btn-back-arrow first--inlist",
+		"linkAtt": "#",
+		"iconClass": "icon-back"
+	},
+	"btnHorse": {
+		"divClass": "btn btn--primary btn-horizontal",
+		"spanClass": "fs0",
+		"spanText": "Horses",
+		"iconClass": "icon-horse-racing"
+	},
+	"btnVerticalDivParent": {
+		"divId": "btnsVertical"
+	},
+	"btnVerticalinf": [
+		{
+			"divClass": "btn btn--primary",
+			"pClass": "btn__title sq",
+			"linkAtt": "#",
+			"pText": "Open Bets",
+			"iconClass": "icon-open-bets"
+		},
+		{
+			"divClass": "btn btn--primary",
+			"pClass": "btn__title sq",
+			"linkAtt": "#",
+			"pText": "Bet Slip",
+			"iconClass": "icon-bet-slip"
+		}
+	],
+	"listBtnCirclesUlData": {
+		"ulClass": "flex-container"
+	},
+	"listBtnCirclesLiData": [
+		{
+			"liClass":"btn--circle first--inlist",  
+			"aClass":"#",
+			"divClass": "flex-container--vertical",
+			"iconClass": "btn--circleIcon active icon-competitions",
+			"pClass": "btn__title",
+			"pText": "meetings"
+		},
+		{
+			"liClass":"btn--circle",  
+			"aClass":"#",
+			"divClass": "flex-container--vertical",
+			"iconClass": "btn--circleIcon icon-highlights",
+			"pClass": "btn__title",
+			"pText": "next off"
+		},
+		{
+			"liClass":"btn--circle",  
+			"aClass":"#",
+			"divClass": "flex-container--vertical",
+			"iconClass": "btn--circleIcon icon-antepost",
+			"pClass": "btn__title",
+			"pText": "ante post"
+		},
+		{
+			"liClass":"btn--circle",  
+			"aClass":"#",
+			"divClass": "flex-container--vertical",
+			"iconClass": "btn--circleIcon golden icon-most-popular-bets2",
+			"pClass": "btn__title",
+			"pText": "top bets"
+		},
+		{
+			"liClass":"btn--circle",  
+			"aClass":"#",
+			"divClass": "flex-container--vertical",
+			"iconClass": "btn--circleIcon icon-search",
+			"pClass": "btn__title",
+			"pText": "search"
+		},
+		{
+			"liClass":"btn--circle",  
+			"aClass":"#",
+			"divClass": "flex-container--vertical",
+			"iconClass": "btn--circleIcon icon-specials",
+			"pClass": "btn__title",
+			"pText": "specials"
+		}
+	]
+}

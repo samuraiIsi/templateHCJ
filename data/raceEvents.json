@@ -1,0 +1,15 @@
+{
+	"divBgModeId": "bgModel",
+	"divBgModeClass": "bg-white-100",
+	"sectionClass": "horseRacingBox border-box-grey",
+	"headerClass": "bar-title bg-blue-dark-27 list",
+	"h4Text": "11:10 Durbanville",
+	"iconClass": "icon-tv-icon pull-right",
+	"articleListRE": [
+		{
+			"articleREClass": ""
+			
+		}
+	]
+		
+}

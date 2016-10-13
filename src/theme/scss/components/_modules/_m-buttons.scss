@@ -1,0 +1,135 @@
+.btn {
+    @include flexSetSpace;
+    background-repeat: repeat-x;
+    color: #fff;
+    font: normal "Helvetica Neue", Arial, sans-serif;
+    margin-left: $standardDistance;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    min-width: $minWidthSqBtn;
+    -webkit-border-radius: $standardDistance - 6;
+    -moz-border-radius: $standardDistance - 6;
+    border-radius: $standardDistance - 6;
+    // background-color: #184b74;
+    font-size: 17px;
+    padding: $standardDistance - 5;
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    &:hover {
+        color: black;
+    }
+    &.btn-horizontal {
+        padding-top: $standardDistance;
+    }
+    // @at-root #{&}--circle {
+    //     background-color: transparent;
+    //     padding: 0;
+    //     font-size: 0;
+    // }
+}
+
+.btn {
+    @at-root #{&}--default {
+        @include coloringButtons(#000, #dadfe5, #dadfe5);
+    }
+    @at-root #{&}--primary {
+        @include coloringButtons(#fff, #184b74, #16446a);
+    }
+    @at-root #{&}--success {
+        @include coloringButtons(#fff, #184b74, #16446a);
+    }
+    @at-root #{&}--info {
+        @include coloringButtons(#fff, #12324b, #16446a);
+    }
+    @at-root #{&}--warning {
+        @include coloringButtons(#fff, #184b74, #16446a);
+    }
+    @at-root #{&}--moving {
+        @include coloringButtons(#fff, #184b74, #16446a);
+    }
+    @at-root #{&}--danger {
+         @include coloringButtons(#fff, #184b74, #16446a);
+    }
+}
+
+.btn {
+    @at-root #{&}--lg {
+        @include sizingButtons($standPaddingBtn, 12px, 1.3px, 4px);
+    }
+    @at-root #{&}--sm {
+        @include sizingButtons($standPaddingBtn, 12px, 5px, 4px);
+    }
+    @at-root #{&}-xs {
+        @include sizingButtons($standPaddingBtn, 12px, 1.3px, 4px);
+    }
+}
+.btn--circle {
+    padding: 5px;
+    font-size: 0;
+    border-radius: 50%;
+    margin-left: 0;
+    @at-root #{&}--sm {
+        padding: 5px 8px;
+        font-size: 11px;
+    }
+
+}
+.btn--login {
+    @include featureButtons(13px, $colorLogin, 0.4em, 24px);
+}
+.btn--login--sm {
+    border: solid 1px #fff;
+}
+.btn--join {
+    @include featureButtons(13px, $colorJoin, 0.8em, 24px);
+}
+.btn--circleIcon {
+    @include particularFeatures(#005266, #eef1f3, #C5C9CC);
+    border-radius: 50%;
+    padding: 0.7em;
+    font-size: 25px;
+    &.active {
+        @include particularFeatures(#fff, #248cb3, #054d68);
+    }
+    &.golden {
+        @include particularFeatures(#fff, #908826, #777018);
+    }
+    &.icon-specials {
+        color: #d65a77;
+    }
+    
+}
+.btn-back-arrow {
+    background-color: rgba(255,255,255, 0.1);
+    font-size: 20px;
+    width: 40px;
+    padding: $standardDistance 0;
+    min-width: 2.5em;
+}
+.btn__title {
+    color: #000;
+    font-weight: bold;
+    font-size: $standardDistance + 2;
+    text-transform: capitalize;
+    &.sq {
+        color: #fff;
+        font-size: $standardDistance;
+        font-weight: bold;
+        margin: 5px 0 0 0;
+    }
+}
+.btn-respons-menu {
+    margin: 15px 5px 0 0;
+    a {
+        color: #fff;
+        font-size: $standardDistance * 2.5;
+    }
+}
+
+#btnHorse,
+#btnsVertical  {
+    display: inline-flex;
+}

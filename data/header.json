@@ -1,0 +1,10 @@
+{
+	"crDiv": "div",
+	"attLinkN": "href",
+	"attLinkV": "#",
+	"attClassN": "class",
+	"attClassV": "pull-left",
+	"crSpan": "span",
+	"attSpanN": "class",
+	"attSpanV": "logo-bg"
+}

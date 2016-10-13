@@ -1,0 +1,37 @@
+{
+	"navTabsTwoUl": {
+		"ulClass": "flex-container nav-tab"	
+	},
+	"navTabsTwoLi": [
+		{
+			"liClass": "active",
+			"aClass": "",
+			"aText": "meetings"
+		},
+		{
+			"liClass": "",
+			"aClass": "",
+			"aText": "tomorrow"
+		}
+	],
+	"navTabsThreeUl": {
+		"ulClass": "flex-container nav-tab"	
+	},
+	"navTabsThreeLi": [
+		{
+			"liClass": "active",
+			"aClass": "",
+			"aText": "next off"
+		},
+		{
+			"liClass": "",
+			"aClass": "",
+			"aText": "top bets"
+		},
+		{
+			"liClass": "",
+			"aClass": "",
+			"aText": "highlights"
+		}
+	]
+}

@@ -1,0 +1,44 @@
+body {
+    color: #fff;
+	font-family: OpenSansRegular,Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    line-height: 0.5;
+    margin: 0;
+    padding: 0;
+}
+
+header, section, footer, aside, nav, main, article, figure {
+    display: block; 
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+a {
+    i {
+        color: #fff;
+    }
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+h1 {
+    margin: $standardDistance $standardDistance 0 0;
+}

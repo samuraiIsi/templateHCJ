@@ -1,0 +1,50 @@
+.flex-container {
+	@include flexSetOrig;
+}
+.flex-container-sp-btw {
+	@include flexSetOrig;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+}
+.flex-container-sp-btw-gr {
+	@include flexSetOrig;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	flex-grow: 1;
+	-webkit-flex-grow: 1;
+}
+.flex-container-grow {
+	@include flexSetOrig;
+	flex-grow: 1;
+	-webkit-flex-grow: 1;
+}
+.flex-container--vertical {
+	@include flexSetOrig;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	@each $align in $aligns {
+		&.sp-#{$align} {
+			justify-content: space-between;
+			-webkit-justify-content: space-between;
+			-webkit-box-align: #{$align};
+		    -moz-box-align: #{$align};
+		    -webkit-align-items: #{$align};
+		    -ms-flex-align: #{$align};
+		    align-items: #{$align};
+		}
+	}
+}
+.wrapper {
+	@include flexSetSpace;
+}
+.row {
+    padding: $standardDistance;
+}
+.row-list {
+    padding: 1px 15px;
+    background-color: #184b74;
+    margin: 0 0 1px 0;
+}
+.end-component {
+	@include flexSetEnd;
+}

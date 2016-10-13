@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'whIconFont';
+    src:url('../whIconFont/whIconFont.eot');
+    src:url('../whIconFont/whIconFont.eot') format('embedded-opentype'),
+        url('../whIconFont/whIconFont.ttf') format('truetype'),
+        url('../whIconFont/whIconFont.woff') format('woff'),
+        url('../whIconFont/whIconFont.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+.icon, [class*=" icon"], [class^="icon-"] {
+	font-family: 'whIconFont' !important; 
+	speak: none;
+	font-style: normal;
+	font-weight: 400; 
+	font-variant: normal; 
+	text-transform: none; 
+	line-height: 1; 
+	-webkit-font-smoothing: antialiased; 
+	-moz-osx-font-smoothing: grayscale;
+}
+.icon-competitions:before {content:"\e61c";}
+.icon-highlights:before {content: "\e63b";}
+.icon-antepost:before {content: "\e690";}
+.icon-most-popular-bets2:before {content: "\e6a3";}
+.icon-search:before {content: "\e664";}
+.icon-specials:before {content: "\e66d";}
+.icon-select:before {content: "\e665";}
+.icon-expanded:before {content: "\e628";}
+.icon-back:before {content: "\e6a4";}
+.icon-horse-racing:before {content: "\e63e";}
+.icon-open-bets:before {content: "\e6c3";}
+.icon-bet-slip:before {content: "\e612";}
+.icon-arrow-slim:before {content: "\e608";} //darle la vuelta con CSS3
+
+.icon-login-head:before{content:"\e603"}
+.icon-my-bets:before{content:"\e67e"}
+.icon.arrow-left:before{content:"\e667"}
+.icon.arrow-right2:before,.icon.arrow-right:before{content:"\e668"}
+.icon.double-arrow-left:before{content:"\e68b"}
+.icon.double-arrow-right:before{content:"\e68c"}
+.icon.form:before{content:"\e669"}
+.icon.arrow:before{content:"\e664"}
+.icon.cash-in:before{content:"\e661"}
+.icon.information:before{content:"\e642"}
+.icon.HRDM:before{content:"\e663"}
+.icon.live-races:before{content:"\e651"}
+.icon-tv-icon:before{content:"\e672"}
+.icon.pelota:before{content:"\e60a"}

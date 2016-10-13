@@ -1,0 +1,50 @@
+.box-container {
+	padding: $standardDistance;
+}
+.border-box-grey {
+	border: $borderBoxGreyLight79;
+	&.list {
+		border-top: 0;
+		color: #000;
+		& > div {
+			margin-right: $standardDistance;
+		}
+		& > .btn {
+			margin-right: 0;
+			margin: 10px 0;
+		}
+	}
+}
+.list-btn {
+	& .btn {
+		margin: 10px 0;
+	}
+}
+.description-list {
+	h3 {
+		a {
+			color: #248CB3;
+			font-weight: 700;
+		    font-size: 1.16667em;
+		}
+	}
+	h3, dl {
+		margin: 0;
+	}
+	dl {
+		margin-top: $standardDistance - 5;
+		dt, dd {
+			color: #1e5884;
+			float: left;
+			display: inline;
+			margin-top: $standardDistance;
+		}
+		dd {
+			margin-left: 0;
+		}
+		dt {
+			clear: both;
+			font-weight: bold;
+		}
+	}
+}

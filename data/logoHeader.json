@@ -1,0 +1,34 @@
+{
+	"logoBg": {
+		"crAnchor":"A",
+		"attLinkN":"href",
+		"attLinkV":"#",
+		"attClassN":"class",
+		"attClassV":"pull-left",
+		"crSpan":"span",
+		"attSpanN":"class",
+		"attSpanV":"logo-bg"
+	},
+	"infoHeaderL1Ul": {
+			"attClassN":"class",
+			"attClassV":"flex-container"
+		},
+	"infoHeaderL1Il": [
+		{
+			"attClassLiN":"class",
+			"attClassLiV":"flag-position",
+			"attLinkN":"href",  
+			"attLinkV":"#",
+			"attIconHL1N": "class",
+			"attIconHL1V": "flags-sprite flag--spain"
+		},
+		{
+			"attClassLiN":"class",
+			"attClassLiV":"btn--circle btn--circle--sm btn--info",
+			"attLinkN":"href",
+			"attLinkV":"#",
+			"attIconHL1N": "class",
+			"attIconHL1V": "icon information"
+		}
+	]
+}

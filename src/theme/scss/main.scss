@@ -1,0 +1,30 @@
+// Old code
+@import "icon-fonts",
+		"mediaQueries";
+
+@import "components/_base/variables.scss",
+		"components/_base/_base.scss",
+		"components/_base/_functions.scss",
+		"components/_base/helpers.scss",
+		"components/_base/mixins.scss";
+
+@import "components/_layouts/_l-footer.scss",
+		"components/_layouts/_l-grid.scss",
+		"components/_layouts/_l-header.scss",
+		"components/_layouts/_l-main.scss",
+		"components/_layouts/_l-sidebar.scss";
+
+@import "components/_modules/_m-accordions.scss",
+		"components/_modules/_m-boxes.scss",
+		"components/_modules/_m-buttons.scss",
+		"components/_modules/_m-charts.scss",
+		"components/_modules/_m-components.scss",
+		"components/_modules/_m-forms.scss",
+		"components/_modules/_m-nav.scss",
+		"components/_modules/_m-tables.scss",
+		"components/_modules/_m-tabs.scss";
+
+@import "components/_states/_s-animations.scss",
+		"components/_states/_s-boxes.scss",
+		"components/_states/_s-buttons.scss",
+		"components/_states/_s-charts.scss";
