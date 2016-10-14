@@ -1,15 +1,60 @@
 {
-	"divBgModeId": "bgModel",
-	"divBgModeClass": "bg-white-100",
-	"sectionClass": "horseRacingBox border-box-grey",
-	"headerClass": "bar-title bg-blue-dark-27 list",
-	"h4Text": "11:10 Durbanville",
-	"iconClass": "icon-tv-icon pull-right",
-	"articleListRE": [
-		{
-			"articleREClass": ""
-			
-		}
-	]
-		
+    "divBgModeId": "bgModel",
+    "divBgModeClass": "bg-white-100",
+    "sectionClass": "horseRacingBox border-box-grey",
+    "headerClass": "bar-title bg-blue-dark-27 list",
+    "h4Text": "11:10 Durbanville",
+    "iconClass": "icon-tv-icon pull-right",
+    "raceEvList": [{
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "4",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(2)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-blackTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Aunty Ann",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "descTitle": [{
+                "listChildTitleTxt": "J: "
+            }, {
+                "listChildTitleTxt": "T: "
+            }]
+        }, {
+            "descDesc": [{
+                "listChildDescTxt": "JBass, D"
+            }, {
+                "listChildDescTxt": "Bailey, K"
+            }]
+        }]
+    }, {
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "6",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(2)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-blackTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Aunty Ann",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }]
+
 }
