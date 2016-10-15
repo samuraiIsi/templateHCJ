@@ -11,7 +11,7 @@ raceEvListHttps.onreadystatechange = function() {
 raceEvListHttps.open("GET", urlbanners, true);
 raceEvListHttps.send();
 
-var i, j, k, z;
+var i, j;
 
 function raceEvList(data) {
     var divBgModel, sectionRE, headerRE, h4RE, h4REText, aRE, iconRE, aLinkPA, aLinkPAText;
@@ -64,42 +64,43 @@ function raceEvList(data) {
         aDesc.setAttribute('href', data.raceEvList[i].aDescLink);
         aDescText = document.createTextNode(data.raceEvList[i].aDescTxt);
         listParent = document.createElement('dl');
-        // for (k = 0; k < data.raceEvList[i].descList[0].descTitle.length; k++) {
-        //     listChildTitle = document.createElement('dt');
-        //     listChildTitleText = document.createTextNode(data.raceEvList[i].descList[0].descTitle[k].listChildTitleTxt);
-        //     listChildTitle.appendChild(listChildTitleText);
-        //     listParent.appendChild(listChildTitle);
+        for (j = 0; j < data.raceEvList[i].descList.length; j++) {
+            listChildTitle = document.createElement('dt');
+            listChildTitleText = document.createTextNode(data.raceEvList[i].descList[j].listChildTitleTxt);
+            listChildTitle.appendChild(listChildTitleText);
+            listParent.appendChild(listChildTitle);
 
-        //     listChildDesc = document.createElement('dd');
-        //     listChildDescText = document.createTextNode(data.raceEvList[i].descList[1].descDesc[z].listChildDescTxt);
-        //     listChildDesc.appendChild(listChildDescText);
-        //     listParent.appendChild(listChildDesc);
-        // }   
+            listChildDesc = document.createElement('dd');
+            listChildDescText = document.createTextNode(data.raceEvList[i].descList[j].listChildDescTxt);
+            listChildDesc.appendChild(listChildDescText);
+            listParent.appendChild(listChildDesc);
+        }
+        spanNumColm.appendChild(spanNumColmText);
+        pNumbColm.appendChild(pNumbColmText);
+        divNumbColm.appendChild(spanNumColm);
+        divNumbColm.appendChild(pNumbColm);
+
+        spanNumb.appendChild(spanNumbText);
+        divImgNumb.appendChild(imgNumb);
+        divImgNumb.appendChild(spanNumb);
+
+        aDesc.appendChild(aDescText);
+        titleDesc.appendChild(aDesc);
+        divDescription.appendChild(titleDesc);
+        divDescription.appendChild(listParent);
+
+        aBtn.appendChild(aBtnText);
+        divBtn.appendChild(aBtn);
+
+        articleRE.appendChild(divNumbColm);
+        articleRE.appendChild(divImgNumb);
+        articleRE.appendChild(divDescription);
+        articleRE.appendChild(divBtn);
+        sectionRE.appendChild(articleRE);
 
     }
 
-    spanNumColm.appendChild(spanNumColmText);
-    pNumbColm.appendChild(pNumbColmText);
-    divNumbColm.appendChild(spanNumColm);
-    divNumbColm.appendChild(pNumbColm);
 
-    spanNumb.appendChild(spanNumbText);
-    divImgNumb.appendChild(imgNumb);
-    divImgNumb.appendChild(spanNumb);
-
-    aDesc.appendChild(aDescText);
-    titleDesc.appendChild(aDesc);
-    divDescription.appendChild(titleDesc);
-    divDescription.appendChild(listParent);
-
-    aBtn.appendChild(aBtnText);
-    divBtn.appendChild(aBtn);
-
-    articleRE.appendChild(divNumbColm);
-    articleRE.appendChild(divImgNumb);
-    articleRE.appendChild(divDescription);
-    articleRE.appendChild(divBtn);
-    sectionRE.appendChild(articleRE);
     divBgModel.appendChild(sectionRE);
 
     document.getElementById('raceList').appendChild(divBgModel);
