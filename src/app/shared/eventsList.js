@@ -21,6 +21,7 @@ function eventsList(data) {
     var divBtnGroupEL, divSidesRG, divSidesLf, divBtn, aBtn, aBtnText, iconBtn, divSides;
     divELVertParent = document.createElement('div');
     divELVertParent.setAttribute('id', data.idDivELVertParent.divId);
+    divELVertParent.setAttribute('class', data.idDivELVertParent.divClass);
     for (i = 0; i < data.eventsList.length; i++) {
         divEL = document.createElement('div');
         divEL.setAttribute('id', data.eventsList[i].idDiv);
@@ -112,7 +113,7 @@ function eventsList(data) {
         divELVertParent.appendChild(divEL);
     }
 
-    document.getElementById('eventsList').appendChild(divELVertParent);
+    document.getElementById('wrapper1').appendChild(divELVertParent);
 }
 
 function init() {

@@ -1,6 +1,7 @@
 {
 	"idDivELVertParent": {
-		"divId": "eventList"
+		"divId": "eventList",
+		"divClass": "bg-white-100"
 	},
 	"eventsList": [
 		{

@@ -103,7 +103,7 @@ function raceEvList(data) {
 
     divBgModel.appendChild(sectionRE);
 
-    document.getElementById('raceList').appendChild(divBgModel);
+    document.getElementById('wrapper2').appendChild(divBgModel);
 }
 
 function init() {

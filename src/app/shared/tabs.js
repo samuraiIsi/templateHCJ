@@ -42,8 +42,8 @@ function tabs(data) {
 		ulTabsThree.appendChild(liTabsThree);
 	}
 
-	document.getElementById('navTabsTwo').appendChild(ulTabsTwo);
-	document.getElementById('navTabsThree').appendChild(ulTabsThree);
+	document.getElementById('wrapper1').appendChild(ulTabsTwo);
+	document.getElementById('wrapper2').appendChild(ulTabsThree);
 }
 
 function init() {

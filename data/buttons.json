@@ -11,7 +11,8 @@
 		"iconClass": "icon-horse-racing"
 	},
 	"btnVerticalDivParent": {
-		"divId": "btnsVertical"
+		"divId": "btnsVertical",
+		"divClass": "flex-container"
 	},
 	"btnVerticalinf": [
 		{

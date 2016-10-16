@@ -14,15 +14,19 @@ bannersHttps.send();
 var i;
 
 function bannerMain(data) {
-	var divBM, h2BM, h2BMText, docId;
+	var divBM, divBS, h2BM, h2BMText, docId;
 	
 	for (i = 0; i < data.bannersMain.length; i++) {
 	divBM = document.createElement('div');
-	divBM.setAttribute('class', data.bannersMain[i].divClass);
+	divBM.setAttribute('class', data.bannersMain[i].divMainClass);
+	divBS = document.createElement('div');
+	divBS.setAttribute('class', data.bannersMain[i].divSecondClass);
 	h2BM = document.createElement('h2');
 	h2BMText = document.createTextNode(data.bannersMain[i].h2Text);
 	h2BM.appendChild(h2BMText);
-	divBM.appendChild(h2BM);
+	divBS.appendChild(h2BM);
+	divBM.appendChild(divBS);
+
 
 	document.getElementById(data.bannersMain[i].docId).appendChild(divBM);
 	}

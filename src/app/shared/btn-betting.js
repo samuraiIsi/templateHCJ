@@ -79,7 +79,7 @@ function btnBackArrow(data) {
 	iconBtBk.setAttribute('class', data.btnBkAr.iconClass);
 	linkBtBk.appendChild(iconBtBk);
 	divBtBk.appendChild(iconBtBk);
-	document.getElementById('btnBackArrow').appendChild(divBtBk);
+	document.getElementById('subHeaderChildFirst').appendChild(divBtBk);
 }
 
 function btnHorse(data) { // Rename to btnHorizontal
@@ -94,13 +94,14 @@ function btnHorse(data) { // Rename to btnHorizontal
 	spanBtnH.appendChild(spanBtnHText);
 	divBtnH.appendChild(iconBtnH);
 	divBtnH.appendChild(spanBtnH);
-	document.getElementById('btnHorse').appendChild(divBtnH);
+	document.getElementById('subHeaderChildFirst').appendChild(divBtnH);
 }
 
 function btnVertical(data) {
 	var divBtnVert, iconBtnVert, pBtnVert, pBtnVertText;
 	divBtnVertParent = document.createElement('div');
 	divBtnVertParent.setAttribute('id', data.btnVerticalDivParent.divId);
+	divBtnVertParent.setAttribute('class', data.btnVerticalDivParent.divClass);
 	for (i = 0; i < data.btnVerticalinf.length; i++) {
 		divBtnVert = document.createElement('div');		
 		divBtnVert.setAttribute('class', data.btnVerticalinf[i].divClass);
@@ -117,7 +118,7 @@ function btnVertical(data) {
 		divBtnVert.appendChild(linkBtBk);
 		divBtnVertParent.appendChild(divBtnVert);	
 	}
-	document.getElementById('btnsVerticalRoot').appendChild(divBtnVertParent);
+	document.getElementById('subHeaderChild').appendChild(divBtnVertParent);
 }
 
 function listBtnCircles(info) {

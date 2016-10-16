@@ -1,14 +1,16 @@
 {
 	"bannersMain": [
 		{
-			"divClass": "bar-title bg-blue-dark-36",
+			"divMainClass": "capitLetter",
+			"divSecondClass": "bar-title bg-blue-dark-36",
 			"h2Text": "meetings",
-			"docId": "titleMeeting"
+			"docId": "wrapper1"
 		},
 		{
-			"divClass": "bar-title bg-white-100",
+			"divMainClass": "capitLetter",
+			"divSecondClass": "bar-title bg-white-100",
 			"h2Text": "horse racing",
-			"docId": "horseRacing"
+			"docId": "wrapper2"
 		}
 	] 
 }

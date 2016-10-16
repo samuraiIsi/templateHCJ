@@ -9,54 +9,18 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body onload="init()">
-	<header>
-		<div class="row bg-blue-dark-27" id="header">
-			<div class="container flex-container" id="headerL1">
-				<div class="btn-respons-menu hidden-md">
-    				<a href="javascript:void(0);" onclick="myFunction()">☰</a>
- 				</div>
-				<h1 class="logo-header">
-					<div id='logoHeader'></div>
-					<div class="btn btn--login pull-right hidden-sm" id='btnBetting'></div>
-				</h1>
-				<div class="row flex-container push-right row--sm" id="loginArea">
-				</div>
-			</div>
-		</div>
-		<div class="row bg-blue-dark-18">
-			<div class="container flex-container-sp-btw" >
-				<div class="flex-container">
-					<div id="btnBackArrow"></div>
-					<div id="btnHorse"></div>
-				</div>
-				<div class="flex-container" id="btnsVerticalRoot"></div>
-			</div>
-		</div>
-	</header>
-	<section id="bodyContainer" class="container">
-		<div id="listBtnsGroupCircles"></div>
-		<section class="flex-container-lg">
-			<article class="wrapper-1">
-				<div id="titleMeeting" class="capitLetter"></div>
-				<div id="navTabsTwo"></div>
-				<div class="bg-white-100">
-					<div id="eventsList"></div>
-				</div>
-			</article>
-			<article class="wrapper-2">
-				<div id="horseRacing" class="capitLetter"></div>
-				<div id="navTabsThree"></div>
-				<div id="raceList"></div>
-			</article>
-		</section>
-	</section>
-	<script src="src/app/layout/header.js"></script>
+	
+	<header id="headerContainer"></header>
+	<section id="bodyContainer"></section>
+
 	<script src="src/app/layout/logoHeader.js"></script>
-	<script src="src/app/shared/banners.js"></script>
+	<script src="src/app/layout/header.js"></script>
+	<script src="src/app/layout/body.js"></script>
 	<script src="src/app/shared/btn-betting.js"></script>
+	<script src="src/app/shared/banners.js"></script>
+	<script src="src/app/shared/tabs.js"></script>
 	<script src="src/app/shared/eventsList.js"></script>
 	<script src="src/app/shared/raceEvents.js"></script>
-	<script src="src/app/shared/tabs.js"></script>
 	<script src="src/app/layout/init.js"></script>
 </body>
 </html>
