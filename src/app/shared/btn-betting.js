@@ -50,10 +50,10 @@ function btnsLoginArea() {
 	divLoginHead.setAttribute('class', 'btn--circle btn--circle--sm btn--login--sm hidden-md');
 	linkLoginHead = document.createElement('A');
 	linkLoginHead.setAttribute('href', '#');
-	linkLoginHeadText = document.createTextNode('Login');
-	linkLoginHead.appendChild(linkLoginHeadText);
+	//linkLoginHeadText = document.createTextNode('Login');
+	//linkLoginHead.appendChild(linkLoginHeadText);
 	iconLoginHead = document.createElement('i');
-	iconLoginHead.setAttribute('class', 'fs0 icon-login-head');
+	iconLoginHead.setAttribute('class', 'fs1 icon-login-head');
 	divLoginHead.appendChild(linkLoginHead);
 	divLoginHead.appendChild(iconLoginHead);
 	document.getElementById('loginArea').appendChild(divLoginHead);
