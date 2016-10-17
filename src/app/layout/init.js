@@ -4,7 +4,4 @@ function init() {
 	bodyFunction();
 	btnBetting();
 	btnsLoginArea();
-	//initLogoHeader();
-	//initBtns();
-	//bannersInit();
 }

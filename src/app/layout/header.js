@@ -1,8 +1,9 @@
 function headerFunction() {
 	var divParent, divSubParent, divChild, btnMenuIcon, h1Logo;
 	divParent = document.createElement('div');
-	divParent.setAttribute('class', 'row bg-blue-dark-27')
+	divParent.setAttribute('class', 'row bg-blue-dark-27');
 	divSubParent = document.createElement('div');
+	divSubParent.setAttribute('id', 'headerL1');
 	divSubParent.setAttribute('class', 'container flex-container');
 	divChildFirst = document.createElement('div');
 	divChildFirst.setAttribute('class', 'btn-respons-menu hidden-md');

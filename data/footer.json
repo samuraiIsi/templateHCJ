@@ -1,0 +1,18 @@
+{
+    "divParentClass": "bar-title bg-grey-80 container",
+    "pAuthorClass": "author",
+    "aAuhtorText": "Designed by ",
+    "spanAuhtorText": "img",
+    "linkSiteAuthor": "img-dev",
+    "ulFooterListClass": "footer-list",
+    "footerList": [
+        "Built with:",
+        "HTML / HTML5",
+        "CSS / CSS3",
+        "Flexbox",
+        "Media Queries",
+        "Sass",
+        "JavaScript",
+        "AJAX"
+    ]
+}

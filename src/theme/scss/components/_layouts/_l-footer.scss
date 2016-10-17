@@ -1,0 +1,31 @@
+.footer-list {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    li {
+        font-size: 15px;
+        font-weight: 700;
+        border-right: solid 1px #fff;
+        padding: 10px 35px;
+        &:first-child {
+            font-size: 20px;
+        }
+        &:first-child,
+        &:last-child {
+            border-right: none;
+        }
+    }
+}
+
+.author {
+    text-align: right;
+    font-size: 12px;
+    text-decoration: underline;
+    a {
+        color: #fff;
+        span {
+            font-style: italic;
+        }
+    }
+}
