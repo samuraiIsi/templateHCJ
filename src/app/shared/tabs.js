@@ -19,9 +19,10 @@ function tabs(data) {
 	ulTabsTwo.setAttribute('class', data.navTabsTwoUl.ulClass);
 	for (i = 0; i < data.navTabsTwoLi.length; i++) {
 		liTabsTwo = document.createElement('li');
-		liTabsTwo.setAttribute('class', data.navTabsTwoLi[i].liClass);
 		aTabsTwo = document.createElement('a');
-		aTabsTwo.setAttribute('href', data.navTabsTwoLi[i].aClass);
+		aTabsTwo.setAttribute('href', data.navTabsTwoLi[i].aLink);
+		aTabsTwo.setAttribute('class', data.navTabsTwoLi[i].aClass);
+		aTabsTwo.setAttribute('onclick', 'openTabTwo' + '(' + 'event' + ', ' + "'" + data.navTabsTwoLi[i].city + "'" +')');
 		aTabsTwoText = document.createTextNode(data.navTabsTwoLi[i].aText);
 		aTabsTwo.appendChild(aTabsTwoText);
 		liTabsTwo.appendChild(aTabsTwo);
@@ -33,9 +34,10 @@ function tabs(data) {
 	ulTabsThree.setAttribute('class', data.navTabsThreeUl.ulClass);
 	for (i = 0; i < data.navTabsThreeLi.length; i++) {
 		liTabsThree = document.createElement('li');
-		liTabsThree.setAttribute('class', data.navTabsThreeLi[i].liClass);
 		aTabsThree = document.createElement('a');
-		aTabsThree.setAttribute('href', data.navTabsThreeLi[i].aClass);
+		aTabsThree.setAttribute('href', data.navTabsThreeLi[i].aLink);
+		aTabsThree.setAttribute('class', data.navTabsThreeLi[i].aClass);
+		aTabsThree.setAttribute('onclick', 'openTabThree' + '(' + 'event' + ', ' + "'" + data.navTabsThreeLi[i].city + "'" +')');
 		aTabsThreeText = document.createTextNode(data.navTabsThreeLi[i].aText);
 		aTabsThree.appendChild(aTabsThreeText);
 		liTabsThree.appendChild(aTabsThree);

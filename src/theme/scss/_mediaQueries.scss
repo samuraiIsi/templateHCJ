@@ -48,6 +48,16 @@
             float: left;
         }
     }
+    #subHeader {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        &.show {
+            max-height: 300px;
+            opacity: 1;
+            transition: opacity max-height 0.3s ease-in-out;
+        }
+    }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {

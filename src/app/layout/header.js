@@ -42,7 +42,7 @@ function subHeaderFunction() {
 	var divParent, divSubParent, divChild;
 	divParent = document.createElement('div');
 	divParent.setAttribute('id', 'subHeader');
-	divParent.setAttribute('class', 'row bg-blue-dark-18');
+	divParent.setAttribute('class', 'row bg-blue-dark-18 accordion');
 	divSubParent = document.createElement('div');
 	divSubParent.setAttribute('id', 'subHeaderChild');
 	divSubParent.setAttribute('class', 'container flex-container-sp-btw');

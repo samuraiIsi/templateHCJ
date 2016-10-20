@@ -1,0 +1,39 @@
+.nav-tab {
+    margin: 0;
+    text-transform: $capitalizeLetter;
+    li {
+        
+        border-right: solid 1px #7878a1;
+        text-align: center;
+        /*width: 50%; Con esto se iguala los tabs, pero se rompe el hover el active, aparte del cursor pointer no coge todo el tab*/
+        &:last-child {
+            border-right: none;
+        }
+        a {
+            background-color: #e1e1ea; //#e1e1ea
+            display: inline-block;
+            color: #00427D;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 15px 30px;
+            &:hover {
+                 background-color: #bfbdc1;
+            }
+            &.activetab {
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+section {
+    #defaultOpen {
+       display: block;
+    }
+}
+#defaultOpenOne {
+       display: block;
+    }
+.tabcontentThree, .tabcontentTwo {
+    display: none;
+}

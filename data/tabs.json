@@ -4,13 +4,15 @@
 	},
 	"navTabsTwoLi": [
 		{
-			"liClass": "active",
-			"aClass": "",
+			"aLink": "javascript:void(0)",
+			"aClass": "tablinksTwo activetab",
+			"city": "defaultOpenOne",
 			"aText": "meetings"
 		},
 		{
-			"liClass": "",
-			"aClass": "",
+			"aLink": "javascript:void(0)",
+			"aClass": "tablinksTwo",
+			"city": "tomorrow",
 			"aText": "tomorrow"
 		}
 	],
@@ -19,18 +21,21 @@
 	},
 	"navTabsThreeLi": [
 		{
-			"liClass": "active",
-			"aClass": "",
+			"aLink": "javascript:void(0)",
+			"aClass": "tablinksThree activetab",
+			"city": "defaultOpen",
 			"aText": "next off"
 		},
 		{
-			"liClass": "",
-			"aClass": "",
+			"aLink": "javascript:void(0)",
+			"aClass": "tablinksThree",
+			"city": "Paris",
 			"aText": "top bets"
 		},
 		{
-			"liClass": "",
-			"aClass": "",
+			"aLink": "javascript:void(0)",
+			"aClass": "tablinksThree",
+			"city": "Sevilla",
 			"aText": "highlights"
 		}
 	]

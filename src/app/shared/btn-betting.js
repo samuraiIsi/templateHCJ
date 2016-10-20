@@ -53,7 +53,7 @@ function btnsLoginArea() {
 	//linkLoginHeadText = document.createTextNode('Login');
 	//linkLoginHead.appendChild(linkLoginHeadText);
 	iconLoginHead = document.createElement('i');
-	iconLoginHead.setAttribute('class', 'fs1 icon-login-head');
+	iconLoginHead.setAttribute('class', 'fs11 icon-login-head');
 	divLoginHead.appendChild(linkLoginHead);
 	divLoginHead.appendChild(iconLoginHead);
 	document.getElementById('loginArea').appendChild(divLoginHead);
