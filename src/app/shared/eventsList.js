@@ -82,19 +82,19 @@ eventsList = function(data) {
             for (t = 0; t < data.tabs[s].eventsList[i].divBtnListEL.length; t++) {
                 divBtn = document.createElement('div');
                 divBtn.setAttribute('class', data.tabs[s].eventsList[i].divBtnListEL[t].divBtnClass);
-                aBtn = document.createElement('a');
-                aBtn.setAttribute('href', data.tabs[s].eventsList[i].divBtnListEL[t].aBtnClass);
-                aBtn.setAttribute('onclick', 'openPanel');
+                aBtn = document.createElement('button');
+                aBtn.setAttribute('href', data.tabs[s].eventsList[i].divBtnListEL[t].aBtnLink);
+                aBtn.setAttribute('class', 'btnMed');
+                aBtn.setAttribute('onclick', 'openPanel' + '(' + 'event' + ', ' + "'" + data.tabs[s].eventsList[i].divBtnListEL[t].aPanelId + "'" + ')');
                 aBtnText = document.createTextNode(data.tabs[s].eventsList[i].divBtnListEL[t].aBtnText);
                 iconBtn = document.createElement('i');
                 iconBtn.setAttribute('class', data.tabs[s].eventsList[i].divBtnListEL[t].iconBtnClass);
                 aBtn.appendChild(aBtnText);
                 aBtn.appendChild(iconBtn);
-                divBtn.appendChild(aBtn);
                 if (data.tabs[s].eventsList[i].divBtnListEL[t / 2]) {
-                    divSidesRG.appendChild(divBtn);
+                    divSidesRG.appendChild(aBtn);
                 } else {
-                    divSidesLf.appendChild(divBtn);
+                    divSidesLf.appendChild(aBtn);
                 }
             }
 

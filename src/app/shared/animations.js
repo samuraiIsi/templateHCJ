@@ -1,4 +1,4 @@
-var toggleBtnMenuIcon, access, i, openTab, tabcontent, classTabContent, classLinkTab, tablinks, closeWrapper2, openPanel, panel;
+var toggleBtnMenuIcon, access, i, openTab, tabcontent, classTabContent, classLinkTab, tablinks, closeWrapper2, openPanel, panel, textBtn;
 toggleBtnMenuIcon = function(toggling) {
     toggling.classList.toggle("change");
     document.getElementById("subHeader").classList.toggle("show");
@@ -24,15 +24,24 @@ openTab = function(evt, tabsName) {
     evt.currentTarget.className += " activetab";
 };
 
-closeWrapper2 = function() {
-    document.getElementById('wrapper2').style.display = 'none';
-};
-
 openPanel = function(evt, tabsName) {
     panel = document.getElementsByClassName("panel");
     for (i = 0; i < panel.length; i++) {
         panel[i].style.display = "none";
     }
+
+    textBtn = evt.currentTarget.childNodes[0];
+
+    if (tabsName === 'panel-0' && textBtn.data === 'All Races') {
+        for (i = 0; i < panel.length; i++) {
+            panel[i].style.display = "block";
+        }
+    }
     document.getElementById(tabsName).style.display = "block";
-    evt.currentTarget.className += " activetab";
+    document.getElementById('wrapper2').style.display = 'block';
+    window.scrollTo(0, 0);
+};
+
+closeWrapper2 = function() {
+    document.getElementById('wrapper2').style.display = 'none';
 };

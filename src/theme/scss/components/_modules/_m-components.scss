@@ -33,28 +33,27 @@
     }
     &.list {
         margin-bottom: 1px;
+        &.list--dropDown {
+            cursor: pointer;
+        }
     }
 }
 
 .bar-title.bg-white-100 {
     color: #000;
 }
-
 // Modifier
 .first--inlist {
     margin-left: 0;
 }
-
 .text {
     &.-b {
         color: #000;
     }
 }
-
 .capitLetter {
     text-transform: $capitalizeLetter;
 }
-
 // Images
 .at-races {
     background-image: url(../img/atr.png);
@@ -62,35 +61,30 @@
     width: 25%;
     height: 1em;
 }
-
 .flag-position {
     margin: 7px;
 }
-
 .flags-sprite {
     background-image: url('../../img/flags.png');
     background-repeat: no-repeat;
     padding: 0px 8px;
     font-size: 10px;
 }
-
 .flag {
     @at-root #{&}--greece {
         background-position: 0 -22px;
     }
+    
     @at-root #{&}--spain {
         background-position: -16px -11px;
     }
 }
-
 .blocking {
     display: block;
 }
-
 .unblock {
     display: none;
 }
-
 // Hacer una file para esto, todo esto de eventList
 #eventList {
     h4 {
