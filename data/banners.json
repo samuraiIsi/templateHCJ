@@ -4,6 +4,8 @@
 			"divMainId": "meeting",
 			"divMainClass": "capitLetter",
 			"divSecondClass": "bar-title bg-blue-dark-36",
+			"iClass": " ",
+			"iMethod": "",
 			"h2Text": "meetings",
 			"docId": "wrapper1"
 		},
@@ -11,6 +13,8 @@
 			"divMainId": "horseRacing",
 			"divMainClass": "capitLetter",
 			"divSecondClass": "bar-title bg-white-100",
+			"iClass": "icon-close hidden-lg",
+			"iMethod": "closeWrapper2()",
 			"h2Text": "horse racing",
 			"docId": "wrapper2"
 		}

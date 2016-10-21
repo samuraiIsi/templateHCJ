@@ -1,5 +1,5 @@
-var eventsList;
-var eventsListHttps = new XMLHttpRequest();
+var eventsList, eventsListHttps;
+eventsListHttps = new XMLHttpRequest();
 var urlbanners = "../../../data/eventsList.json";
 
 eventsListHttps.onreadystatechange = function() {
@@ -12,13 +12,10 @@ eventsListHttps.onreadystatechange = function() {
 eventsListHttps.open("GET", urlbanners, true);
 eventsListHttps.send();
 
-var s, i, j, k, count;
+var z, s, i, j, k, count;
 var count = 0;
 eventsList = function(data) {
-    var divEL, headerEL, h4EL, h4ELText, aEL, iconEL, aLinkPA, aLinkPAText;
-    var sectionEL, headerSEL, h4SEL, h4SELText;
-    var asideEL, pAEL, articleEL, ulAr, liAr, liArText;
-    var divBtnGroupEL, divSidesRG, divSidesLf, divBtn, aBtn, aBtnText, iconBtn, divSides;
+    var divEL, headerEL, h4EL, h4ELText, aEL, iconEL, aLinkPA, aLinkPAText, sectionEL, headerSEL, h4SEL, h4SELText, asideEL, pAEL, articleEL, ulAr, liAr, liArText, divBtnGroupEL, divSidesRG, divSidesLf, divBtn, aBtn, aBtnText, iconBtn, divSides;
     for (s = 0; s < data.tabs.length; s++) {
         divELVertParent = document.createElement('div');
         divELVertParent.setAttribute('id', data.tabs[s].idDivELVertParent.divId);
@@ -87,6 +84,7 @@ eventsList = function(data) {
                 divBtn.setAttribute('class', data.tabs[s].eventsList[i].divBtnListEL[t].divBtnClass);
                 aBtn = document.createElement('a');
                 aBtn.setAttribute('href', data.tabs[s].eventsList[i].divBtnListEL[t].aBtnClass);
+                aBtn.setAttribute('onclick', 'openPanel');
                 aBtnText = document.createTextNode(data.tabs[s].eventsList[i].divBtnListEL[t].aBtnText);
                 iconBtn = document.createElement('i');
                 iconBtn.setAttribute('class', data.tabs[s].eventsList[i].divBtnListEL[t].iconBtnClass);

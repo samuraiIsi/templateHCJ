@@ -47,3 +47,19 @@
 .icon.live-races:before{content:"\e651"}
 .icon-tv-icon:before{content:"\e672"}
 .icon.pelota:before{content:"\e60a"}
+.icon-arrow-slim {
+    &:after {
+        content: "\e665";
+        float: right;
+    }
+    &.activecord:after {
+        content: "\e628";
+        float: right;
+    }
+}
+.icon-close {
+	&:after {
+        content: "\e905";
+        float: right;
+    }
+}

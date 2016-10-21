@@ -97,14 +97,3 @@
         font-size: 15px;
     }
 }
-
-h4.icon-arrow-slim {
-    &:after {
-        content: "\e665";
-        float: right;
-    }
-    &.activecord:after {
-        content: "\e628";
-        float: right;
-    }
-}

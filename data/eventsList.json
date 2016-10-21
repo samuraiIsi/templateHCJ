@@ -1,7 +1,7 @@
 {"tabs":[{
 	"idDivELVertParent": {
 		"divId": "defaultOpenOne",
-		"divClass": "bg-white-100 tabcontentTwo"
+		"divClass": "bg-white-100 tabcontent-8"
 	},
 	"eventsList": [
 		{
@@ -268,7 +268,7 @@
 {
 	"idDivELVertParent": {
 		"divId": "tomorrow",
-		"divClass": "bg-white-100 tabcontentTwo"
+		"divClass": "bg-white-100 tabcontent-8"
 	},
 	"eventsList": [
 		{
