@@ -77,6 +77,13 @@
     }
 
 }
+
+.btnMed {
+    padding: 10px 0;
+    min-width: 100%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
 .btn--login {
     @include featureButtons(13px, $colorLogin, 0.4em, 24px);
 }

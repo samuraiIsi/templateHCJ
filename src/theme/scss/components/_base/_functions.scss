@@ -1,21 +1,30 @@
 @each $align in $aligns {
-	.align-#{$align} {
-		text-align: #{$align};
-	}
+    .align-#{$align} {
+        text-align: #{$align};
+    }
 }
+
 @each $alignment in $alignments {
-	.alignIt-#{$alignment} {
-		align-items: #{$alignment};
-	}
+    .alignIt-#{$alignment} {
+        align-items: #{$alignment};
+    }
 }
+
 @each $fontsStyle in $fontsStyles {
-	.fst-#{$fontsStyle} {
-		font-style: #{$fontsStyle};
-	}
+    .fst-#{$fontsStyle} {
+        font-style: #{$fontsStyle};
+    }
 }
+
 @each $side in $sides {
-	.col-container-#{$side} {
-		margin-#{$side}: $standardDistance - 5;
-		flex-basis: 50%;
-	}
+    .col-container-#{$side} {
+        margin-#{$side}: $standardDistance - 5;
+        flex-basis: 50%;
+    }
+}
+
+@for $i from 1 through 8 {
+    .tabcontent-#{$i} {
+        display: none;
+    }
 }

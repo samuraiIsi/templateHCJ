@@ -23,12 +23,15 @@ function bannerMain(data) {
         divBS = document.createElement('div');
         divBS.setAttribute('class', data.bannersMain[i].divSecondClass);
         h2BM = document.createElement('h2');
+        iconEl = document.createElement('i');
+        iconEl.setAttribute('class', data.bannersMain[i].iClass);
+        iconEl.setAttribute('onclick', data.bannersMain[i].iMethod);
         h2BMText = document.createTextNode(data.bannersMain[i].h2Text);
+        h2BM.appendChild(iconEl);
         h2BM.appendChild(h2BMText);
         divBS.appendChild(h2BM);
         divBM.appendChild(divBS);
-
-
+        
         document.getElementById(data.bannersMain[i].docId).appendChild(divBM);
     }
 }

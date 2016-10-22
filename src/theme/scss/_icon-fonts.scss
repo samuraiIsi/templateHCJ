@@ -31,7 +31,7 @@
 .icon-horse-racing:before {content: "\e63e";}
 .icon-open-bets:before {content: "\e6c3";}
 .icon-bet-slip:before {content: "\e612";}
-.icon-arrow-slim:before {content: "\e608";} //darle la vuelta con CSS3
+//.icon-arrow-slim:before {content: "\e608";} //darle la vuelta con CSS3
 
 .icon-login-head:before{content:"\e603"}
 .icon-my-bets:before{content:"\e67e"}
@@ -47,3 +47,19 @@
 .icon.live-races:before{content:"\e651"}
 .icon-tv-icon:before{content:"\e672"}
 .icon.pelota:before{content:"\e60a"}
+.icon-arrow-slim {
+    &:after {
+        content: "\e665";
+        float: right;
+    }
+    &.activecord:after {
+        content: "\e628";
+        float: right;
+    }
+}
+.icon-close {
+	&:after {
+        content: "\e905";
+        float: right;
+    }
+}

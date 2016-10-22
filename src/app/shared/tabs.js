@@ -11,41 +11,47 @@ tabsHttps.onreadystatechange = function() {
 tabsHttps.open("GET", urlbanners, true);
 tabsHttps.send();
 
-var i;
+var i, j, insertPanelTwo, insertPanelOne;
 
 function tabs(data) {
-	var ulTabsTwo, liTabsTwo, aTabsTwo;
-	ulTabsTwo = document.createElement('ul');
-	ulTabsTwo.setAttribute('class', data.navTabsTwoUl.ulClass);
-	for (i = 0; i < data.navTabsTwoLi.length; i++) {
-		liTabsTwo = document.createElement('li');
-		liTabsTwo.setAttribute('class', data.navTabsTwoLi[i].liClass);
-		aTabsTwo = document.createElement('a');
-		aTabsTwo.setAttribute('href', data.navTabsTwoLi[i].aClass);
-		aTabsTwoText = document.createTextNode(data.navTabsTwoLi[i].aText);
-		aTabsTwo.appendChild(aTabsTwoText);
-		liTabsTwo.appendChild(aTabsTwo);
-		ulTabsTwo.appendChild(liTabsTwo);
-	}
-	
-	var ulTabsThree, liTabsThree, aTabsThree;
-	ulTabsThree = document.createElement('ul');
-	ulTabsThree.setAttribute('class', data.navTabsThreeUl.ulClass);
-	for (i = 0; i < data.navTabsThreeLi.length; i++) {
-		liTabsThree = document.createElement('li');
-		liTabsThree.setAttribute('class', data.navTabsThreeLi[i].liClass);
-		aTabsThree = document.createElement('a');
-		aTabsThree.setAttribute('href', data.navTabsThreeLi[i].aClass);
-		aTabsThreeText = document.createTextNode(data.navTabsThreeLi[i].aText);
-		aTabsThree.appendChild(aTabsThreeText);
-		liTabsThree.appendChild(aTabsThree);
-		ulTabsThree.appendChild(liTabsThree);
-	}
+    var ulTabsTwo, liTabsTwo, aTabsTwo;
+    ulTabsTwo = document.createElement('ul');
+    ulTabsTwo.setAttribute('class', data.navTabsTwoUl.ulClass);
+    for (i = 0; i < data.navTabsTwoLi.length; i++) {
+        liTabsTwo = document.createElement('li');
+        aTabsTwo = document.createElement('a');
+        aTabsTwo.setAttribute('href', data.navTabsTwoLi[i].aLink);
+        aTabsTwo.setAttribute('class', data.navTabsTwoLi[i].aClass);
+        aTabsTwo.setAttribute('onclick', 'openTab' + '(' + 'event' + ', ' + "'" + data.navTabsTwoLi[i].city + "'" + ')');
+        aTabsTwoText = document.createTextNode(data.navTabsTwoLi[i].aText);
+        aTabsTwo.appendChild(aTabsTwoText);
+        liTabsTwo.appendChild(aTabsTwo);
+        ulTabsTwo.appendChild(liTabsTwo);
+    }
 
-	document.getElementById('wrapper1').appendChild(ulTabsTwo);
-	document.getElementById('wrapper2').appendChild(ulTabsThree);
+    var ulTabsThree, liTabsThree, aTabsThree;
+
+    for (i = 0; i < data.navTabsThreeLi.length; i++) {
+        ulTabsThree = document.createElement('ul');
+        ulTabsThree.setAttribute('class', data.navTabsThreeUl.ulClass);
+        for (j = 0; j < data.navTabsThreeLi[i].length; j++) {
+            liTabsThree = document.createElement('li');
+            aTabsThree = document.createElement('a');
+            aTabsThree.setAttribute('href', data.navTabsThreeLi[i][j].aLink);
+            aTabsThree.setAttribute('class', data.navTabsThreeLi[i][j].aClass);
+            aTabsThree.setAttribute('onclick', 'openTab' + '(' + 'event' + ', ' + "'" + data.navTabsThreeLi[i][j].city + "'" + ')');
+            aTabsThreeText = document.createTextNode(data.navTabsThreeLi[i][j].aText);
+            aTabsThree.appendChild(aTabsThreeText);
+            liTabsThree.appendChild(aTabsThree);
+            ulTabsThree.appendChild(liTabsThree);
+            insertPanelTwo = document.getElementById('panel-' + [i]);
+            insertPanelTwo.insertBefore(ulTabsThree, insertPanelTwo.childNodes[0]);
+        }
+    }
+    insertPanelOne = document.getElementById('wrapper1');
+    insertPanelOne.insertBefore(ulTabsTwo, insertPanelOne.childNodes[1]);
 }
 
 function init() {
-	tabs();
+    tabs();
 }

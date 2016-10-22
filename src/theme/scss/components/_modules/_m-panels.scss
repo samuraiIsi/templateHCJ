@@ -1,0 +1,14 @@
+.panel {
+    margin-bottom: 15px;
+    display: none;
+}
+
+section {
+    #defaultOpenOne,
+    #defaultOpenPanelOne,
+    #defaultOpenPanelTwo,
+    #defaultOpenPanelThree,
+    #panel-0 {
+        display: block;
+    }
+}
