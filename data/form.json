@@ -1,0 +1,41 @@
+{
+	"divModalId": "loginModal",
+	"divModalClass": "popup-modal",
+	"formContainerClass": "popup-content animate-login",
+	"formName": "loginForm",
+	"divHeaderClass": "imgcontainer text-center",
+	"spanHeaderClass": "btn-close",
+	"spanHeaderTitle": "Close",
+	"spanHeaderMethod": "closeLoginModel()",
+	"imgHeaderSrc": "img/css-3-icon.png",
+	"imgHeaderAlt": "Avatar",
+	"imgHeaderAltClass": "avatar--lg",
+	"divContainerClass": "container-login pt-0",
+	"inputBoxes": [
+		{
+			"labelText": "Username",
+			"inputType": "text",
+			"inputPlaceHolder": "Enter Username",
+			"inputName": "uname",
+			"errorText": "Name must be filled out"
+		},
+		{
+			"labelText": "Password",
+			"inputType": "password",
+			"inputPlaceHolder": "Enter Password",
+			"inputName": "psw",
+			"errorText": "Password must be filled out"
+		}
+	],
+	"btnLoginType": "button",
+	"btnLoginMethod": "validateForm()",
+	"btnLoginClass": "btn--big",
+	"inputCheckText": "Remeber Me",
+	"divFooterClass": "container-login pt-0",
+	"btnCancelType": "button",
+	"btnCancelClass": "btn-cancel",
+	"btnCancelMethod": "miCancelFunct",
+	"spanForgotClass": "psw",
+	"spanForgotText": "Forgot ",
+	"aBtnText": "password?"
+}

@@ -37,6 +37,7 @@ function btnsLoginArea() {
 	divLogin.setAttribute('class', 'btn btn--login hidden-sm');
 	linkLogin = document.createElement('A');
 	linkLogin.setAttribute('href', '#');
+	linkLogin.setAttribute('onclick', 'openLoginModal()');
 	linkLoginText = document.createTextNode('Login');
 	linkLogin.appendChild(linkLoginText);
 	iconLinkLogin = document.createElement('i');
@@ -48,6 +49,7 @@ function btnsLoginArea() {
 	var divLoginHead, linkLoginHead, linkLoginHeadText;
 	divLoginHead = document.createElement('div');
 	divLoginHead.setAttribute('class', 'btn--circle btn--circle--sm btn--login--sm hidden-md');
+	divLoginHead.setAttribute('onclick', 'openLoginModal()');
 	linkLoginHead = document.createElement('A');
 	linkLoginHead.setAttribute('href', '#');
 	//linkLoginHeadText = document.createTextNode('Login');

@@ -1,0 +1,13 @@
+{
+	"divModalId": "validatedPopUp",
+	"divModalClass": "popup-modal",
+	"divParentClass": "popup-content animate-login",
+	"divHeaderClass": "imgcontainer",
+	"spanHeaderClass": "btn-close bc--sm",
+	"spanHeaderTitle": "Close",
+	"spanHeaderMethod": "closeValidatedModel()",
+	"imgHeaderSrc": "img/css-3-icon.png",
+	"imgHeaderAlt": "Avatar",
+	"imgHeaderAltClass": "avatar--sm",
+	"divContainerClass": "container-login pt-0"
+}

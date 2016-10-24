@@ -67,6 +67,9 @@
         display: none;
         min-height: 900px;
     }
+    .popup-content {
+        width: 100% !important;
+    }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {

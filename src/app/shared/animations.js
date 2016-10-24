@@ -1,4 +1,4 @@
-var toggleBtnMenuIcon, access, i, openTab, tabcontent, classTabContent, classLinkTab, tablinks, closeWrapper2, openPanel, panel, textBtn;
+var toggleBtnMenuIcon, access, i, openTab, tabcontent, classTabContent, classLinkTab, tablinks, closeWrapper2, closeLoginModel, openLoginModal, validateForm, error, onblurLoginInput, closeValidatedModel, openPanel, panel, textBtn;
 toggleBtnMenuIcon = function(toggling) {
     toggling.classList.toggle("change");
     document.getElementById("subHeader").classList.toggle("show");
@@ -45,3 +45,39 @@ openPanel = function(evt, tabsName) {
 closeWrapper2 = function() {
     document.getElementById('wrapper2').style.display = 'none';
 };
+
+openLoginModal = function() {
+    document.getElementById('loginModal').style.display = 'block';
+};
+
+closeLoginModel = function() {
+    document.getElementById('loginModal').style.display = 'none';
+};
+
+validateForm = function() {
+    var userName = document.forms["loginForm"]["uname"].value;
+    var password = document.forms["loginForm"]["psw"].value;
+    error = document.getElementsByClassName("error");
+    for (i = 0; i < error.length; i++) {
+        error[i].style.display = "none";
+    }
+    if (userName == null || userName == "") {
+        error[0].style.display = "block";
+    } else if (password == null || password == "") {
+        error[1].style.display = "block";
+    } else {
+        document.getElementById('loginModal').style.display = 'none';
+        document.getElementById('validatedPopUp').style.display = 'block';
+    }
+};
+
+closeValidatedModel = function() {
+    document.getElementById('validatedPopUp').style.display = 'none';
+}
+ 
+onblurLoginInput = function() {
+    error = document.getElementsByClassName("error");
+    for (i = 0; i < error.length; i++) {
+        error[i].style.display = "none";
+    }
+}
