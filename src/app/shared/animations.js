@@ -73,6 +73,7 @@ validateForm = function() {
 
 closeValidatedModel = function() {
     document.getElementById('validatedPopUp').style.display = 'none';
+    document.forms["loginForm"]["psw"].value = '';
 }
  
 onblurLoginInput = function() {

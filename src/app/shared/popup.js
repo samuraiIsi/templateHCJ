@@ -30,7 +30,7 @@ validatedPopUp = function(data) {
 	imgHeader.setAttribute('alt', data.imgHeaderAlt);
 	imgHeader.setAttribute('class', data.imgHeaderAltClass);
 	pMessage = document.createElement('p');
-	pMessage.setAttribute('class', 'fs20')
+	pMessage.setAttribute('class', 'fs20 text-center')
 	ptext = document.createTextNode("Thank you very much for logging");
 	divContainer = document.createElement('div');
 	divContainer.setAttribute('class', data.divContainerClass);
