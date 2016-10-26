@@ -77,50 +77,53 @@ function btnBackArrow(data) {
 	divBtBk.setAttribute('class', data.btnBkAr.divClass);
 	linkBtBk = document.createElement('A');
 	linkBtBk.setAttribute('href', data.btnBkAr.linkAtt);
+	linkBtBk.setAttribute('onclick', 'backBtn()');
 	iconBtBk = document.createElement('i');
 	iconBtBk.setAttribute('class', data.btnBkAr.iconClass);
 	linkBtBk.appendChild(iconBtBk);
-	divBtBk.appendChild(iconBtBk);
+	divBtBk.appendChild(linkBtBk);
 	document.getElementById('subHeaderChildFirst').appendChild(divBtBk);
 }
 
 function btnHorse(data) { // Rename to btnHorizontal
 	var divBtnH, iconBtnH, spanBtnH, spanBtnHText;
-	divBtnH = document.createElement('div');
-	divBtnH.setAttribute('class', data.btnHorse.divClass);
+	btnHEl = document.createElement('button');
+	btnHEl.setAttribute('class', data.btnHorse.btnClass);
+	btnHEl.setAttribute('href', data.btnHorse.btnLink);
+	btnHEl.setAttribute('onclick', 'changeView' + '(' + "'" + data.btnHorse.btnMethodValue + "'" + ')');
 	iconBtnH = document.createElement('i');
 	iconBtnH.setAttribute('class', data.btnHorse.iconClass);
 	spanBtnH = document.createElement('span');
 	spanBtnH.setAttribute('class', data.btnHorse.spanClass);
 	spanBtnHText = document.createTextNode(data.btnHorse.spanText);
 	spanBtnH.appendChild(spanBtnHText);
-	divBtnH.appendChild(iconBtnH);
-	divBtnH.appendChild(spanBtnH);
-	document.getElementById('subHeaderChildFirst').appendChild(divBtnH);
+	btnHEl.appendChild(iconBtnH);
+	btnHEl.appendChild(spanBtnH);
+	document.getElementById('subHeaderChildFirst').appendChild(btnHEl);
 }
 
 function btnVertical(data) {
-	var divBtnVert, iconBtnVert, pBtnVert, pBtnVertText;
-	divBtnVertParent = document.createElement('div');
-	divBtnVertParent.setAttribute('id', data.btnVerticalDivParent.divId);
-	divBtnVertParent.setAttribute('class', data.btnVerticalDivParent.divClass);
+	var btnVert, iconBtnVert, pBtnVert, pBtnVertText;
+	btnVertParent = document.createElement('div');
+	btnVertParent.setAttribute('id', data.btnVerticalDivParent.divId);
+	btnVertParent.setAttribute('class', data.btnVerticalDivParent.divClass);
 	for (i = 0; i < data.btnVerticalinf.length; i++) {
-		divBtnVert = document.createElement('div');		
-		divBtnVert.setAttribute('class', data.btnVerticalinf[i].divClass);
-		linkBtBk = document.createElement('A');
-		linkBtBk.setAttribute('href', data.btnVerticalinf[i].linkAtt);
+		btnVert = document.createElement('button');		
+		btnVert.setAttribute('class', data.btnVerticalinf[i].btnClass);
+		btnVert.setAttribute('href', data.btnVerticalinf[i].linkAtt);
+		btnVert.setAttribute('onclick', 'changeView' + '(' + "'" + data.btnVerticalinf[i].btnMethodValue + "'" + ')');
 		iconBtnVert = document.createElement('i');
 		iconBtnVert.setAttribute('class', data.btnVerticalinf[i].iconClass);
 		pBtnVert = document.createElement('p');
 		pBtnVert.setAttribute('class', data.btnVerticalinf[i].pClass);
 		pBtnVertText = document.createTextNode(data.btnVerticalinf[i].pText);
 		pBtnVert.appendChild(pBtnVertText);
-		linkBtBk.appendChild(iconBtnVert);
-		linkBtBk.appendChild(pBtnVert);
-		divBtnVert.appendChild(linkBtBk);
-		divBtnVertParent.appendChild(divBtnVert);	
+		btnVert.appendChild(iconBtnVert);
+		btnVert.appendChild(pBtnVert);
+		//btnVert.appendChild(linkBtBk);
+		btnVertParent.appendChild(btnVert);	
 	}
-	document.getElementById('subHeaderChild').appendChild(divBtnVertParent);
+	document.getElementById('subHeaderChild').appendChild(btnVertParent);
 }
 
 function listBtnCircles(info) {
@@ -131,7 +134,8 @@ function listBtnCircles(info) {
 		liBC = document.createElement('li');
 		liBC.setAttribute('class', info.listBtnCirclesLiData[i].liClass);
 		aBC = document.createElement('a');
-		aBC.setAttribute('href', info.listBtnCirclesLiData[i].aClass);
+		aBC.setAttribute('href', info.listBtnCirclesLiData[i].aLink);
+		aBC.setAttribute('onclick', 'changeView' + '(' + "'" + info.listBtnCirclesLiData[i].aMethod + "'" + ')');
 		divBC = document.createElement('div');
 		divBC.setAttribute('class', info.listBtnCirclesLiData[i].divClass)
 		iconBC = document.createElement('i');

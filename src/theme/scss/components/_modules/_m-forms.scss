@@ -2,12 +2,16 @@ input[type=text],
 input[type=password] {
     width: 100%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 15px 0;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
 
+input[type=text]#searchInput {
+    margin: 0;
+    padding: 20px 10px;
+}
 .imgcontainer {
     //text-align: center;
     margin: 24px 0 12px 0;
@@ -43,4 +47,28 @@ span.psw {
     color: red;
     font-style: oblique;
     display: none;
+}
+
+.input-group-addon {
+    padding: 6px 25px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+    display: table-cell;
+}
+.input-group-addon:first-child {
+    border-right: 0;
+}
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
 }

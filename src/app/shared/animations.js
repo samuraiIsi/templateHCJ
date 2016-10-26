@@ -1,4 +1,4 @@
-var toggleBtnMenuIcon, access, i, openTab, tabcontent, classTabContent, classLinkTab, tablinks, closeWrapper2, closeLoginModel, openLoginModal, validateForm, error, onblurLoginInput, closeValidatedModel, openPanel, panel, textBtn;
+var toggleBtnMenuIcon, access, i, openTab, tabcontent, classTabContent, classLinkTab, tablinks, closeWrapper2, closeLoginModel, openLoginModal, validateForm, error, onblurLoginInput, closeValidatedModel, searchList, backBtn, openPanel, changeView, panel, textBtn;
 toggleBtnMenuIcon = function(toggling) {
     toggling.classList.toggle("change");
     document.getElementById("subHeader").classList.toggle("show");
@@ -42,6 +42,14 @@ openPanel = function(evt, tabsName) {
     window.scrollTo(0, 0);
 };
 
+changeView = function(viewName) {
+    viewContainer = document.getElementsByClassName("view-container");
+    for (i = 0; i < viewContainer.length; i++) {
+        viewContainer[i].style.display = "none";
+    }
+    document.getElementById(viewName).style.display = "block";
+};
+
 closeWrapper2 = function() {
     document.getElementById('wrapper2').style.display = 'none';
 };
@@ -82,3 +90,19 @@ onblurLoginInput = function() {
         error[i].style.display = "none";
     }
 }
+
+searchList = function() {
+    var input, filter, containerWrapper, article, a, i;
+    input = document.getElementById("searchInput");
+    filter = input.value.toUpperCase();
+    containerWrapper = document.getElementById("container-wrappers-1");
+    article = containerWrapper.getElementsByTagName("article");
+    for (i = 0; i < article.length; i++) {
+        a = article[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            article[i].style.display = "";
+        } else {
+            article[i].style.display = "none";
+        }
+    }
+};

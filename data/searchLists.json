@@ -1,0 +1,1069 @@
+{"tabs":[{
+    "divBgModeId": "bgModel",
+    "divBgModeClass": "bg-white-100",
+    "raceEvList": [{
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "4",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(1)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-blackTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Aunty Ann",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }, {
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "6",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(2)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-greenTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Martin Ann",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }, {
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "6",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(3)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-purpleTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Nogal Ann",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }, {
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "6",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(4)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-redTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Why Wait",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }, {
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "6",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(5)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-yellowTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Diamant Gris",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }]
+
+},
+{
+    "divBgModeId": "bgModel",
+    "divBgModeClass": "bg-white-100",
+    "raceEvList": [{
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "4",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(1)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-yellowTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Sumburg",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }, {
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "6",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(2)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-greenTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Etoile Des As",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }, {
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "6",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(3)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-purpleTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Ballerine Dauteuil",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }, {
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "6",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(4)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-redTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Le Meteque",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }, {
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "6",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(5)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-yellowTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Raydaveric",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }]
+
+},
+{
+    "divBgModeId": "bgModel",
+    "divBgModeClass": "bg-white-100",
+    "raceEvList": [{
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "4",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(1)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-blackTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Sabastian",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }, {
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "6",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(2)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-greenTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Botticelli",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }, {
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "6",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(3)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-purpleTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Aunty Ann",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }, {
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "6",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(4)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-redTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Fearless Fred",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }, {
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "6",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(5)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-yellowTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Fernan",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }]
+
+},
+{
+    "divBgModeId": "bgModel",
+    "divBgModeClass": "bg-white-100",
+    "sectionClass": "horseRacingBox border-box-grey tabcontent-2",
+    "cityNameObj": "defaultOpenPanelTwo",
+    "headerClass": "bar-title bg-blue-dark-27 list",
+    "h4Text": "11:10 London2",
+    "iconClass": "icon-tv-icon pull-right",
+    "raceEvList": [{
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "4",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(1)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-blackTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Grissey",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }, {
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "6",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(2)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-greenTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "karmel",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }, {
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "6",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(3)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-purpleTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Zortig",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }, {
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "6",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(4)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-redTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Youness",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }, {
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "6",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(5)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-yellowTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Aragon",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }]
+
+},
+{
+    "divBgModeId": "bgModel",
+    "divBgModeClass": "bg-white-100",
+    "raceEvList": [{
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "4",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(1)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-yellowTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Capital City",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }, {
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "6",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(2)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-greenTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Denmark",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }, {
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "6",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(3)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-purpleTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Hamberk",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }, {
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "6",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(4)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-redTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Goitosolo",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }, {
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "6",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(5)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-yellowTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Italian Job",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }]
+
+},
+{
+    "divBgModeId": "bgModel",
+    "divBgModeClass": "bg-white-100",
+    "sectionClass": "horseRacingBox border-box-grey tabcontent-2",
+    "cityNameObj": "Sevilla2",
+    "headerClass": "bar-title bg-blue-light-70 list",
+    "h4Text": "11:10 Sevilla2",
+    "iconClass": "icon-tv-icon pull-right",
+    "raceEvList": [{
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "4",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(1)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-blackTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Jacky D",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }, {
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "6",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(2)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-greenTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Lorens de Arabia",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }, {
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "6",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(3)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-purpleTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Nogales",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }, {
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "6",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(4)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-redTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Orense",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }, {
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "6",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(5)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-yellowTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Parshuk",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }]
+
+},
+{
+    "divBgModeId": "bgModel",
+    "divBgModeClass": "bg-white-100",
+    "sectionClass": "horseRacingBox border-box-grey tabcontent-3",
+    "cityNameObj": "defaultOpenPanelThree",
+    "headerClass": "bar-title bg-blue-dark-27 list",
+    "h4Text": "11:10 London3",
+    "iconClass": "icon-tv-icon pull-right",
+    "raceEvList": [{
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "4",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(1)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-blackTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Quentin T",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }, {
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "6",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(2)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-greenTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Rob Ris",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }, {
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "6",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(3)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-purpleTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Tortel",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }, {
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "6",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(4)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-redTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Selene",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }, {
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "6",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(5)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-yellowTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Triana",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }]
+
+},
+{
+    "divBgModeId": "bgModel",
+    "divBgModeClass": "bg-white-100",
+    "sectionClass": "horseRacingBox border-box-grey tabcontent-3",
+    "cityNameObj": "Paris3",
+    "headerClass": "bar-title bg-blue-light-60 list",
+    "h4Text": "11:10 Paris3",
+    "iconClass": "icon-tv-icon pull-right",
+    "raceEvList": [{
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "4",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(1)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-yellowTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Sevilla",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }, {
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "6",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(2)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-greenTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Aunty Ann",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }, {
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "6",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(3)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-purpleTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Pirata Hys",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }, {
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "6",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(4)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-redTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Uberville",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }, {
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "6",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(5)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-yellowTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Winsorf",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }]
+
+},
+{
+    "divBgModeId": "bgModel",
+    "divBgModeClass": "bg-white-100",
+    "sectionClass": "horseRacingBox border-box-grey tabcontent-3",
+    "cityNameObj": "Sevilla3",
+    "headerClass": "bar-title bg-blue-light-70 list",
+    "h4Text": "11:10 Sevilla3",
+    "iconClass": "icon-tv-icon pull-right",
+    "raceEvList": [{
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "4",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(1)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-blackTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Xempilan",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }, {
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "6",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(2)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-greenTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Yamiren",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }, {
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "6",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(3)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-purpleTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Aerion",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }, {
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "6",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(4)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-redTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Terulon",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }, {
+        "articleREClass": "row flex-container border-box-grey list",
+        "divNumbColmClass": "flex-container--vertical align-center",
+        "spanNumColmTxt": "6",
+        "pNumbColmClass": "fst-italic",
+        "pNumbColmTxt": "(5)",
+        "divImgNumbClass": "flex-container--vertical sp-center",
+        "imgNumbSrc": "img/icon-tshirt-yellowTs.gif",
+        "spanNumbTxt": "4F1-1",
+        "divDescriptionClass": "flex-container--vertical description-list push-right",
+        "aDescLink": "#",
+        "aDescTxt": "Zacarrias",
+        "divBtnClass": "btn btn--default btn--sm",
+        "aBtnLink": "#",
+        "aBtnTxt": "7/4",
+        "descList": [{
+            "listChildTitleTxt": "J: ",
+            "listChildDescTxt": "JBass, D"
+        }, {
+            "listChildTitleTxt": "T: ",
+            "listChildDescTxt": "Bailey, K"
+        }]
+    }]
+}
+]}

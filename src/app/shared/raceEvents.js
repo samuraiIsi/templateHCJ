@@ -14,7 +14,7 @@ raceEvListHttps.send();
 var z, s, i, j;
 
 function raceEvList(data) {
-    var divBgModel, sectionRE, headerRE, h4RE, h4REText, aRE, iconRE, aLinkPA, aLinkPAText;
+    var articleComp2, divBgModel, sectionRE, headerRE, h4RE, h4REText, aRE, iconRE, aLinkPA, aLinkPAText;
     var articleRE, divNumbColm, spanNumColm, pNumbColm, divImgNumb, imgNumb, spanNumb, divDescription, titleDesc, aDesc, listParent, listChildTitle, listChildDesc, divBtn, aBtn, aBtnText;
     for (s = 0; s < data.tabs.length; s++) {
         divBgModelParent = document.createElement('div');
@@ -106,6 +106,7 @@ function raceEvList(data) {
             }
             divBgModel.appendChild(sectionRE);
         }
+        
         document.getElementById('wrapper2').appendChild(divBgModelParent);
     }
 }

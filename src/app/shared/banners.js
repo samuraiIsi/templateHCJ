@@ -32,7 +32,7 @@ function bannerMain(data) {
         divBS.appendChild(h2BM);
         divBM.appendChild(divBS);
         
-        document.getElementById(data.bannersMain[i].docId).appendChild(divBM);
+        document.getElementById(data.bannersMain[i].wrapperId).appendChild(divBM);
     }
 }
 
