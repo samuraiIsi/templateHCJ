@@ -11,7 +11,7 @@ raceEvListHttps.onreadystatechange = function() {
 raceEvListHttps.open("GET", urlbanners, true);
 raceEvListHttps.send();
 
-var z, s, i, j;
+var z, s, i, j, ev;
 
 function raceEvList(data) {
     var articleComp2, divBgModel, sectionRE, headerRE, h4RE, h4REText, aRE, iconRE, aLinkPA, aLinkPAText;
@@ -61,6 +61,8 @@ function raceEvList(data) {
                 divBtn.setAttribute('class', data.tabs[s][z].raceEvList[i].divBtnClass);
                 aBtn = document.createElement('a');
                 aBtn.setAttribute('href', data.tabs[s][z].raceEvList[i].aBtnLink);
+                aBtn.setAttribute('id', 'raceEventsBtn-' + [i]);
+                aBtn.setAttribute('onclick', 'counter(this)');
                 aBtnText = document.createTextNode(data.tabs[s][z].raceEvList[i].aBtnTxt);
 
                 divDescription = document.createElement('div');

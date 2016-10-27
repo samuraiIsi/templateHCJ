@@ -1,4 +1,4 @@
-var toggleBtnMenuIcon, access, i, openTab, tabcontent, classTabContent, classLinkTab, tablinks, closeWrapper2, closeLoginModel, openLoginModal, validateForm, error, onblurLoginInput, closeValidatedModel, searchList, backBtn, openPanel, changeView, panel, textBtn;
+var toggleBtnMenuIcon, access, i, openTab, tabcontent, classTabContent, classLinkTab, tablinks, closeWrapper2, closeLoginModel, openLoginModal, validateForm, error, onblurLoginInput, closeValidatedModel, searchList, counter, backBtn, openPanel, changeView, panel, textBtn, counterVx = 0;
 toggleBtnMenuIcon = function(toggling) {
     toggling.classList.toggle("change");
     document.getElementById("subHeader").classList.toggle("show");
@@ -105,4 +105,17 @@ searchList = function() {
             article[i].style.display = "none";
         }
     }
+};
+
+counter = function(evt) {
+    var counterEl = document.getElementById("counter"), btnSelected = document.getElementById(evt.id);
+    if (evt.classList.value === "activeBtn") {
+        btnSelected.className = "";
+        counterVx--;
+    } else {
+        btnSelected.className = "activeBtn";
+        counterVx++;
+    }
+    counterEl.innerHTML = counterVx;
+    counterEl.style.display = (counterEl.innerHTML === "0") ? 'none' : 'block';
 };

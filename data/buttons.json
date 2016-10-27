@@ -23,6 +23,8 @@
 			"linkAtt": "javascript:void(0)",
 			"btnMethodValue": "container-wrappers-0",
 			"pText": "Open Bets",
+			"badgeClass": "badge",
+			"badgeCounter": "counter",
 			"iconClass": "icon-open-bets"
 		},
 		{
@@ -31,6 +33,8 @@
 			"linkAtt": "javascript:void(0)",
 			"btnMethodValue": "container-wrappers-0",
 			"pText": "Bet Slip",
+			"badgeClass": "",
+			"badgeCounter": "counter",
 			"iconClass": "icon-bet-slip"
 		}
 	],

@@ -91,6 +91,7 @@ function btnHorse(data) { // Rename to btnHorizontal
 	btnHEl.setAttribute('class', data.btnHorse.btnClass);
 	btnHEl.setAttribute('href', data.btnHorse.btnLink);
 	btnHEl.setAttribute('onclick', 'changeView' + '(' + "'" + data.btnHorse.btnMethodValue + "'" + ')');
+
 	iconBtnH = document.createElement('i');
 	iconBtnH.setAttribute('class', data.btnHorse.iconClass);
 	spanBtnH = document.createElement('span');
@@ -112,12 +113,16 @@ function btnVertical(data) {
 		btnVert.setAttribute('class', data.btnVerticalinf[i].btnClass);
 		btnVert.setAttribute('href', data.btnVerticalinf[i].linkAtt);
 		btnVert.setAttribute('onclick', 'changeView' + '(' + "'" + data.btnVerticalinf[i].btnMethodValue + "'" + ')');
+		spanVert = document.createElement('span');
+		spanVert.setAttribute('id', data.btnVerticalinf[i].badgeCounter);
+		spanVert.setAttribute('class', data.btnVerticalinf[i].badgeClass);
 		iconBtnVert = document.createElement('i');
 		iconBtnVert.setAttribute('class', data.btnVerticalinf[i].iconClass);
 		pBtnVert = document.createElement('p');
 		pBtnVert.setAttribute('class', data.btnVerticalinf[i].pClass);
 		pBtnVertText = document.createTextNode(data.btnVerticalinf[i].pText);
 		pBtnVert.appendChild(pBtnVertText);
+		btnVert.appendChild(spanVert);
 		btnVert.appendChild(iconBtnVert);
 		btnVert.appendChild(pBtnVert);
 		//btnVert.appendChild(linkBtBk);
