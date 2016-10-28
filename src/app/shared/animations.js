@@ -26,6 +26,12 @@ openTab = function(evt, tabsName) {
 
 openPanel = function(evt, tabsName) {
     panel = document.getElementsByClassName("panel");
+    btnMed = document.getElementsByClassName("btnMed");
+    
+    for (i = 0; i < btnMed.length; i++) {
+        btnMed[i].className = btnMed[i].className.replace("btnMed activeBtn", "btnMed");
+    }
+
     for (i = 0; i < panel.length; i++) {
         panel[i].style.display = "none";
     }
@@ -39,6 +45,7 @@ openPanel = function(evt, tabsName) {
     }
     document.getElementById(tabsName).style.display = "block";
     document.getElementById('wrapper2').style.display = 'block';
+    evt.currentTarget.className += " activeBtn";
     window.scrollTo(0, 0);
 };
 
@@ -109,11 +116,11 @@ searchList = function() {
 
 counter = function(evt) {
     var counterEl = document.getElementById("counter"), btnSelected = document.getElementById(evt.id);
-    if (evt.classList.value === "activeBtn") {
-        btnSelected.className = "";
+    if (evt.classList.value === "btn btn--default btn--sm activeBtn") {
+        btnSelected.className = "btn btn--default btn--sm";
         counterVx--;
     } else {
-        btnSelected.className = "activeBtn";
+        btnSelected.className = "btn btn--default btn--sm activeBtn";
         counterVx++;
     }
     counterEl.innerHTML = counterVx;

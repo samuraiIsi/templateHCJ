@@ -18,64 +18,63 @@ var i;
 
 function btnBetting() {
 	var spanBet, btnBet, icon;
-	btnBet = document.createElement("A");
+	btnBet = document.createElement("button");
 	btnBet.setAttribute("href", "#");
-	btnBet.setAttribute('class', 'pull-left');
+	btnBet.setAttribute('class', 'btn btn--login pull-left');
 	spanBet = document.createElement('span');
-	spanBetText = document.createTextNode('Betting');
+	spanBetText = document.createTextNode('Color');
 	spanBet.appendChild(spanBetText);
 	icon = document.createElement("i");
 	icon.setAttribute('class', 'fs0 icon-select');
+	spanBet.appendChild(icon)
 	btnBet.appendChild(spanBet);
-	btnBet.appendChild(icon);
 	document.getElementById('btnBetting').appendChild(btnBet);
 }
 
 function btnsLoginArea() {
-	var divLogin, linkLogin, linkLoginText, iconLinkLogin;
-	divLogin = document.createElement('div');
-	divLogin.setAttribute('class', 'btn btn--login hidden-sm');
-	linkLogin = document.createElement('A');
-	linkLogin.setAttribute('href', '#');
-	linkLogin.setAttribute('onclick', 'openLoginModal()');
-	linkLoginText = document.createTextNode('Login');
-	linkLogin.appendChild(linkLoginText);
+	var btnLogin, iconLinkLogin;
+	btnLogin = document.createElement('button');
+	btnLogin.setAttribute('class', 'btn btn--login hidden-sm');
+	btnLogin.setAttribute('href', 'javascript:void(0)');
+	btnLogin.setAttribute('onclick', 'openLoginModal()');
+	//btnLoginText = document.createTextNode('Login');
+	spanLogin = document.createElement('span');
+	spanLoginText = document.createTextNode('Login');
+	spanLogin.appendChild(spanLoginText);
 	iconLinkLogin = document.createElement('i');
 	iconLinkLogin.setAttribute('class', 'fs0 icon-expanded');
-	divLogin.appendChild(linkLogin);
-	divLogin.appendChild(iconLinkLogin);
-	document.getElementById('loginArea').appendChild(divLogin);
+	spanLogin.appendChild(iconLinkLogin);
+	btnLogin.appendChild(spanLogin);
+	document.getElementById('loginArea').appendChild(btnLogin);
 
-	var divLoginHead, linkLoginHead, linkLoginHeadText;
-	divLoginHead = document.createElement('div');
-	divLoginHead.setAttribute('class', 'btn--circle btn--circle--sm btn--login--sm hidden-md');
-	divLoginHead.setAttribute('onclick', 'openLoginModal()');
-	linkLoginHead = document.createElement('A');
-	linkLoginHead.setAttribute('href', '#');
-	//linkLoginHeadText = document.createTextNode('Login');
-	//linkLoginHead.appendChild(linkLoginHeadText);
+	var btnLoginHead, linkLoginHead, linkLoginHeadText;
+	btnLoginHead = document.createElement('button');
+	btnLoginHead.setAttribute('class', 'btn--circle btn--circle--sm btn--login--sm hidden-md');
+	btnLoginHead.setAttribute('onclick', 'openLoginModal()');
+	//linkLoginHead = document.createElement('A');
+	btnLoginHead.setAttribute('href', 'javascript:void(0)');
 	iconLoginHead = document.createElement('i');
 	iconLoginHead.setAttribute('class', 'fs11 icon-login-head');
-	divLoginHead.appendChild(linkLoginHead);
-	divLoginHead.appendChild(iconLoginHead);
-	document.getElementById('loginArea').appendChild(divLoginHead);
+	//btnLoginHead.appendChild(linkLoginHead);
+	btnLoginHead.appendChild(iconLoginHead);
+	document.getElementById('loginArea').appendChild(btnLoginHead);
 
-	var divJoin;
-	divJoin = document.createElement('div');
-	divJoin.setAttribute('class', 'btn btn--join');
-	linkJoin = document.createElement('A');
-	linkJoin.setAttribute('href', '#');
-	linkJoinText = document.createTextNode('Join');
-	linkJoin.appendChild(linkJoinText);
-	divJoin.appendChild(linkJoin);
-	document.getElementById('loginArea').appendChild(divJoin);
+	var btnJoin;
+	btnJoin = document.createElement('button');
+	btnJoin.setAttribute('class', 'btn btn--join');
+	//linkJoin = document.createElement('A');
+	btnJoin.setAttribute('href', '#');
+	btnJoinText = document.createTextNode('Join');
+	btnJoin.appendChild(btnJoinText);
+	document.getElementById('loginArea').appendChild(btnJoin);
 }
 
 function btnBackArrow(data) {
 	var divBtBk, linkBtBk, iconBtBk;
 	divBtBk = document.createElement('div');
 	divBtBk.setAttribute('class', data.btnBkAr.divClass);
-	linkBtBk = document.createElement('A');
+	linkBtBk = document.createElement('button');
+	linkBtBk.setAttribute('class', data.btnBkAr.btnClass);
 	linkBtBk.setAttribute('href', data.btnBkAr.linkAtt);
 	linkBtBk.setAttribute('onclick', 'backBtn()');
 	iconBtBk = document.createElement('i');

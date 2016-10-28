@@ -1,5 +1,6 @@
 .btn {
     @include flexSetSpace;
+    border: 0;
     background-repeat: repeat-x;
     color: #fff;
     font: normal "Helvetica Neue", Arial, sans-serif;
@@ -11,18 +12,15 @@
     -webkit-border-radius: $standardDistance - 6;
     -moz-border-radius: $standardDistance - 6;
     border-radius: $standardDistance - 6;
-    // background-color: #184b74;
     font-size: 17px;
     padding: $standardDistance - 5;
+    transition: background-color .20s linear;
     a {
         text-decoration: none;
         color: inherit;
     }
-    &:hover {
-        color: black;
-    }
     &.btn-horizontal {
-        padding-top: $standardDistance;
+        padding-top: $standardDistance - 5;
     }
     // @at-root #{&}--circle {
     //     background-color: transparent;
@@ -51,7 +49,7 @@
         @include coloringButtons(#fff, #184b74, #16446a);
     }
     @at-root #{&}--danger {
-         @include coloringButtons(#fff, #184b74, #16446a);
+        @include coloringButtons(#fff, #184b74, #16446a);
     }
 }
 
@@ -77,6 +75,7 @@
         background-color: #999999;
     }
 }
+
 .btn-cancel {
     width: auto;
     padding: 10px 18px;
@@ -94,7 +93,8 @@
     color: #fff;
     font-size: 35px;
     font-weight: bold;
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         color: #999999;
         cursor: pointer;
     }
@@ -102,6 +102,7 @@
         font-size: 20px;
     }
 }
+
 .btn--circle {
     padding: 5px;
     font-size: 0;
@@ -110,8 +111,10 @@
     @at-root #{&}--sm {
         padding: 5px 8px;
         font-size: 11px;
+        &:hover {
+            background-color: #266fa6;
+        }
     }
-
 }
 
 .btnMed {
@@ -119,39 +122,95 @@
     min-width: 100%;
     margin-bottom: 10px;
     cursor: pointer;
+    transition: background-color .25s linear;
 }
+
 .btn--login {
     @include featureButtons(13px, $colorLogin, 0.4em, 24px);
+    transition: all 0.25s;
+    width: 70px;
+    &:hover {
+        background-color: #6cc1e0;
+        span {
+            padding-right: 15px;
+            .icon-select,
+            .icon-expanded {
+                opacity: 1;
+                right: 0;
+            }
+            .icon-expanded {
+                top: 0px;
+            }
+        }
+    }
+    span {
+        display: inline-block;
+        position: relative;
+        transition: 0.25s;
+        .icon-select,
+        .icon-expanded {
+            position: absolute;
+            opacity: 0;
+            transition: 0.25s;
+        }
+        .icon-select {
+            top: 0;
+            right: -20px;
+        }
+        .icon-expanded {
+            top: -10px;
+            right: -10px;
+        }
+    }
 }
+
 .btn--login--sm {
     border: solid 1px #fff;
 }
+
 .btn--join {
-    @include featureButtons(13px, $colorJoin, 0.8em, 24px);
+    @include featureButtons(13px, $colorJoin, 0, 24px);
+    &:hover {
+        background-color: #00ccb1;
+    }
 }
+
 .btn--circleIcon {
     @include particularFeatures(#005266, #eef1f3, #C5C9CC);
     border-radius: 50%;
     padding: 0.7em;
     font-size: 25px;
+    &:hover {
+        background-color: #fff;
+    }
     &.active {
         @include particularFeatures(#fff, #248cb3, #054d68);
+        &:hover {
+            background-color: #3fb0d9;
+        }
     }
     &.golden {
         @include particularFeatures(#fff, #908826, #777018);
+        &:hover {
+            background-color: #c9bd36;
+        }
     }
     &.icon-specials {
         color: #d65a77;
     }
-    
 }
+
 .btn-back-arrow {
-    background-color: rgba(255,255,255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     font-size: 20px;
     width: 40px;
-    padding: $standardDistance 0;
+    padding: ($standardDistance + 2) 0;
     min-width: 2.5em;
+    &:hover {
+        background-color: #2f8ad0;
+    }
 }
+
 .btn__title {
     color: #000;
     font-weight: bold;
@@ -164,6 +223,7 @@
         margin: 5px 0 0 0;
     }
 }
+
 .btn-respons-menu {
     margin: 5px 5px 0 0;
     a {
@@ -173,14 +233,31 @@
 }
 
 #btnHorse,
-#btnsVertical  {
+#btnsVertical {
     display: inline-flex;
 }
 
+// #bfbdc1
 button.btn.btn--primary {
     border: 0;
+    &:hover {
+        background-color: #378fd1;
+    }
 }
 
 .activeBtn {
-    background-color: red;
+    background-color: #248cb3;
+    color: #fff;
+    &:hover {
+        background-color: #1d7595 !important;
+        color: #fff;
+    }
+}
+
+.view-container {
+    button {
+        &:hover {
+            background-color: #bfbdc1;
+        }
+    }
 }

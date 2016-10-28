@@ -1,7 +1,8 @@
 {
 	"btnBkAr": {
-		"divClass": "btn btn-back-arrow first--inlist",
-		"linkAtt": "#",
+		"divClass": "first--inlist",
+		"linkAtt": "javascript:void(0)",
+		"btnClass": "btn btn-back-arrow",
 		"iconClass": "icon-back"
 	},
 	"btnHorse": {

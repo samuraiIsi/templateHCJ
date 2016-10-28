@@ -57,12 +57,11 @@ function raceEvList(data) {
                 spanNumb = document.createElement('span');
                 spanNumbText = document.createTextNode(data.tabs[s][z].raceEvList[i].spanNumbTxt);
 
-                divBtn = document.createElement('div');
+                divBtn = document.createElement('button');
                 divBtn.setAttribute('class', data.tabs[s][z].raceEvList[i].divBtnClass);
-                aBtn = document.createElement('a');
-                aBtn.setAttribute('href', data.tabs[s][z].raceEvList[i].aBtnLink);
-                aBtn.setAttribute('id', 'raceEventsBtn-' + [i]);
-                aBtn.setAttribute('onclick', 'counter(this)');
+                divBtn.setAttribute('href', data.tabs[s][z].raceEvList[i].aBtnLink);
+                divBtn.setAttribute('id', 'raceEventsBtn-' + [s] + [z] + [i]);
+                divBtn.setAttribute('onclick', 'counter(this)');
                 aBtnText = document.createTextNode(data.tabs[s][z].raceEvList[i].aBtnTxt);
 
                 divDescription = document.createElement('div');
@@ -97,8 +96,7 @@ function raceEvList(data) {
                 divDescription.appendChild(titleDesc);
                 divDescription.appendChild(listParent);
 
-                aBtn.appendChild(aBtnText);
-                divBtn.appendChild(aBtn);
+                divBtn.appendChild(aBtnText);
 
                 articleRE.appendChild(divNumbColm);
                 articleRE.appendChild(divImgNumb);
