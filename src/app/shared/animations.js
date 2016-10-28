@@ -1,4 +1,4 @@
-var toggleBtnMenuIcon, access, i, openTab, tabcontent, classTabContent, classLinkTab, tablinks, closeWrapper2, openPanel, panel, textBtn;
+var toggleBtnMenuIcon, access, i, openTab, tabcontent, classTabContent, classLinkTab, tablinks, closeWrapper2, closeLoginModel, openLoginModal, validateForm, error, onblurLoginInput, closeValidatedModel, searchList, counter, backBtn, openPanel, changeView, panel, textBtn, counterVx = 0;
 toggleBtnMenuIcon = function(toggling) {
     toggling.classList.toggle("change");
     document.getElementById("subHeader").classList.toggle("show");
@@ -26,6 +26,12 @@ openTab = function(evt, tabsName) {
 
 openPanel = function(evt, tabsName) {
     panel = document.getElementsByClassName("panel");
+    btnMed = document.getElementsByClassName("btnMed");
+    
+    for (i = 0; i < btnMed.length; i++) {
+        btnMed[i].className = btnMed[i].className.replace("btnMed activeBtn", "btnMed");
+    }
+
     for (i = 0; i < panel.length; i++) {
         panel[i].style.display = "none";
     }
@@ -39,9 +45,84 @@ openPanel = function(evt, tabsName) {
     }
     document.getElementById(tabsName).style.display = "block";
     document.getElementById('wrapper2').style.display = 'block';
+    evt.currentTarget.className += " activeBtn";
     window.scrollTo(0, 0);
+};
+
+changeView = function(viewName) {
+    viewContainer = document.getElementsByClassName("view-container");
+    for (i = 0; i < viewContainer.length; i++) {
+        viewContainer[i].style.display = "none";
+    }
+    document.getElementById(viewName).style.display = "block";
 };
 
 closeWrapper2 = function() {
     document.getElementById('wrapper2').style.display = 'none';
+};
+
+openLoginModal = function() {
+    document.getElementById('loginModal').style.display = 'block';
+};
+
+closeLoginModel = function() {
+    document.getElementById('loginModal').style.display = 'none';
+};
+
+validateForm = function() {
+    var userName = document.forms["loginForm"]["uname"].value;
+    var password = document.forms["loginForm"]["psw"].value;
+    error = document.getElementsByClassName("error");
+    for (i = 0; i < error.length; i++) {
+        error[i].style.display = "none";
+    }
+    if (userName == null || userName == "") {
+        error[0].style.display = "block";
+    } else if (password == null || password == "") {
+        error[1].style.display = "block";
+    } else {
+        document.getElementById('loginModal').style.display = 'none';
+        document.getElementById('validatedPopUp').style.display = 'block';
+    }
+};
+
+closeValidatedModel = function() {
+    document.getElementById('validatedPopUp').style.display = 'none';
+    document.forms["loginForm"]["psw"].value = '';
+}
+ 
+onblurLoginInput = function() {
+    error = document.getElementsByClassName("error");
+    for (i = 0; i < error.length; i++) {
+        error[i].style.display = "none";
+    }
+}
+
+searchList = function() {
+    var input, filter, containerWrapper, article, a, i;
+    input = document.getElementById("searchInput");
+    filter = input.value.toUpperCase();
+    containerWrapper = document.getElementById("container-wrappers-1");
+    article = containerWrapper.getElementsByTagName("article");
+    for (i = 0; i < article.length; i++) {
+        a = article[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            article[i].style.display = "";
+        } else {
+            article[i].style.display = "none";
+        }
+    }
+};
+
+counter = function(evt) {
+    var counterEl = document.getElementById("counter"), btnSelected = document.getElementById(evt.id);
+    if (evt.classList.value === "btn btn--default btn--sm activeBtn") {
+        btnSelected.className = "btn btn--default btn--sm";
+        counterVx--;
+    } else {
+        btnSelected.className = "btn btn--default btn--sm activeBtn";
+        counterVx++;
+    }
+    counterEl.innerHTML = counterVx;
+    counterEl.style.display = (counterEl.innerHTML === "0") ? 'none' : 'block';
 };

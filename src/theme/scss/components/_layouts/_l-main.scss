@@ -17,6 +17,10 @@
     font-size: 15px;
 }
 
+.fs20 {
+    font-size: 20px;
+}
+
 .fs2 {
     font-size: 24px;
 }
@@ -82,4 +86,9 @@
 
 .bg-blue-dark-42 {
     background-color: #237eb1;
+}
+
+.clearfix {
+    display: table;
+    content: " ";
 }

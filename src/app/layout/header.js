@@ -22,7 +22,7 @@ function headerFunction() {
 	divLogoFirst.setAttribute('id', 'logoHeader');
 	divLogoSecond = document.createElement('div');
 	divLogoSecond.setAttribute('id', 'btnBetting');
-	divLogoSecond.setAttribute('class', 'btn btn--login pull-right hidden-sm');
+	divLogoSecond.setAttribute('class', 'pull-right hidden-sm');
 	divChildSecond = document.createElement('div');
 	divChildSecond.setAttribute('id', 'loginArea');
 	divChildSecond.setAttribute('class', 'row flex-container push-right row--sm');

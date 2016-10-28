@@ -1,11 +1,6 @@
-{"tabs":[[{
+{"tabs":[{
     "divBgModeId": "bgModel",
     "divBgModeClass": "bg-white-100",
-    "sectionClass": "horseRacingBox border-box-grey tabcontent-1",
-    "cityNameObj": "defaultOpenPanelOne",
-    "headerClass": "bar-title bg-blue-dark-27 list",
-    "h4Text": "11:10 London",
-    "iconClass": "icon-tv-icon pull-right",
     "raceEvList": [{
         "articleREClass": "row flex-container border-box-grey list",
         "divNumbColmClass": "flex-container--vertical align-center",
@@ -19,7 +14,7 @@
         "aDescLink": "#",
         "aDescTxt": "Aunty Ann",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -39,9 +34,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Martin Ann",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -61,9 +56,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Nogal Ann",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -83,9 +78,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Why Wait",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -105,9 +100,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Diamant Gris",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -122,11 +117,6 @@
 {
     "divBgModeId": "bgModel",
     "divBgModeClass": "bg-white-100",
-    "sectionClass": "horseRacingBox border-box-grey tabcontent-1",
-    "cityNameObj": "Paris",
-    "headerClass": "bar-title bg-blue-light-60 list",
-    "h4Text": "11:10 Paris",
-    "iconClass": "icon-tv-icon pull-right",
     "raceEvList": [{
         "articleREClass": "row flex-container border-box-grey list",
         "divNumbColmClass": "flex-container--vertical align-center",
@@ -138,9 +128,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Sumburg",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -160,9 +150,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Etoile Des As",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -182,9 +172,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Ballerine Dauteuil",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -204,9 +194,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Le Meteque",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -226,9 +216,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Raydaveric",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -243,11 +233,6 @@
 {
     "divBgModeId": "bgModel",
     "divBgModeClass": "bg-white-100",
-    "sectionClass": "horseRacingBox border-box-grey tabcontent-1",
-    "cityNameObj": "Sevilla",
-    "headerClass": "bar-title bg-blue-light-70 list",
-    "h4Text": "11:10 Sevilla",
-    "iconClass": "icon-tv-icon pull-right",
     "raceEvList": [{
         "articleREClass": "row flex-container border-box-grey list",
         "divNumbColmClass": "flex-container--vertical align-center",
@@ -259,9 +244,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Sabastian",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -281,9 +266,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Botticelli",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -305,7 +290,7 @@
         "aDescLink": "#",
         "aDescTxt": "Aunty Ann",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -325,9 +310,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Fearless Fred",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -347,9 +332,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Fernan",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -360,8 +345,8 @@
         }]
     }]
 
-}],
-[{
+},
+{
     "divBgModeId": "bgModel",
     "divBgModeClass": "bg-white-100",
     "sectionClass": "horseRacingBox border-box-grey tabcontent-2",
@@ -380,9 +365,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Grissey",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -402,9 +387,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "karmel",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -424,9 +409,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Zortig",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -446,9 +431,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Youness",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -468,9 +453,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Aragon",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -485,11 +470,6 @@
 {
     "divBgModeId": "bgModel",
     "divBgModeClass": "bg-white-100",
-    "sectionClass": "horseRacingBox border-box-grey tabcontent-2",
-    "cityNameObj": "Paris2",
-    "headerClass": "bar-title bg-blue-light-60 list",
-    "h4Text": "11:10 Paris2",
-    "iconClass": "icon-tv-icon pull-right",
     "raceEvList": [{
         "articleREClass": "row flex-container border-box-grey list",
         "divNumbColmClass": "flex-container--vertical align-center",
@@ -501,9 +481,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Capital City",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -523,9 +503,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Denmark",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -545,9 +525,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Hamberk",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -567,9 +547,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Goitosolo",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -589,9 +569,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Italian Job",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -622,9 +602,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Jacky D",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -644,9 +624,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Lorens de Arabia",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -666,9 +646,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Nogales",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -688,9 +668,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Orense",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -710,9 +690,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Parshuk",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -723,8 +703,8 @@
         }]
     }]
 
-}],
-[{
+},
+{
     "divBgModeId": "bgModel",
     "divBgModeClass": "bg-white-100",
     "sectionClass": "horseRacingBox border-box-grey tabcontent-3",
@@ -743,9 +723,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Quentin T",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -765,9 +745,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Rob Ris",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -787,9 +767,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Tortel",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -809,9 +789,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Selene",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -831,9 +811,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Triana",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -864,9 +844,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Sevilla",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -888,7 +868,7 @@
         "aDescLink": "#",
         "aDescTxt": "Aunty Ann",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -908,9 +888,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Pirata Hys",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -930,9 +910,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Uberville",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -952,9 +932,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Winsorf",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -985,9 +965,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Xempilan",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -1007,9 +987,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Yamiren",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -1029,9 +1009,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Aerion",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -1051,9 +1031,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Terulon",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -1073,9 +1053,9 @@
         "spanNumbTxt": "4F1-1",
         "divDescriptionClass": "flex-container--vertical description-list push-right",
         "aDescLink": "#",
-        "aDescTxt": "Aunty Ann",
+        "aDescTxt": "Zacarrias",
         "divBtnClass": "btn btn--default btn--sm",
-        "aBtnLink": "javascript:void(0)",
+        "aBtnLink": "#",
         "aBtnTxt": "7/4",
         "descList": [{
             "listChildTitleTxt": "J: ",
@@ -1085,6 +1065,5 @@
             "listChildDescTxt": "Bailey, K"
         }]
     }]
-
-}]
+}
 ]}

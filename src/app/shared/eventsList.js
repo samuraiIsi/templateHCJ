@@ -108,6 +108,7 @@ eventsList = function(data) {
         }
 
         document.getElementById('wrapper1').appendChild(divELVertParent);
+
     }
 };
 

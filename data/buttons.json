@@ -1,11 +1,14 @@
 {
 	"btnBkAr": {
-		"divClass": "btn btn-back-arrow first--inlist",
-		"linkAtt": "#",
+		"divClass": "first--inlist",
+		"linkAtt": "javascript:void(0)",
+		"btnClass": "btn btn-back-arrow",
 		"iconClass": "icon-back"
 	},
 	"btnHorse": {
-		"divClass": "btn btn--primary btn-horizontal",
+		"btnClass": "btn btn--primary btn-horizontal",
+		"btnLink": "javascript:void(0)",
+		"btnMethodValue": "container-wrappers-1",
 		"spanClass": "fs0",
 		"spanText": "Horses",
 		"iconClass": "icon-horse-racing"
@@ -16,17 +19,23 @@
 	},
 	"btnVerticalinf": [
 		{
-			"divClass": "btn btn--primary",
+			"btnClass": "btn btn--primary",
 			"pClass": "btn__title sq",
-			"linkAtt": "#",
+			"linkAtt": "javascript:void(0)",
+			"btnMethodValue": "container-wrappers-0",
 			"pText": "Open Bets",
+			"badgeClass": "badge",
+			"badgeCounter": "counter",
 			"iconClass": "icon-open-bets"
 		},
 		{
-			"divClass": "btn btn--primary",
+			"btnClass": "btn btn--primary",
 			"pClass": "btn__title sq",
-			"linkAtt": "#",
+			"linkAtt": "javascript:void(0)",
+			"btnMethodValue": "container-wrappers-0",
 			"pText": "Bet Slip",
+			"badgeClass": "",
+			"badgeCounter": "counter",
 			"iconClass": "icon-bet-slip"
 		}
 	],
@@ -36,7 +45,8 @@
 	"listBtnCirclesLiData": [
 		{
 			"liClass":"btn--circle first--inlist",  
-			"aClass":"#",
+			"aLink":"javascript:void(0)",
+			"aMethod":"container-wrappers-0",
 			"divClass": "flex-container--vertical",
 			"iconClass": "btn--circleIcon active icon-competitions",
 			"pClass": "btn__title",
@@ -44,7 +54,8 @@
 		},
 		{
 			"liClass":"btn--circle",  
-			"aClass":"#",
+			"aLink":"javascript:void(0)",
+			"aMethod":"container-wrappers-1",
 			"divClass": "flex-container--vertical",
 			"iconClass": "btn--circleIcon icon-highlights",
 			"pClass": "btn__title",
@@ -52,7 +63,8 @@
 		},
 		{
 			"liClass":"btn--circle",  
-			"aClass":"#",
+			"aLink":"javascript:void(0)",
+			"aMethod":"container-wrappers-0",
 			"divClass": "flex-container--vertical",
 			"iconClass": "btn--circleIcon icon-antepost",
 			"pClass": "btn__title",
@@ -60,7 +72,8 @@
 		},
 		{
 			"liClass":"btn--circle",  
-			"aClass":"#",
+			"aLink":"javascript:void(0)",
+			"aMethod":"container-wrappers-1",
 			"divClass": "flex-container--vertical",
 			"iconClass": "btn--circleIcon golden icon-most-popular-bets2",
 			"pClass": "btn__title",
@@ -68,7 +81,8 @@
 		},
 		{
 			"liClass":"btn--circle",  
-			"aClass":"#",
+			"aLink":"javascript:void(0)",
+			"aMethod":"container-wrappers-0",
 			"divClass": "flex-container--vertical",
 			"iconClass": "btn--circleIcon icon-search",
 			"pClass": "btn__title",
@@ -76,7 +90,8 @@
 		},
 		{
 			"liClass":"btn--circle",  
-			"aClass":"#",
+			"aLink":"javascript:void(0)",
+			"aMethod":"container-wrappers-1",
 			"divClass": "flex-container--vertical",
 			"iconClass": "btn--circleIcon icon-specials",
 			"pClass": "btn__title",

@@ -85,9 +85,37 @@
 .unblock {
     display: none;
 }
+.pt-0 {
+    padding-top: 0 !important;
+}
+
 // Hacer una file para esto, todo esto de eventList
 #eventList {
     h4 {
         font-size: 15px;
     }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.view-container {
+    display: none;
+}
+
+.badge {
+    display: none;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: #ffff00;
+    border-radius: 10px;
+    float: left; // mirar si se puede con fb
 }

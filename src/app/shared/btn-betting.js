@@ -18,107 +18,116 @@ var i;
 
 function btnBetting() {
 	var spanBet, btnBet, icon;
-	btnBet = document.createElement("A");
+	btnBet = document.createElement("button");
 	btnBet.setAttribute("href", "#");
-	btnBet.setAttribute('class', 'pull-left');
+	btnBet.setAttribute('class', 'btn btn--login pull-left');
 	spanBet = document.createElement('span');
-	spanBetText = document.createTextNode('Betting');
+	spanBetText = document.createTextNode('Color');
 	spanBet.appendChild(spanBetText);
 	icon = document.createElement("i");
 	icon.setAttribute('class', 'fs0 icon-select');
+	spanBet.appendChild(icon)
 	btnBet.appendChild(spanBet);
-	btnBet.appendChild(icon);
 	document.getElementById('btnBetting').appendChild(btnBet);
 }
 
 function btnsLoginArea() {
-	var divLogin, linkLogin, linkLoginText, iconLinkLogin;
-	divLogin = document.createElement('div');
-	divLogin.setAttribute('class', 'btn btn--login hidden-sm');
-	linkLogin = document.createElement('A');
-	linkLogin.setAttribute('href', '#');
-	linkLoginText = document.createTextNode('Login');
-	linkLogin.appendChild(linkLoginText);
+	var btnLogin, iconLinkLogin;
+	btnLogin = document.createElement('button');
+	btnLogin.setAttribute('class', 'btn btn--login hidden-sm');
+	btnLogin.setAttribute('href', 'javascript:void(0)');
+	btnLogin.setAttribute('onclick', 'openLoginModal()');
+	//btnLoginText = document.createTextNode('Login');
+	spanLogin = document.createElement('span');
+	spanLoginText = document.createTextNode('Login');
+	spanLogin.appendChild(spanLoginText);
 	iconLinkLogin = document.createElement('i');
 	iconLinkLogin.setAttribute('class', 'fs0 icon-expanded');
-	divLogin.appendChild(linkLogin);
-	divLogin.appendChild(iconLinkLogin);
-	document.getElementById('loginArea').appendChild(divLogin);
+	spanLogin.appendChild(iconLinkLogin);
+	btnLogin.appendChild(spanLogin);
+	document.getElementById('loginArea').appendChild(btnLogin);
 
-	var divLoginHead, linkLoginHead, linkLoginHeadText;
-	divLoginHead = document.createElement('div');
-	divLoginHead.setAttribute('class', 'btn--circle btn--circle--sm btn--login--sm hidden-md');
-	linkLoginHead = document.createElement('A');
-	linkLoginHead.setAttribute('href', '#');
-	//linkLoginHeadText = document.createTextNode('Login');
-	//linkLoginHead.appendChild(linkLoginHeadText);
+	var btnLoginHead, linkLoginHead, linkLoginHeadText;
+	btnLoginHead = document.createElement('button');
+	btnLoginHead.setAttribute('class', 'btn--circle btn--circle--sm btn--login--sm hidden-md');
+	btnLoginHead.setAttribute('onclick', 'openLoginModal()');
+	//linkLoginHead = document.createElement('A');
+	btnLoginHead.setAttribute('href', 'javascript:void(0)');
 	iconLoginHead = document.createElement('i');
 	iconLoginHead.setAttribute('class', 'fs11 icon-login-head');
-	divLoginHead.appendChild(linkLoginHead);
-	divLoginHead.appendChild(iconLoginHead);
-	document.getElementById('loginArea').appendChild(divLoginHead);
+	//btnLoginHead.appendChild(linkLoginHead);
+	btnLoginHead.appendChild(iconLoginHead);
+	document.getElementById('loginArea').appendChild(btnLoginHead);
 
-	var divJoin;
-	divJoin = document.createElement('div');
-	divJoin.setAttribute('class', 'btn btn--join');
-	linkJoin = document.createElement('A');
-	linkJoin.setAttribute('href', '#');
-	linkJoinText = document.createTextNode('Join');
-	linkJoin.appendChild(linkJoinText);
-	divJoin.appendChild(linkJoin);
-	document.getElementById('loginArea').appendChild(divJoin);
+	var btnJoin;
+	btnJoin = document.createElement('button');
+	btnJoin.setAttribute('class', 'btn btn--join');
+	//linkJoin = document.createElement('A');
+	btnJoin.setAttribute('href', '#');
+	btnJoinText = document.createTextNode('Join');
+	btnJoin.appendChild(btnJoinText);
+	document.getElementById('loginArea').appendChild(btnJoin);
 }
 
 function btnBackArrow(data) {
 	var divBtBk, linkBtBk, iconBtBk;
 	divBtBk = document.createElement('div');
 	divBtBk.setAttribute('class', data.btnBkAr.divClass);
-	linkBtBk = document.createElement('A');
+	linkBtBk = document.createElement('button');
+	linkBtBk.setAttribute('class', data.btnBkAr.btnClass);
 	linkBtBk.setAttribute('href', data.btnBkAr.linkAtt);
+	linkBtBk.setAttribute('onclick', 'backBtn()');
 	iconBtBk = document.createElement('i');
 	iconBtBk.setAttribute('class', data.btnBkAr.iconClass);
 	linkBtBk.appendChild(iconBtBk);
-	divBtBk.appendChild(iconBtBk);
+	divBtBk.appendChild(linkBtBk);
 	document.getElementById('subHeaderChildFirst').appendChild(divBtBk);
 }
 
 function btnHorse(data) { // Rename to btnHorizontal
 	var divBtnH, iconBtnH, spanBtnH, spanBtnHText;
-	divBtnH = document.createElement('div');
-	divBtnH.setAttribute('class', data.btnHorse.divClass);
+	btnHEl = document.createElement('button');
+	btnHEl.setAttribute('class', data.btnHorse.btnClass);
+	btnHEl.setAttribute('href', data.btnHorse.btnLink);
+	btnHEl.setAttribute('onclick', 'changeView' + '(' + "'" + data.btnHorse.btnMethodValue + "'" + ')');
+
 	iconBtnH = document.createElement('i');
 	iconBtnH.setAttribute('class', data.btnHorse.iconClass);
 	spanBtnH = document.createElement('span');
 	spanBtnH.setAttribute('class', data.btnHorse.spanClass);
 	spanBtnHText = document.createTextNode(data.btnHorse.spanText);
 	spanBtnH.appendChild(spanBtnHText);
-	divBtnH.appendChild(iconBtnH);
-	divBtnH.appendChild(spanBtnH);
-	document.getElementById('subHeaderChildFirst').appendChild(divBtnH);
+	btnHEl.appendChild(iconBtnH);
+	btnHEl.appendChild(spanBtnH);
+	document.getElementById('subHeaderChildFirst').appendChild(btnHEl);
 }
 
 function btnVertical(data) {
-	var divBtnVert, iconBtnVert, pBtnVert, pBtnVertText;
-	divBtnVertParent = document.createElement('div');
-	divBtnVertParent.setAttribute('id', data.btnVerticalDivParent.divId);
-	divBtnVertParent.setAttribute('class', data.btnVerticalDivParent.divClass);
+	var btnVert, iconBtnVert, pBtnVert, pBtnVertText;
+	btnVertParent = document.createElement('div');
+	btnVertParent.setAttribute('id', data.btnVerticalDivParent.divId);
+	btnVertParent.setAttribute('class', data.btnVerticalDivParent.divClass);
 	for (i = 0; i < data.btnVerticalinf.length; i++) {
-		divBtnVert = document.createElement('div');		
-		divBtnVert.setAttribute('class', data.btnVerticalinf[i].divClass);
-		linkBtBk = document.createElement('A');
-		linkBtBk.setAttribute('href', data.btnVerticalinf[i].linkAtt);
+		btnVert = document.createElement('button');		
+		btnVert.setAttribute('class', data.btnVerticalinf[i].btnClass);
+		btnVert.setAttribute('href', data.btnVerticalinf[i].linkAtt);
+		btnVert.setAttribute('onclick', 'changeView' + '(' + "'" + data.btnVerticalinf[i].btnMethodValue + "'" + ')');
+		spanVert = document.createElement('span');
+		spanVert.setAttribute('id', data.btnVerticalinf[i].badgeCounter);
+		spanVert.setAttribute('class', data.btnVerticalinf[i].badgeClass);
 		iconBtnVert = document.createElement('i');
 		iconBtnVert.setAttribute('class', data.btnVerticalinf[i].iconClass);
 		pBtnVert = document.createElement('p');
 		pBtnVert.setAttribute('class', data.btnVerticalinf[i].pClass);
 		pBtnVertText = document.createTextNode(data.btnVerticalinf[i].pText);
 		pBtnVert.appendChild(pBtnVertText);
-		linkBtBk.appendChild(iconBtnVert);
-		linkBtBk.appendChild(pBtnVert);
-		divBtnVert.appendChild(linkBtBk);
-		divBtnVertParent.appendChild(divBtnVert);	
+		btnVert.appendChild(spanVert);
+		btnVert.appendChild(iconBtnVert);
+		btnVert.appendChild(pBtnVert);
+		//btnVert.appendChild(linkBtBk);
+		btnVertParent.appendChild(btnVert);	
 	}
-	document.getElementById('subHeaderChild').appendChild(divBtnVertParent);
+	document.getElementById('subHeaderChild').appendChild(btnVertParent);
 }
 
 function listBtnCircles(info) {
@@ -129,7 +138,8 @@ function listBtnCircles(info) {
 		liBC = document.createElement('li');
 		liBC.setAttribute('class', info.listBtnCirclesLiData[i].liClass);
 		aBC = document.createElement('a');
-		aBC.setAttribute('href', info.listBtnCirclesLiData[i].aClass);
+		aBC.setAttribute('href', info.listBtnCirclesLiData[i].aLink);
+		aBC.setAttribute('onclick', 'changeView' + '(' + "'" + info.listBtnCirclesLiData[i].aMethod + "'" + ')');
 		divBC = document.createElement('div');
 		divBC.setAttribute('class', info.listBtnCirclesLiData[i].divClass)
 		iconBC = document.createElement('i');

@@ -7,7 +7,7 @@
 			"iClass": " ",
 			"iMethod": "",
 			"h2Text": "meetings",
-			"docId": "wrapper1"
+			"wrapperId": "wrapper1"
 		},
 		{
 			"divMainId": "horseRacing",
@@ -16,7 +16,7 @@
 			"iClass": "icon-close hidden-lg",
 			"iMethod": "closeWrapper2()",
 			"h2Text": "horse racing",
-			"docId": "wrapper2"
+			"wrapperId": "wrapper2"
 		}
 	] 
 }

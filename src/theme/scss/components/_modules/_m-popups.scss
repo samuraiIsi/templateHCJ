@@ -1,0 +1,35 @@
+.popup-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+.popup-content {
+    background-color: #184b74;
+    margin: 5% auto 15% auto;
+    border: 1px solid #12324b;
+    border-radius: 4px;
+    width: 30%;
+}
+.validatedPopUp {
+	display: block;
+	background-color: blue;
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 50%;
+}
+
+.container-login {
+    p {
+        margin-top: 6px;
+        line-height: 1;
+    }
+}

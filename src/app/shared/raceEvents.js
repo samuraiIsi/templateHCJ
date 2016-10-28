@@ -11,10 +11,10 @@ raceEvListHttps.onreadystatechange = function() {
 raceEvListHttps.open("GET", urlbanners, true);
 raceEvListHttps.send();
 
-var z, s, i, j;
+var z, s, i, j, ev;
 
 function raceEvList(data) {
-    var divBgModel, sectionRE, headerRE, h4RE, h4REText, aRE, iconRE, aLinkPA, aLinkPAText;
+    var articleComp2, divBgModel, sectionRE, headerRE, h4RE, h4REText, aRE, iconRE, aLinkPA, aLinkPAText;
     var articleRE, divNumbColm, spanNumColm, pNumbColm, divImgNumb, imgNumb, spanNumb, divDescription, titleDesc, aDesc, listParent, listChildTitle, listChildDesc, divBtn, aBtn, aBtnText;
     for (s = 0; s < data.tabs.length; s++) {
         divBgModelParent = document.createElement('div');
@@ -57,10 +57,11 @@ function raceEvList(data) {
                 spanNumb = document.createElement('span');
                 spanNumbText = document.createTextNode(data.tabs[s][z].raceEvList[i].spanNumbTxt);
 
-                divBtn = document.createElement('div');
+                divBtn = document.createElement('button');
                 divBtn.setAttribute('class', data.tabs[s][z].raceEvList[i].divBtnClass);
-                aBtn = document.createElement('a');
-                aBtn.setAttribute('href', data.tabs[s][z].raceEvList[i].aBtnLink);
+                divBtn.setAttribute('href', data.tabs[s][z].raceEvList[i].aBtnLink);
+                divBtn.setAttribute('id', 'raceEventsBtn-' + [s] + [z] + [i]);
+                divBtn.setAttribute('onclick', 'counter(this)');
                 aBtnText = document.createTextNode(data.tabs[s][z].raceEvList[i].aBtnTxt);
 
                 divDescription = document.createElement('div');
@@ -95,8 +96,7 @@ function raceEvList(data) {
                 divDescription.appendChild(titleDesc);
                 divDescription.appendChild(listParent);
 
-                aBtn.appendChild(aBtnText);
-                divBtn.appendChild(aBtn);
+                divBtn.appendChild(aBtnText);
 
                 articleRE.appendChild(divNumbColm);
                 articleRE.appendChild(divImgNumb);
@@ -106,6 +106,7 @@ function raceEvList(data) {
             }
             divBgModel.appendChild(sectionRE);
         }
+        
         document.getElementById('wrapper2').appendChild(divBgModelParent);
     }
 }
