@@ -254,6 +254,11 @@ button.btn.btn--primary {
     }
 }
 
+.btnTopClass {
+    background-color: red;
+    padding: 20px;
+}
+
 .view-container {
     button {
         &:hover {

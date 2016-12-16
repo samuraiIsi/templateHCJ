@@ -1,0 +1,16 @@
+{
+	[
+		{
+			"name": "description",
+			"content": "Site Built with html, CSS, JavaScript" 
+		},
+		{
+			"name": "keywords",
+			"content": "HTML, HTML5, CSS, CSS3, JavaScript, Flexbox, BEM, SmaCss, JSON, AJAX" 
+		},
+		{
+			"name": "author",
+			"content": "img-dev" 
+		}
+	]
+}

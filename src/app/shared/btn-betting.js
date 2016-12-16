@@ -157,9 +157,22 @@ function listBtnCircles(info) {
 	document.getElementById('listBtnsGroupCircles').appendChild(ulBC);
 }
 
+function btnToTopFunction(){
+	//crear un div , crear una clase
+	var divBtnToTop, iIconTopBtn;
+	divBtnToTop = document.createElement('div');
+	divBtnToTop.setAttribute('class', 'btnTopClass');
+	iIconTopBtn = document.createElement('i');
+	iIconTopBtn.setAttribute('class', 'glyphicon glyphicon-menu-up');
+	divBtnToTop.appendChild(iIconTopBtn);
+
+	document.getElementById('widgets').appendChild(divBtnToTop);
+}
+
 function init() {
 	btnBackArrow();
 	btnHorse();
 	btnVertical();
 	listBtnCircles();
+	btnToTopFunction();
 }
