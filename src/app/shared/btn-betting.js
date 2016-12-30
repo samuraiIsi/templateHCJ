@@ -163,7 +163,8 @@ var buttons = function() {
         var divBtnToTop, iIconTopBtn;
         divBtnToTop = document.createElement('div');
         divBtnToTop.setAttribute('class', 'btnTopClass');
-        //divBtnToTop.setAttribute('onscroll', scrollAnimation());
+        divBtnToTop.setAttribute('id', 'btnTopId');
+        //divBtnToTop.setAttribute('onscroll', scrollAnimation(this));
         iIconTopBtn = document.createElement('i');
         iIconTopBtn.setAttribute('class', 'icon arrow-left');
         divBtnToTop.appendChild(iIconTopBtn);

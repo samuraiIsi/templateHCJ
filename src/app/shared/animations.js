@@ -129,9 +129,20 @@ counter = function(evt) {
 var isBelowPageFold = function(){
     return (window.scrollY || window.pageYOffset) > window.screen.height / 12;
 };
-window.onscroll = function() {
+
+window.onscroll = function(evt) {
     if(isBelowPageFold()) {
-        alert('hola')
+        document.getElementById('btnTopId').style.display = 'none';    
+    } else {
+        document.getElementById('btnTopId').style.display = 'block';    
     }
 }
+/*
+var scrollAnimation = function(evt) {
+    if(isBelowPageFold()) {
+        document.getElementById('btnTopId').className = 'fadeIn';    
+    } else {
+        document.getElementById('btnTopId').className = 'fadeOut';    
+    }
+}*/
 
