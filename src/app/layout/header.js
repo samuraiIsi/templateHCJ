@@ -20,6 +20,7 @@ function headerFunction() {
 	h1Logo.setAttribute('class', 'logo-header');
 	divLogoFirst = document.createElement('div');
 	divLogoFirst.setAttribute('id', 'logoHeader');
+	
 	divLogoSecond = document.createElement('div');
 	divLogoSecond.setAttribute('id', 'btnBetting');
 	divLogoSecond.setAttribute('class', 'pull-right hidden-sm');
@@ -49,6 +50,7 @@ function subHeaderFunction() {
 	divChild = document.createElement('div');
 	divChild.setAttribute('class', 'flex-container');
 	divChild.setAttribute('id', 'subHeaderChildFirst');
+	//divChild.setAttribute('onload', btns());
 	divSubParent.appendChild(divChild);
 	divParent.appendChild(divSubParent);
 

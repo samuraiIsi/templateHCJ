@@ -48,6 +48,3 @@ validatedPopUp = function(data) {
 	
 	document.getElementById('bodyContainer').appendChild(divModal);
 };
-function init() {
-	validatedPopUp();
-}

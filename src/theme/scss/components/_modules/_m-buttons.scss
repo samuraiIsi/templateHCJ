@@ -255,8 +255,20 @@ button.btn.btn--primary {
 }
 
 .btnTopClass {
-    background-color: red;
-    padding: 20px;
+    background-color: #01c3fe;
+    border-radius: 50%;
+    position: fixed;
+    top: 90%;
+    right: 2%;
+    padding: 5px 12px;
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+    .icon.arrow-left {
+        color: white;
+        font-size: 30px;
+        font-weight: 700;
+    }
 }
 
 .view-container {

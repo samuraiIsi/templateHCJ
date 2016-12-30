@@ -126,3 +126,12 @@ counter = function(evt) {
     counterEl.innerHTML = counterVx;
     counterEl.style.display = (counterEl.innerHTML === "0") ? 'none' : 'block';
 };
+var isBelowPageFold = function(){
+    return (window.scrollY || window.pageYOffset) > window.screen.height / 12;
+};
+window.onscroll = function() {
+    if(isBelowPageFold()) {
+        alert('hola')
+    }
+}
+
