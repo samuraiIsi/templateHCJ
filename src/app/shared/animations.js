@@ -27,7 +27,7 @@ openTab = function(evt, tabsName) {
 openPanel = function(evt, tabsName) {
     panel = document.getElementsByClassName("panel");
     btnMed = document.getElementsByClassName("btnMed");
-    
+
     for (i = 0; i < btnMed.length; i++) {
         btnMed[i].className = btnMed[i].className.replace("btnMed activeBtn", "btnMed");
     }
@@ -90,7 +90,7 @@ closeValidatedModel = function() {
     document.getElementById('validatedPopUp').style.display = 'none';
     document.forms["loginForm"]["psw"].value = '';
 }
- 
+
 onblurLoginInput = function() {
     error = document.getElementsByClassName("error");
     for (i = 0; i < error.length; i++) {
@@ -115,7 +115,8 @@ searchList = function() {
 };
 
 counter = function(evt) {
-    var counterEl = document.getElementById("counter"), btnSelected = document.getElementById(evt.id);
+    var counterEl = document.getElementById("counter"),
+        btnSelected = document.getElementById(evt.id);
     if (evt.classList.value === "btn btn--default btn--sm activeBtn") {
         btnSelected.className = "btn btn--default btn--sm";
         counterVx--;
@@ -126,23 +127,17 @@ counter = function(evt) {
     counterEl.innerHTML = counterVx;
     counterEl.style.display = (counterEl.innerHTML === "0") ? 'none' : 'block';
 };
-var isBelowPageFold = function(){
-    return (window.scrollY || window.pageYOffset) > window.screen.height / 12;
+var isBelowPageFold = function() {
+    return (window.scrollY || window.pageYOffset) > window.screen.height / 24;
 };
 
-window.onscroll = function(evt) {
-    if(isBelowPageFold()) {
-        document.getElementById('btnTopId').style.display = 'none';    
-    } else {
-        document.getElementById('btnTopId').style.display = 'block';    
+window.onscroll = function() {
+    var getClassElement = document.getElementById('btnTopId').className;
+    if (isBelowPageFold() || getClassElement == 'btnTopClass fadeIn') {
+        if (isBelowPageFold()) {
+            document.getElementById('btnTopId').className = 'btnTopClass fadeIn';
+        } else {
+            document.getElementById('btnTopId').className = 'btnTopClass fadeOut';
+        }
     }
-}
-/*
-var scrollAnimation = function(evt) {
-    if(isBelowPageFold()) {
-        document.getElementById('btnTopId').className = 'fadeIn';    
-    } else {
-        document.getElementById('btnTopId').className = 'fadeOut';    
-    }
-}*/
-
+};

@@ -69,7 +69,7 @@ var buttons = function() {
         btnJoin.appendChild(btnJoinText);
         document.getElementById('loginArea').appendChild(btnJoin);
     }
-    //document.getElementById('subHeaderChildFirst').addEventListener('load', btnBackArrow);
+    
     var btnBackArrow = function(data) {
         var divBtBk, linkBtBk, iconBtBk;
         divBtBk = document.createElement('div');
@@ -84,7 +84,7 @@ var buttons = function() {
         divBtBk.appendChild(linkBtBk);
         document.getElementById('subHeaderChildFirst').appendChild(divBtBk);
     };
-    //document.getElementById('subHeaderChildFirst').addEventListener('load', btnHorse);
+
     function btnHorse(data) { // Rename to btnHorizontal
         var divBtnH, iconBtnH, spanBtnH, spanBtnHText;
         btnHEl = document.createElement('button');
@@ -159,12 +159,10 @@ var buttons = function() {
     }
 
     function btnToTopFunction() {
-        //crear un div , crear una clase
         var divBtnToTop, iIconTopBtn;
         divBtnToTop = document.createElement('div');
         divBtnToTop.setAttribute('class', 'btnTopClass');
         divBtnToTop.setAttribute('id', 'btnTopId');
-        //divBtnToTop.setAttribute('onscroll', scrollAnimation(this));
         iIconTopBtn = document.createElement('i');
         iIconTopBtn.setAttribute('class', 'icon arrow-left');
         divBtnToTop.appendChild(iIconTopBtn);
