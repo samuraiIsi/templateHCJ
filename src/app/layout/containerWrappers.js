@@ -1,11 +1,11 @@
-var containerWrappers = function() {
+var containerWps = function() {
 	var containerWpsHttps = new XMLHttpRequest();
-    var urlcontainerWps = "../../../data/footer.json";
+    var urlcontainerWps = "../../../data/containerWps.json";
 
     containerWpsHttps.onreadystatechange = function() {
         if (containerWpsHttps.readyState == 4 && containerWpsHttps.status == 200) {
             var data = JSON.parse(containerWpsHttps.responseText);
-            footerFunction(data);
+            containerWpsSub(data);
         }
     };
 
@@ -13,7 +13,7 @@ var containerWrappers = function() {
     containerWpsHttps.send();
 
     var divParent, i;
-    function containerWps() {
+    function containerWpsSub() {
 		for (var i = 0; i < containerWps.length; i++) {
 			divParent = document.createElement('div');
 			divParent.setAttribute('id', 'container-wp-' + [i]);
