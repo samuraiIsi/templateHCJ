@@ -2,8 +2,13 @@
     background-color: #dad9db;
     padding: $standardDistance;
     min-height: 800px;
+    height: 100%;
+    overflow: auto;
 }
-
+// #scrollArea {
+//     height: 100%;
+//     overflow: auto;
+// }
 .fs0 {
     font-size: 13px;
     margin-left: $standardDistance - 5;

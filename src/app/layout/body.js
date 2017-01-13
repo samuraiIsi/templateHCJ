@@ -1,5 +1,5 @@
 function bodyFunction() {
-	var sectionComp, articleComp1, articleComp2, divListBtns, i, numberContainerWrappers = 2, insertListBtns;
+	var sectionComp, articleComp1, articleComp2, divListBtns, i, numberContainerWrappers = 3, insertListBtns;
 	
 	divListBtns = document.createElement('div');
 	divListBtns.setAttribute('id', 'listBtnsGroupCircles');

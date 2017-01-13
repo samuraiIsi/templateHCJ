@@ -160,9 +160,10 @@ var buttons = function() {
 
     function btnToTopFunction() {
         var divBtnToTop, iIconTopBtn;
-        divBtnToTop = document.createElement('div');
+        divBtnToTop = document.createElement('button');
         divBtnToTop.setAttribute('class', 'btnTopClass');
         divBtnToTop.setAttribute('id', 'btnTopId');
+        divBtnToTop.setAttribute('onclick', 'smoothScroll('+ '"backTopCall"'+ ')');
         iIconTopBtn = document.createElement('i');
         iIconTopBtn.setAttribute('class', 'icon arrow-left');
         divBtnToTop.appendChild(iIconTopBtn);

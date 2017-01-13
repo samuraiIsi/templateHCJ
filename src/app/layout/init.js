@@ -10,5 +10,6 @@ function init() {
 	searchLists();
 	forms();
 	tabsComponent();
+	tables();
 	footer();
 }

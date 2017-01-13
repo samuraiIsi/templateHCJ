@@ -257,6 +257,8 @@ button.btn.btn--primary {
 .btnTopClass {
     background-color: #01c3fe;
     border-radius: 50%;
+    border-style: none;
+    cursor: pointer;
     position: fixed;
     opacity: 0;
     top: 90%;
@@ -269,6 +271,9 @@ button.btn.btn--primary {
         color: white;
         font-size: 30px;
         font-weight: 700;
+    }
+    &:focus {
+        outline: none;
     }
 }
 
