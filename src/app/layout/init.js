@@ -1,7 +1,15 @@
 function init() {
 	headerFunction();
 	subHeaderFunction();
+	logoHeader();
 	bodyFunction();
-	btnBetting();
-	btnsLoginArea();
+	buttons();
+	bannersComponent();
+	eventsLists();
+	raceEvents();
+	searchLists();
+	forms();
+	tabsComponent();
+	tables();
+	footer();
 }

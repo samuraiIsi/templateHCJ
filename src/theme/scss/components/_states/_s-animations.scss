@@ -74,3 +74,38 @@ section {
        width: 100%;
     }
 }
+
+.fadeIn {
+    animation: fadeIn 0.5s linear;
+    opacity: 1;
+}
+
+.fadeOut {
+    animation: fadeout 0.5s linear;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; top: 95%}
+    to {opacity: 1; top: 90%}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0; top: 95%}
+    to {opacity: 1; top: 90%}
+}
+
+@keyframes fadeout {
+    from {opacity: 1; top: 90% }
+    to {opacity: 0; top: 95% }
+}
+
+@-webkit-keyframes fadeout {
+    from {opacity: 1; top: 90% }
+    to {opacity: 0; top: 95% }
+}
+#backTopCall {
+    position: relative;
+    margin: 0 auto;
+    max-width: 650px;
+    display: block;
+}

@@ -1,9 +1,11 @@
 function headerFunction() {
-	var divParent, divSubParent, divChild, btnMenuIcon, h1Logo, i, divBars;
+	var divParent, divSubParent, divChild, btnMenuIcon, h1Logo, i, divBars, aTopId;
 	divParent = document.createElement('div');
 	divParent.setAttribute('class', 'row bg-blue-dark-27');
 	divSubParent = document.createElement('div');
 	divSubParent.setAttribute('id', 'headerL1');
+	aTopId = document.createElement('a');
+	aTopId.setAttribute('id', 'backTopCall');
 	divSubParent.setAttribute('class', 'container flex-container');
 	divChildFirst = document.createElement('div');
 	divChildFirst.setAttribute('class', 'btn-respons-menu hidden-md');
@@ -20,6 +22,7 @@ function headerFunction() {
 	h1Logo.setAttribute('class', 'logo-header');
 	divLogoFirst = document.createElement('div');
 	divLogoFirst.setAttribute('id', 'logoHeader');
+	
 	divLogoSecond = document.createElement('div');
 	divLogoSecond.setAttribute('id', 'btnBetting');
 	divLogoSecond.setAttribute('class', 'pull-right hidden-sm');
@@ -33,8 +36,9 @@ function headerFunction() {
 	divSubParent.appendChild(divChildFirst);
 	divSubParent.appendChild(h1Logo);
 	divSubParent.appendChild(divChildSecond);
+	divParent.appendChild(aTopId);
 	divParent.appendChild(divSubParent);
-	
+		
 	document.getElementById('headerContainer').appendChild(divParent);
 }
 
@@ -49,6 +53,7 @@ function subHeaderFunction() {
 	divChild = document.createElement('div');
 	divChild.setAttribute('class', 'flex-container');
 	divChild.setAttribute('id', 'subHeaderChildFirst');
+	//divChild.setAttribute('onload', btns());
 	divSubParent.appendChild(divChild);
 	divParent.appendChild(divSubParent);
 

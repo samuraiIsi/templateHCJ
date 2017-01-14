@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
 	sass = require('gulp-ruby-sass'),
 	uglify = require('gulp-uglify'),
+	modernizr = require('gulp-modernizr');
 	loading = require('gulp-load-plugins')();
 
 gulp.task('scripts', function(){
@@ -15,6 +16,22 @@ gulp.task('styles', function(){
 
 });
 
+gulp.task('modernizr', function() {
+	var settings = { 
+    "options" : [
+      "setClasses",
+      "addTest",
+      "html5printshiv",
+      "testProp",
+      "fnBind"
+    ]
+  };
+  gulp.src('src/app/**/*.js')
+    .pipe(modernizr('modernizr.js', settings))
+    .pipe(uglify())
+    .pipe(gulp.dest("build/"))
+});
+
 gulp.task('watch', function(){
 	gulp.watch('src/app/**/*.js', ['scripts']);
 	gulp.watch('src/theme/scss/**/**/**/*.scss', ['styles']); // L5.3
@@ -27,4 +44,4 @@ gulp.task('serve', function() {
     });
 });
 
-gulp.task('default', ['scripts', 'styles', 'watch', 'serve']);
+gulp.task('default', ['scripts', 'styles', 'modernizr', 'watch', 'serve']);
