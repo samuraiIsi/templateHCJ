@@ -4,6 +4,7 @@ function init() {
 	logoHeader();
 	bodyFunction();
 	buttons();
+	containerWps();
 	bannersComponent();
 	eventsLists();
 	raceEvents();

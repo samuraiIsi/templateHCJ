@@ -107,9 +107,7 @@ var eventsLists = function() {
                 divEL.appendChild(sectionEL);
                 divELVertParent.appendChild(divEL);
             }
-
             document.getElementById('wrapper1').appendChild(divELVertParent);
-
         }
     };
 };

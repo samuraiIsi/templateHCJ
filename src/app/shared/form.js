@@ -87,7 +87,7 @@ var forms = function() {
 
         btnLogin.appendChild(btnLoginText);
         spanCheck.appendChild(inputCheckText);
-        //inputCheck.appendChild(spanCheck);
+        
         divContainer.appendChild(btnLogin);
         divContainer.appendChild(inputCheck);
         divContainer.appendChild(spanCheck);

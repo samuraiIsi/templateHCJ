@@ -21,23 +21,24 @@ openTab = function(evt, tabsName) {
         tablinks[i].className = tablinks[i].className.replace("activetab", "");
     }
     document.getElementById(tabsName).style.display = "block";
-    evt.currentTarget.className += " activetab";
+    if (evt.currentTarget.className.indexOf("activetab") != -1) {
+        evt.currentTarget.className += "";
+    } else {
+        evt.currentTarget.className += " activetab";
+    }
+    
 };
 
 openPanel = function(evt, tabsName) {
     panel = document.getElementsByClassName("panel");
     btnMed = document.getElementsByClassName("btnMed");
-
     for (i = 0; i < btnMed.length; i++) {
         btnMed[i].className = btnMed[i].className.replace("btnMed activeBtn", "btnMed");
     }
-
     for (i = 0; i < panel.length; i++) {
         panel[i].style.display = "none";
     }
-
     textBtn = evt.currentTarget.childNodes[0];
-
     if (tabsName === 'panel-0' && textBtn.data === 'All Races') {
         for (i = 0; i < panel.length; i++) {
             panel[i].style.display = "block";
@@ -143,25 +144,21 @@ window.onscroll = function() {
 };
 
 function currentYPosition() {
-    // Firefox, Chrome, Opera, Safari
     if (self.pageYOffset) return self.pageYOffset;
-    // Internet Explorer 6 - standards mode
     if (document.documentElement && document.documentElement.scrollTop)
-        return document.documentElement.scrollTop;
-    // Internet Explorer 6, 7 and 8
+        return document.documentElement.scrollTop; 
     if (document.body.scrollTop) return document.body.scrollTop;
     return 0;
 }
-
 
 function elmYPosition(eID) {
     var elm = document.getElementById(eID);
     var y = elm.offsetTop;
     var node = elm;
-    // while (node.offsetParent && node.offsetParent != document.body) {
-    //     node = node.offsetParent;
-    //     y += node.offsetTop;
-    // } 
+    while (node.offsetParent && node.offsetParent != document.body) {
+        node = node.offsetParent;
+        y += node.offsetTop;
+    } 
     return y;
 }
 

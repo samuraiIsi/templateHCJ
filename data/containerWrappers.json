@@ -1,0 +1,14 @@
+{
+	"containerWps":[
+		{
+			"containerId": 0,
+			"wrapperId": [1, 2],
+			"classAmount": [1, 2]
+		},
+		{
+			"containerId": 2,
+			"wrapperId": [3, 4, 5],
+			"classAmount": [1, 2, 3]
+		}
+	]
+}

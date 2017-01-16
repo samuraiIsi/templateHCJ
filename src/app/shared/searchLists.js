@@ -103,8 +103,6 @@ var searchLists = function() {
 
         }
         document.getElementById('container-wrappers-1').className = 'view-container bg-white-100';
-        var removeArticles = document.getElementById('container-wp-1');
-        removeArticles.remove(removeArticles.selectedIndex);
         var insertSearch = document.getElementById('container-wrappers-1');
         insertSearch.insertBefore(divInput, insertSearch.childNodes[0]);
     }
