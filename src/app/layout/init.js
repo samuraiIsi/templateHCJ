@@ -12,5 +12,6 @@ function init() {
 	forms();
 	tabsComponent();
 	tables();
+	carousel();
 	footer();
 }

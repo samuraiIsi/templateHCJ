@@ -9,6 +9,11 @@
 			"containerId": 2,
 			"wrapperId": [3, 4, 5],
 			"classAmount": [1, 1, 1]
+		},
+		{
+			"containerId": 3,
+			"wrapperId": [6],
+			"classAmount": [3]
 		}
 	]
 }

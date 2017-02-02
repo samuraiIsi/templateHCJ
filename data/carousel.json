@@ -1,0 +1,69 @@
+{
+	"carousel":[
+		[
+		{
+			"liSliderId": "first",
+			"liSliderClass": "firstanimation",
+			"imgSrc": "img/carousel/ballNet.jpg",
+			"imgAlt": "Football",
+			"imgWidth": "680",
+			"imgHeight": "320",
+			"h1Text": "All About Football",
+			"anchorText": "Ver",
+			"anchorLink": "#",
+			"anchorClass": "botoncito"
+		},
+		{
+			"liSliderId": "second",
+			"liSliderClass": "secondanimation",
+			"imgSrc": "img/carousel/basketball.jpg",
+			"imgAlt": "Football",
+			"imgWidth": "680",
+			"imgHeight": "320",
+			"h1Text": "All About Football",
+			"anchorText": "Ver",
+			"anchorLink": "#",
+			"anchorClass": "botoncito"
+		},
+		{
+			"liSliderId": "third",
+			"liSliderClass": "thirdanimation",
+			"imgSrc": "img/carousel/taekwondo.jpg",
+			"imgAlt": "Football",
+			"imgWidth": "680",
+			"imgHeight": "320",
+			"h1Text": "All About Football",
+			"anchorText": "Ver",
+			"anchorLink": "#",
+			"anchorClass": "botoncito"
+		},
+		{
+			"liSliderId": "fourth",
+			"liSliderClass": "fourthanimation",
+			"imgSrc": "img/carousel/volleyball.jpg",
+			"imgAlt": "Football",
+			"imgWidth": "680",
+			"imgHeight": "320",
+			"h1Text": "All About Football",
+			"anchorText": "Ver",
+			"anchorLink": "#",
+			"anchorClass": "botoncito"
+		},
+		{
+			"liSliderId": "fifth",
+			"liSliderClass": "fifthanimation",
+			"imgSrc": "img/carousel/twoCompetators.jpg",
+			"imgAlt": "Football",
+			"imgWidth": "680",
+			"imgHeight": "320",
+			"h1Text": "All About Football",
+			"anchorText": "Ver",
+			"anchorLink": "#",
+			"anchorClass": "botoncito"
+		}
+		]
+	],
+	"wrapperId": [
+		{"carouselFive": "wrapper6"}
+	]
+}

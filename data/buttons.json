@@ -73,7 +73,7 @@
 		{
 			"liClass":"btn--circle",  
 			"aLink":"javascript:void(0)",
-			"aMethod":"container-wrappers-1",
+			"aMethod":"container-wrappers-3",
 			"divClass": "flex-container--vertical",
 			"iconClass": "btn--circleIcon golden icon-most-popular-bets2",
 			"pClass": "btn__title",

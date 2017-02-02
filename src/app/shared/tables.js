@@ -51,6 +51,5 @@ var tables = function(){
             divWrapper.appendChild(tableParent);
             document.getElementById('wrapper' + [z + 3]).appendChild(divWrapper);
     	}
-
     };
 };
