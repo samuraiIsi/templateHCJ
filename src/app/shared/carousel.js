@@ -12,7 +12,7 @@ var carousel = function(){
     carouselHttp.send();
     var i;
 	var carouselCss = function(data){
-    	var divContainer, divcontentSlider, divSlider, divSliderWrapper, ulSlider, divBar, liSlider, imgSlider, divTip, h1Tip, anchorTip;
+    	var divContainer, divcontentSlider, divSlider, divSliderWrapper, ulSlider, divBar, liSlider, imgSlider, anchor, divTip, h1Tip;
 		for(i = 0; i < data.carousel.length; i++) {
 			divContainer = document.createElement('div');
 			divContainer.setAttribute('class', 'containerSlider');
@@ -29,6 +29,9 @@ var carousel = function(){
 				liSlider = document.createElement('li');
 				liSlider.setAttribute('id', data.carousel[i][j].liSliderId);
 				liSlider.setAttribute('class', data.carousel[i][j].liSliderClass);
+				anchor = document.createElement('a');
+				anchor.setAttribute('href', data.carousel[i][j].anchorLink);
+				anchor.setAttribute('class', data.carousel[i][j].anchorClass);
 				imgSlider = document.createElement('img');
 				imgSlider.setAttribute('src', data.carousel[i][j].imgSrc);
 				imgSlider.setAttribute('alt', data.carousel[i][j].imgAlt);
@@ -38,15 +41,10 @@ var carousel = function(){
 				divTip.setAttribute('class', 'tipBox');
 				h1Tip =document.createElement('h1');
 				h1TipText = document.createTextNode(data.carousel[i][j].h1Text);
-				anchorTip = document.createElement('a');
-				anchorTipText = document.createTextNode(data.carousel[i][j].anchorText);
-				anchorTip.setAttribute('href', data.carousel[i][j].anchorLink);
-				anchorTip.setAttribute('class', data.carousel[i][j].anchorClass);
 				h1Tip.appendChild(h1TipText);
 				divTip.appendChild(h1Tip);
-				anchorTip.appendChild(anchorTipText);
-				divTip.appendChild(anchorTip);
-				liSlider.appendChild(imgSlider);
+				anchor.appendChild(imgSlider);
+				liSlider.appendChild(anchor);
 				liSlider.appendChild(divTip);
 				ulSlider.appendChild(liSlider);
 			}

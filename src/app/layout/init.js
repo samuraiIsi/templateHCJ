@@ -13,5 +13,6 @@ function init() {
 	tabsComponent();
 	tables();
 	carousel();
+	panelsBox();
 	footer();
 }

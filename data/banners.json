@@ -2,7 +2,7 @@
 	"bannersMain": [
 		{
 			"divMainId": "meeting",
-			"divMainClass": "capitLetter",
+			"divMainClass": "capitalLetter",
 			"divSecondClass": "bar-title bg-blue-dark-36",
 			"iClass": " ",
 			"iMethod": "",
@@ -11,12 +11,21 @@
 		},
 		{
 			"divMainId": "horseRacing",
-			"divMainClass": "capitLetter",
+			"divMainClass": "capitalLetter",
 			"divSecondClass": "bar-title bg-white-100",
 			"iClass": "icon-close hidden-lg",
 			"iMethod": "closeWrapper2()",
 			"h2Text": "horse racing",
 			"wrapperId": "wrapper2"
+		},
+		{
+			"divMainId": "sports",
+			"divMainClass": "well-panel uppercaseLetter fs20 text-center letter-space-20",
+			"divSecondClass": "bar-title bg-blue-dark-27",
+			"iClass": "icon-close hidden-lg",
+			"iMethod": "closeWrapper2()",
+			"h2Text": "sports",
+			"wrapperId": "wrapper6"
 		}
 	] 
 }

@@ -85,6 +85,10 @@
     background-color: #80b8e5;
 }
 
+.bg-blue-dark-27 {
+    background-color: $bgBlueDark27;
+}
+
 .bg-blue-dark-36 {
     background-color: $bgBlueDark36;
 }
@@ -96,4 +100,8 @@
 .clearfix {
     display: table;
     content: " ";
+}
+
+.letter-space-20 {
+    letter-spacing: 20px;
 }
