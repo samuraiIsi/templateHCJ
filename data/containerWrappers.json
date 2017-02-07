@@ -14,6 +14,11 @@
 			"containerId": 3,
 			"wrapperId": [6],
 			"classAmount": [3]
+		},
+		{
+			"containerId": 4,
+			"wrapperId": [7],
+			"classAmount": [3]
 		}
 	]
 }

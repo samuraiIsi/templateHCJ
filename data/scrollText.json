@@ -1,0 +1,39 @@
+{
+	"scrollText":[
+		[
+			{
+				"liListClass": "firstText",
+				"anchorLink": "javascript:changeView('container-wrappers-0');",
+				"anchorClass": "color-text-white",
+				"liListText": "Lorem ipsum Home Page dolor sit amet, consectetur adipiscing elit. Nullam eget purus risus. Donec scelerisque vel nibh in consectetur. Vestibulum nisl nulla, suscipit et semper et, venenatis non leo."
+			},
+			{
+				"liListClass": "secondText",
+				"anchorLink": "javascript:changeView('container-wrappers-1');",
+				"anchorClass": "color-text-white",
+				"liListText": "Sed sed Search List elementum mauris. Mauris nisl tellus, porta et fringilla sed, iaculis vel dui. Sed nec sapien id tortor euismod sagittis."
+			},
+			{
+				"liListClass": "thirdText",
+				"anchorLink": "javascript:changeView('container-wrappers-2');",
+				"anchorClass": "color-text-white",
+				"liListText": "Pellentesque Tables fermentum mauris at fringilla vulputate. Aenean porta id ligula vel lobortis. Nam pellentesque ipsum lacinia lectus mattis, et convallis est bibendum."
+			},
+			{
+				"liListClass": "fourthText",
+				"anchorLink": "javascript:changeView('container-wrappers-3');",
+				"anchorClass": "color-text-white",
+				"liListText": "Praesent varius Carousel in risus id iaculis. Aenean fermentum nulla ac lorem semper tincidunt. Phasellus porttitor nisl sit amet vestibulum tincidunt."
+			}
+		]
+	],
+	"containerStyle": [
+		{
+			"scrollContainer": "scrollContainer wrapper-3 fs20 bg-blue-dark-27",
+			"ulClass": "margin-0"
+		}
+	],
+	"wrapperId":[
+		"wrapper7"
+	]
+}

@@ -12,16 +12,16 @@ var carousel = function(){
     carouselHttp.send();
     var i;
 	var carouselCss = function(data){
-    	var divContainer, divcontentSlider, divSlider, divSliderWrapper, ulSlider, divBar, liSlider, imgSlider, divTip, h1Tip, anchorTip;
+    	var divContainer, divcontentSlider, divSlider, divSliderWrapper, ulSlider, divBar, liSlider, imgSlider, divTip, h1Tip, anchor;
 		for(i = 0; i < data.carousel.length; i++) {
 			divContainer = document.createElement('div');
 			divContainer.setAttribute('class', 'containerSlider');
 			divcontentSlider = document.createElement('div');
 			divcontentSlider.setAttribute('id', 'contentSlider');
 			divSlider = document.createElement('div');
-			divSlider.setAttribute('id', 'slider');
+			divSlider.setAttribute('id', 'slider-img');
 			divSliderWrapper = document.createElement('div');
-			divSliderWrapper.setAttribute('id', 'sliderWrapper');
+			divSliderWrapper.setAttribute('id', 'slider-imgWrapper');
 			ulSlider = document.createElement('ul');
 			divBar = document.createElement('div');
 			divBar.setAttribute('class', 'progress-bar');
@@ -38,15 +38,13 @@ var carousel = function(){
 				divTip.setAttribute('class', 'tipBox');
 				h1Tip =document.createElement('h1');
 				h1TipText = document.createTextNode(data.carousel[i][j].h1Text);
-				anchorTip = document.createElement('a');
-				anchorTipText = document.createTextNode(data.carousel[i][j].anchorText);
-				anchorTip.setAttribute('href', data.carousel[i][j].anchorLink);
-				anchorTip.setAttribute('class', data.carousel[i][j].anchorClass);
+				anchor = document.createElement('a');
+				anchor.setAttribute('href', data.carousel[i][j].anchorLink);
+				anchor.setAttribute('class', data.carousel[i][j].anchorClass);
 				h1Tip.appendChild(h1TipText);
 				divTip.appendChild(h1Tip);
-				anchorTip.appendChild(anchorTipText);
-				divTip.appendChild(anchorTip);
-				liSlider.appendChild(imgSlider);
+				anchor.appendChild(imgSlider);
+				liSlider.appendChild(anchor);
 				liSlider.appendChild(divTip);
 				ulSlider.appendChild(liSlider);
 			}
@@ -57,7 +55,7 @@ var carousel = function(){
 			divContainer.appendChild(divcontentSlider);
 		}
 		for(var z = 0; z < data.wrapperId.length; z++){
-			document.getElementById(data.wrapperId[z].carouselFive).appendChild(divContainer);
+			document.getElementById(data.wrapperId[z]).appendChild(divContainer);
 		}
 
 	};

@@ -2,68 +2,63 @@
 	"carousel":[
 		[
 		{
-			"liSliderId": "first",
+			"liSliderId": "firstCarousel",
 			"liSliderClass": "firstanimation",
 			"imgSrc": "img/carousel/ballNet.jpg",
 			"imgAlt": "Football",
 			"imgWidth": "680",
 			"imgHeight": "320",
 			"h1Text": "All About Football",
-			"anchorText": "Ver",
-			"anchorLink": "#",
+			"anchorLink": "javascript:changeView('container-wrappers-0');",
 			"anchorClass": "botoncito"
 		},
 		{
-			"liSliderId": "second",
+			"liSliderId": "secondCarousel",
 			"liSliderClass": "secondanimation",
 			"imgSrc": "img/carousel/basketball.jpg",
-			"imgAlt": "Football",
+			"imgAlt": "Basketball",
 			"imgWidth": "680",
 			"imgHeight": "320",
-			"h1Text": "All About Football",
-			"anchorText": "Ver",
-			"anchorLink": "#",
+			"h1Text": "All About Basketball",
+			"anchorLink": "javascript:changeView('container-wrappers-1');",
 			"anchorClass": "botoncito"
 		},
 		{
-			"liSliderId": "third",
+			"liSliderId": "thirdCarousel",
 			"liSliderClass": "thirdanimation",
 			"imgSrc": "img/carousel/taekwondo.jpg",
-			"imgAlt": "Football",
+			"imgAlt": "taekwondo",
 			"imgWidth": "680",
 			"imgHeight": "320",
-			"h1Text": "All About Football",
-			"anchorText": "Ver",
-			"anchorLink": "#",
+			"h1Text": "Taekwondo",
+			"anchorLink": "javascript:changeView('container-wrappers-2');",
 			"anchorClass": "botoncito"
 		},
 		{
-			"liSliderId": "fourth",
+			"liSliderId": "fourthCarousel",
 			"liSliderClass": "fourthanimation",
 			"imgSrc": "img/carousel/volleyball.jpg",
-			"imgAlt": "Football",
+			"imgAlt": "Volleyball",
 			"imgWidth": "680",
 			"imgHeight": "320",
-			"h1Text": "All About Football",
-			"anchorText": "Ver",
-			"anchorLink": "#",
+			"h1Text": "All About Volleyball",
+			"anchorLink": "javascript:changeView('container-wrappers-4');",
 			"anchorClass": "botoncito"
 		},
 		{
-			"liSliderId": "fifth",
+			"liSliderId": "fifthCarousel",
 			"liSliderClass": "fifthanimation",
 			"imgSrc": "img/carousel/twoCompetators.jpg",
 			"imgAlt": "Football",
 			"imgWidth": "680",
 			"imgHeight": "320",
 			"h1Text": "All About Football",
-			"anchorText": "Ver",
-			"anchorLink": "#",
+			"anchorLink": "javascript:changeView('container-wrappers-5');",
 			"anchorClass": "botoncito"
 		}
 		]
 	],
 	"wrapperId": [
-		{"carouselFive": "wrapper6"}
+		"wrapper6"
 	]
 }
