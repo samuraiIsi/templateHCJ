@@ -14,5 +14,6 @@ function init() {
 	tables();
 	carousel();
 	panelsBox();
+	scrollText();
 	footer();
 }

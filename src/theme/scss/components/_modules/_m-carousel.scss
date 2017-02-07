@@ -1,4 +1,4 @@
-#slider {
+#slider-img {
    background: #000;
    border: 5px solid #eaeaea;
    box-shadow: 1px 1px 5px rgba(0,0,0,0.7);
@@ -9,16 +9,16 @@
    overflow: visible;
    position: relative;
 }
-#sliderWrapper {
+#slider-imgWrapper {
    overflow: hidden;
    height: 320px;
 }
-#slider ul {
+#slider-img ul {
    margin: 0;
    padding: 0;
    position: relative;
 }
-#slider li {
+#slider-img li {
    box-sizing: content-box;
    width: 680px;
    height: 320px;
@@ -26,27 +26,27 @@
    left: 680px;
    list-style: none;
 }
-#slider li.firstanimation {
+#slider-img li.firstanimation {
    animation: cycle 25s linear infinite;
 }
 
-#slider li.secondanimation {
+#slider-img li.secondanimation {
    animation: cycletwo 25s linear infinite;
 }
 
-#slider li.thirdanimation {
+#slider-img li.thirdanimation {
    animation: cyclethree 25s linear infinite;
 }
 
-#slider li.fourthanimation {
+#slider-img li.fourthanimation {
    animation: cyclefour 25s linear infinite;
 }
 
-#slider li.fifthanimation {
+#slider-img li.fifthanimation {
    animation: cyclefive 25s linear infinite;
 }
 
-#slider .tipBox {
+#slider-img .tipBox {
    background: rgba(0,0,0,0.7);
    width: 300px;
    height: 60px;
@@ -55,26 +55,26 @@
    left: -620px;
 }
 
-#slider .tipBox h1 {
+#slider-img .tipBox h1 {
    color: #fff;
    font-size: 24px;
    font-weight: 300;
    line-height: 60px;
    padding: 0 0 0 10px;
 }
-#slider .tipBox {
+#slider-img .tipBox {
    transition: all 0.3s ease-in-out;
 }
 
-#slider li#first:hover .tipBox, 
-#slider li#second:hover .tipBox, 
-#slider li#third:hover .tipBox, 
-#slider li#fourth:hover .tipBox, 
-#slider li#fifth:hover .tipBox {
+#slider-img li#firstCarousel:hover .tipBox, 
+#slider-img li#secondCarousel:hover .tipBox, 
+#slider-img li#thirdCarousel:hover .tipBox, 
+#slider-img li#fourthCarousel:hover .tipBox, 
+#slider-img li#fifthCarousel:hover .tipBox {
     left:0px;
 }
-#slider:hover li, 
-#slider:hover .progress-bar {
+#slider-img:hover li, 
+#slider-img:hover .progress-bar {
     -moz-animation-play-state:paused;
     -webkit-animation-play-state:paused;
 }
