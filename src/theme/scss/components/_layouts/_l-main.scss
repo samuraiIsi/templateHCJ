@@ -5,6 +5,7 @@
     height: 100%;
     overflow: auto;
 }
+
 // #scrollArea {
 //     height: 100%;
 //     overflow: auto;
@@ -98,13 +99,31 @@
     content: " ";
 }
 
+.cursor-pointer {
+    cursor: pointer;
+}
+
 .margin-0 {
     margin: 0;
 }
+
 .padding-all-20 {
     padding: 20px;
 }
 
 .color-text-white {
     color: #fff;
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid black;
+    position: absolute;
+    &.arrow-down {
+        border-top: 5px solid black;
+        border-bottom: 0;
+    }
 }
