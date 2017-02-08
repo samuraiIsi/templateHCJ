@@ -13,6 +13,7 @@ function init() {
 	tabsComponent();
 	tables();
 	carousel();
+	panelsBox();
 	scrollText();
 	footer();
 }

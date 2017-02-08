@@ -29,6 +29,9 @@ var carousel = function(){
 				liSlider = document.createElement('li');
 				liSlider.setAttribute('id', data.carousel[i][j].liSliderId);
 				liSlider.setAttribute('class', data.carousel[i][j].liSliderClass);
+				anchor = document.createElement('a');
+				anchor.setAttribute('href', data.carousel[i][j].anchorLink);
+				anchor.setAttribute('class', data.carousel[i][j].anchorClass);
 				imgSlider = document.createElement('img');
 				imgSlider.setAttribute('src', data.carousel[i][j].imgSrc);
 				imgSlider.setAttribute('alt', data.carousel[i][j].imgAlt);

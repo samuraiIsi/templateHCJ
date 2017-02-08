@@ -51,8 +51,12 @@
         color: #000;
     }
 }
-.capitLetter {
+.capitalLetter {
     text-transform: $capitalizeLetter;
+}
+
+.uppercaseLetter {
+    text-transform: $uppercaseLetter;
 }
 // Images
 .at-races {
@@ -99,6 +103,10 @@
 
 .text-center {
     text-align: center;
+}
+
+.letter-spacing-20 {
+    letter-spacing: 20px;
 }
 
 .badge {

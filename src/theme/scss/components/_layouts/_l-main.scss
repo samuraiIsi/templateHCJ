@@ -14,95 +14,80 @@
     font-size: 13px;
     margin-left: $standardDistance - 5;
 }
-
 .fs11 {
     font-size: 11px;
 }
-
 .fs15 {
     font-size: 15px;
 }
-
 .fs20 {
     font-size: 20px;
 }
-
 .fs2 {
     font-size: 24px;
 }
-
 .fs3 {
     font-size: 32px;
 }
-
 .pull-left {
     float: left;
 }
-
 .pull-right {
     float: right;
     margin-right: 5px;
 }
-
 .push-right {
     flex: 1 0;
 }
-
 .pull-end {
     margin-left: auto;
     margin-right: 0;
 }
-
 .end-component {
     @include flexSetEnd;
 }
-
 .bg-white-100 {
     background-color: $bgWhite100;
 }
-
 .bg-grey-80 {
     background-color: #cccace;
 }
-
 .bg-grey-light-85 {
     //bg-85-light-grey
     background-color: #dad9db;
 }
-
 .bg-blue-dark-18 {
     background-color: #12324b;
 }
-
 .bg-blue-dark-27 {
     background-color: #184b74;
 }
-
 .bg-blue-light-60 {
     background-color: #56a0dc;
 }
-
 .bg-blue-light-70 {
     background-color: #80b8e5;
 }
-
+.bg-blue-dark-27 {
+    background-color: $bgBlueDark27;
+}
 .bg-blue-dark-36 {
     background-color: $bgBlueDark36;
 }
-
 .bg-blue-dark-42 {
     background-color: #237eb1;
 }
-
 .clearfix {
     display: table;
     content: " ";
 }
-
 .cursor-pointer {
     cursor: pointer;
 }
 
+.letter-space-20 {
+    letter-spacing: 20px;
+}
 .margin-0 {
     margin: 0;
 }
@@ -110,11 +95,9 @@
 .padding-all-20 {
     padding: 20px;
 }
-
 .color-text-white {
     color: #fff;
 }
-
 .arrow-up {
     width: 0;
     height: 0;
