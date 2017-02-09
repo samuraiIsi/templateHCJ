@@ -116,7 +116,7 @@
     }
     @for $i from 1 through 3 {
         .wrapper-#{$i} {
-            width: $i * 33%;
+            width: ($i * 33%) + 1%;
         }
     }
     .wrapper-1 {

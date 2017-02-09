@@ -5,13 +5,16 @@
    box-sizing: content-box;
    height: 320px;
    width: 680px;
-   margin: 40px auto 0;
+   margin: 0 auto;
    overflow: visible;
    position: relative;
 }
 #slider-imgWrapper {
    overflow: hidden;
    height: 320px;
+}
+.containerSlider {
+   margin: 40px;
 }
 #slider-img ul {
    margin: 0;

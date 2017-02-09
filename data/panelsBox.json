@@ -1,0 +1,61 @@
+{
+	"panelsBox": [
+		{
+			"articleClass": "wrapper-1",
+			"divParentClass": "panelBox bg-blue-dark-27",
+			"divHeaderClass": "panelBox-heading text-center fs30",
+			"divHeaderText": "Football",
+			"divBodyClass": "padding-0",
+			"anchorClass": "panelBox-link",
+			"anchorLink": "javascript:changeView('container-wrappers-1');",
+			"divCaptionClass": "caption",
+			"divCaptionContentClass": "caption-content",
+			"iconContentClass": "icon-search fs30",
+			"imgCaptionSrc": "img/promotions/newyork.jpg",
+			"imgCaptionClass": "img-responsive",
+			"imgCaptionAlt": "Football",
+			"imgCaptionMaxWidth": "350px",
+			"imgCaptionMaxHeight": "350px",
+			"divFooterClass": "panelBox-footer fs15",
+			"divFooterText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc eget auctor enim."
+		},
+		{
+			"articleClass": "wrapper-1",
+			"divParentClass": "panelBox bg-blue-dark-27",
+			"divHeaderClass": "panelBox-heading text-center fs30",
+			"divHeaderText": "Basketball",
+			"divBodyClass": "padding-0",
+			"anchorClass": "panelBox-link",
+			"anchorLink": "javascript:changeView('container-wrappers-0');",
+			"divCaptionClass": "caption",
+			"divCaptionContentClass": "caption-content",
+			"iconContentClass": "icon-search fs30",
+			"imgCaptionSrc": "img/promotions/paris.jpg",
+			"imgCaptionClass": "img-responsive",
+			"imgCaptionAlt": "Basketball",
+			"imgCaptionMaxWidth": "350px",
+			"imgCaptionMaxHeight": "350px",
+			"divFooterClass": "panelBox-footer fs15",
+			"divFooterText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc eget auctor enim."
+		},
+		{
+			"articleClass": "wrapper-1 margin-0",
+			"divParentClass": "panelBox bg-blue-dark-27",
+			"divHeaderClass": "panelBox-heading text-center fs30",
+			"divHeaderText": "Volleyball",
+			"divBodyClass": "padding-0",
+			"anchorClass": "panelBox-link",
+			"anchorLink": "javascript:changeView('container-wrappers-2');",
+			"divCaptionClass": "caption",
+			"divCaptionContentClass": "caption-content",
+			"iconContentClass": "icon-search fs30",
+			"imgCaptionSrc": "img/promotions/sanfran.jpg",
+			"imgCaptionClass": "img-responsive",
+			"imgCaptionAlt": "Volleyball",
+			"imgCaptionMaxWidth": "350px",
+			"imgCaptionMaxHeight": "350px",
+			"divFooterClass": "panelBox-footer fs15",
+			"divFooterText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc eget auctor enim."
+		}
+	]
+}
