@@ -26,7 +26,7 @@ openTab = function(evt, tabsName) {
     } else {
         evt.currentTarget.className += " activetab";
     }
-    
+
 };
 
 openPanel = function(evt, tabsName) {
@@ -146,7 +146,7 @@ window.onscroll = function() {
 function currentYPosition() {
     if (self.pageYOffset) return self.pageYOffset;
     if (document.documentElement && document.documentElement.scrollTop)
-        return document.documentElement.scrollTop; 
+        return document.documentElement.scrollTop;
     if (document.body.scrollTop) return document.body.scrollTop;
     return 0;
 }
@@ -158,10 +158,9 @@ function elmYPosition(eID) {
     while (node.offsetParent && node.offsetParent != document.body) {
         node = node.offsetParent;
         y += node.offsetTop;
-    } 
+    }
     return y;
 }
-
 
 function smoothScroll(eID) {
     var startY = currentYPosition();
@@ -193,3 +192,56 @@ function smoothScroll(eID) {
     }
     return false;
 }
+
+var sortTable = function(n) {
+    var table, rows, switching, i, antiElem, postElem, shouldSwitch, dir, numx, numy, switchcount = 0;
+    table = n.parentNode.parentNode.parentNode;
+    switching = true;
+    antiElem = n.childNodes[1];
+    antiElem.classList.toggle('arrow-down');
+    dir = "asc";
+    while (switching) {
+        switching = false;
+        rows = table.getElementsByTagName("TR");
+        for (i = 1; i < (rows.length - 1); i++) {
+            shouldSwitch = false;
+            antiElem = rows[i].getElementsByTagName("TD")[n.cellIndex];
+            postElem = rows[i + 1].getElementsByTagName("TD")[n.cellIndex];
+            if (dir == "asc") {
+                if (!isNaN(antiElem.innerHTML)) {
+                    if (parseFloat(antiElem.innerHTML) > parseFloat(postElem.innerHTML)) {
+                        shouldSwitch = true;
+                        break;
+                    }
+                } else {
+                    if (antiElem.innerHTML.toLowerCase() > postElem.innerHTML.toLowerCase()) {
+                        shouldSwitch = true;
+                        break;
+                    }
+                }
+            } else if (dir == "desc") {
+                if (!isNaN(antiElem.innerHTML)) {
+                    if (parseFloat(antiElem.innerHTML) < parseFloat(postElem.innerHTML)) {
+                        shouldSwitch = true;
+                        break;
+                    }
+                } else {
+                    if (antiElem.innerHTML.toLowerCase() < postElem.innerHTML.toLowerCase()) {
+                        shouldSwitch = true;
+                        break;
+                    }
+                }
+            }
+        }
+        if (shouldSwitch) {
+            rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+            switching = true;
+            switchcount++;
+        } else {
+            if (switchcount == 0 && dir == "asc") {
+                dir = "desc";
+                switching = true;
+            }
+        }
+    }
+};

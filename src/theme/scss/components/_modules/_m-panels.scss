@@ -13,3 +13,60 @@ section {
         display: block;
     }
 }
+
+.panelBox {
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    line-height: 1.5;
+    color: #fff;
+}
+.panelBox-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.panelBox-footer {
+    padding: 10px 15px;
+    border-top: 1px solid #ddd;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.panelBox-link {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+.caption, .caption-content {
+    position: absolute;
+    width: 100%;
+}
+.caption {
+    background: rgba(24,188,156,.9);
+    transition: all ease .5s;
+    -webkit-transition: all ease .5s;
+    height: 100%;
+    opacity: 0;
+    text-align: center;
+    &:hover {
+        opacity: 1;
+    }
+}
+.caption-content{
+    height: 20px;
+    font-size: 20px;
+    top: 50%;
+    margin-top: -20px;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+}
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}

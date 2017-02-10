@@ -3,22 +3,26 @@
 		{
 			"containerId": 0,
 			"wrapperId": [1, 2],
-			"classAmount": [1, 2]
+			"containerClass": "flex-container-lg",
+			"classAmount": ["wrapper-1", "wrapper-2"]
 		},
 		{
 			"containerId": 2,
 			"wrapperId": [3, 4, 5],
-			"classAmount": [1, 1, 1]
+			"containerClass": "flex-container-lg",
+			"classAmount": ["wrapper-1", "wrapper-1", "wrapper-1"]
 		},
 		{
 			"containerId": 3,
-			"wrapperId": [6],
-			"classAmount": [3]
+			"wrapperId": [6, 9],
+			"containerClass": "flex-container-lg flex-container--vertical",
+			"classAmount": ["wrapper-3", "wrapper-3 flex-container margin-auto"]
 		},
 		{
 			"containerId": 4,
-			"wrapperId": [7],
-			"classAmount": [3]
+			"wrapperId": [7, 8],
+			"containerClass": "flex-container-lg flex-container--vertical",
+			"classAmount": ["wrapper-3", "wrapper-3"]
 		}
 	]
 }
