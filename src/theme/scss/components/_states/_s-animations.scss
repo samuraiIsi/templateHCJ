@@ -214,3 +214,10 @@ section {
    95% { top: 0px; opacity: 1; z-index: 0; }
    100%{ top: -50px; opacity: 0; z-index: -1;}
 }
+@keyframes typewriter{
+   0% {width: 0;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}

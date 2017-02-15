@@ -6,6 +6,7 @@ var scrollText = function() {
         if (scrollTextHttp.readyState == 4 && scrollTextHttp.status == 200) {
         	var info = JSON.parse(scrollTextHttp.responseText);
             scrollMove(info);
+            typeEffect();
         }
     };
     scrollTextHttp.open("GET", urlScrollText, true);
@@ -29,10 +30,7 @@ var scrollText = function() {
 				ulContainer.appendChild(liList);
 			}
 			divContainer.appendChild(ulContainer);
+			document.getElementById(data.wrapperId[i]).appendChild(divContainer);
 		}
-		for(var z = 0; z < data.wrapperId.length; z++) {
-			document.getElementById(data.wrapperId[z]).appendChild(divContainer);	
-		}
-		
 	};
 };

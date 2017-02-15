@@ -1,7 +1,7 @@
 .scrollContainer {
     height: 50px;
     overflow: hidden;
-    padding: 20px;
+    padding: 15px 20px;
     position: relative;
     border-radius: 5px;
 }
@@ -9,13 +9,14 @@
 .scrollContainer ul li {
     color: white;
     position: absolute;
+}
+.scroll-li{
     width: 100%;
     height: 100%;
     margin: 0;
     line-height: 50px;
     top: -50px;
 }
-
 .firstText {
     animation: scroll-top-1 20s linear infinite;
 }
@@ -35,4 +36,22 @@
 .scrollContainer:hover li {
     -moz-animation-play-state:paused;
     -webkit-animation-play-state:paused;
+}
+.typeEffect {
+    display: none;
+}
+.typeEffect.active {
+    display: block;
+}
+.typeEffect-lines {
+    border-right: 2px solid rgba(255,255,255,.75);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    a{
+        line-height: 21px;
+    }
+}
+.typeEffectWrapper {
+    position: relative;
 }

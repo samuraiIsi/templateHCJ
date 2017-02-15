@@ -23,6 +23,12 @@
 			"wrapperId": [7, 8],
 			"containerClass": "flex-container-lg flex-container--vertical",
 			"classAmount": ["wrapper-3", "wrapper-3"]
+		},
+		{
+			"containerId": 5,
+			"wrapperId": [10],
+			"containerClass": "flex-container-lg flex-container--vertical",
+			"classAmount": ["wrapper-3"]
 		}
 	]
 }

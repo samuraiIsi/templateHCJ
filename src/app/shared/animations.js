@@ -245,3 +245,47 @@ var sortTable = function(n) {
         }
     }
 };
+var typeEffect = function(){
+    var x, y, h, lengthLine, widthChild, startFrame, stopTypeEffect, frame;
+    x = document.getElementsByClassName('typeEffectWrapper');
+    for(var i = 0; i < x.length; i++) {
+        x[i].lastChild.className = 'typeEffect active typeEffect-lines';  
+        lengthLine = x[i].lastChild.innerHTML.length;
+        x[i].lastChild.style.animation = 'typewriter 2s steps(' + lengthLine + ') .5s normal both, blinkTextCursor 500ms steps(' + lengthLine + ') infinite normal';
+        widthChild = x[i].lastChild.offsetWidth;
+        x[i].lastChild.style.width = "81%";
+    }
+    for(var z = 0; z < x.length; z++) {
+        eval("count" + z + "=0");
+    }
+    h = 0;
+    startFrame = function(){
+        intervalo = setInterval(frame, 5000);
+    };
+    stopTypeEffect = function(){
+        clearInterval(intervalo);
+    };
+    frame = function() {
+        for(k = 0; k < x.length; k++) {
+            y = x[k].getElementsByClassName('typeEffect');
+            if(eval("count" + k) == y.length) eval("count" + k + "=0");
+            for(var j = 0; j < y.length; j++) {
+                y[j].className = 'typeEffect';
+                x[k].childNodes[j].style = '';
+            }
+            lengthLine = x[k].childNodes[eval("count" + k)].innerHTML.length;
+            x[k].childNodes[eval("count" + k)].className = 'typeEffect active typeEffect-lines';
+            widthChild = x[k].childNodes[eval("count" + k)].offsetWidth;
+            x[k].childNodes[eval("count" + k)].addEventListener('mouseover', stopTypeEffect);
+            x[k].childNodes[eval("count" + k)].addEventListener('mouseout', startFrame);
+            x[k].childNodes[eval("count" + k)].style.animation = 'typewriter 2s steps(' + lengthLine + ') 1.5s normal both, blinkTextCursor 500ms steps(' + lengthLine + ') infinite normal';
+            x[k].childNodes[eval("count" + k)].style.width =  widthChild + "px";
+        }
+        h++
+        if(h > x.length) h = 0;
+        for(var h = 0; h < x.length; h++) {
+        eval("count"+ h + "= count" + h +  "+ 1");
+      }
+    };
+    startFrame();
+};
