@@ -3,62 +3,157 @@
 		[
 		{
 			"liSliderId": "firstCarousel",
-			"liSliderClass": "firstanimation",
+			"liSliderClass": "firstanimation slide-carouselCss",
 			"imgSrc": "img/carousel/ballNet.jpg",
 			"imgAlt": "Football",
 			"imgWidth": "680",
 			"imgHeight": "320",
+			"divTipClass": "tipBox",
 			"h1Text": "All About Football",
 			"anchorLink": "javascript:changeView('container-wrappers-0');",
 			"anchorClass": "botoncito"
 		},
 		{
 			"liSliderId": "secondCarousel",
-			"liSliderClass": "secondanimation",
+			"liSliderClass": "secondanimation slide-carouselCss",
 			"imgSrc": "img/carousel/basketball.jpg",
 			"imgAlt": "Basketball",
 			"imgWidth": "680",
 			"imgHeight": "320",
+			"divTipClass": "tipBox",
 			"h1Text": "All About Basketball",
 			"anchorLink": "javascript:changeView('container-wrappers-1');",
 			"anchorClass": "botoncito"
 		},
 		{
 			"liSliderId": "thirdCarousel",
-			"liSliderClass": "thirdanimation",
+			"liSliderClass": "thirdanimation slide-carouselCss",
 			"imgSrc": "img/carousel/taekwondo.jpg",
 			"imgAlt": "taekwondo",
 			"imgWidth": "680",
 			"imgHeight": "320",
+			"divTipClass": "tipBox",
 			"h1Text": "Taekwondo",
 			"anchorLink": "javascript:changeView('container-wrappers-2');",
 			"anchorClass": "botoncito"
 		},
 		{
 			"liSliderId": "fourthCarousel",
-			"liSliderClass": "fourthanimation",
+			"liSliderClass": "fourthanimation slide-carouselCss",
 			"imgSrc": "img/carousel/volleyball.jpg",
 			"imgAlt": "Volleyball",
 			"imgWidth": "680",
 			"imgHeight": "320",
+			"divTipClass": "tipBox",
 			"h1Text": "All About Volleyball",
 			"anchorLink": "javascript:changeView('container-wrappers-4');",
 			"anchorClass": "botoncito"
 		},
 		{
 			"liSliderId": "fifthCarousel",
-			"liSliderClass": "fifthanimation",
+			"liSliderClass": "fifthanimation slide-carouselCss",
 			"imgSrc": "img/carousel/twoCompetators.jpg",
 			"imgAlt": "Football",
 			"imgWidth": "680",
 			"imgHeight": "320",
+			"divTipClass": "tipBox",
 			"h1Text": "All About Football",
+			"anchorLink": "javascript:changeView('container-wrappers-5');",
+			"anchorClass": "botoncito"
+		}
+		],
+		[
+		{
+			"liSliderId": null,
+			"liSliderClass": "slide fade",
+			"imgSrc": "img/carousel/ballNet.jpg",
+			"imgAlt": "Football",
+			"imgWidth": "680",
+			"imgHeight": "320",
+			"divTipClass": "carousel-caption",
+			"h1Text": "All About Football",
+			"pText": "All about football including a glossary of terms, players, rules",
+			"btnClass": "btn btn--green pull-right",
+			"btnText": "Bet Now",
+			"anchorLink": "javascript:changeView('container-wrappers-0');",
+			"anchorClass": "botoncito"
+		},
+		{
+			"liSliderId": null,
+			"liSliderClass": "slide fade",
+			"imgSrc": "img/carousel/basketball.jpg",
+			"imgAlt": "Basketball",
+			"imgWidth": "680",
+			"imgHeight": "320",
+			"divTipClass": "carousel-caption",
+			"h1Text": "All About Basketball",
+			"pText": "Compare basketball betting odds and place your bets with bookmaker that benefits you the most.",
+			"btnClass": "btn btn--green pull-right",
+			"btnText": "Bet Now",
+			"anchorLink": "javascript:changeView('container-wrappers-1');",
+			"anchorClass": "botoncito"
+		},
+		{
+			"liSliderId": null,
+			"liSliderClass": "slide fade",
+			"imgSrc": "img/carousel/taekwondo.jpg",
+			"imgAlt": "taekwondo",
+			"imgWidth": "680",
+			"imgHeight": "320",
+			"divTipClass": "carousel-caption",
+			"h1Text": "Taekwondo",
+			"pText": "Get the best Martial Arts betting and Taekwondo odds from the Home Of Betting.",
+			"btnClass": "btn btn--green pull-right",
+			"btnText": "Bet Now",
+			"anchorLink": "javascript:changeView('container-wrappers-2');",
+			"anchorClass": "botoncito"
+		},
+		{
+			"liSliderId": null,
+			"liSliderClass": "slide fade",
+			"imgSrc": "img/carousel/volleyball.jpg",
+			"imgAlt": "Volleyball",
+			"imgWidth": "680",
+			"imgHeight": "320",
+			"divTipClass": "carousel-caption",
+			"h1Text": "All About Volleyball",
+			"pText": "Volleyball Betting with us, come and experience the thrill of the game with the latest Volleyball Betting Odds. ",
+			"btnClass": "btn btn--green pull-right",
+			"btnText": "Bet Now",
+			"anchorLink": "javascript:changeView('container-wrappers-4');",
+			"anchorClass": "botoncito"
+		},
+		{
+			"liSliderId": null,
+			"liSliderClass": "slide fade",
+			"imgSrc": "img/carousel/twoCompetators.jpg",
+			"imgAlt": "Football",
+			"imgWidth": "680",
+			"imgHeight": "320",
+			"divTipClass": "carousel-caption",
+			"h1Text": "All About Football",
+			"pText": "Football Betting from Us. Our Elite Football Coupon.",
+			"btnClass": "btn btn--green pull-right",
+			"btnText": "Bet Now",
 			"anchorLink": "javascript:changeView('container-wrappers-5');",
 			"anchorClass": "botoncito"
 		}
 		]
 	],
 	"wrapperId": [
-		"wrapper6"
+		"wrapper6",
+		"wrapper10"
+	],
+	"barProgress": [
+		true,
+		false
+	],
+	"arrows": [
+		[null, null],
+		["prev triangle left", "next triangle right"]
+	],
+	"dotsActive": [
+		false,
+		true
 	]
 }

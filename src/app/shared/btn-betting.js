@@ -62,7 +62,7 @@ var buttons = function() {
 
         var btnJoin;
         btnJoin = document.createElement('button');
-        btnJoin.setAttribute('class', 'btn btn--join');
+        btnJoin.setAttribute('class', 'btn btn--green');
         //linkJoin = document.createElement('A');
         btnJoin.setAttribute('href', '#');
         btnJoinText = document.createTextNode('Join');

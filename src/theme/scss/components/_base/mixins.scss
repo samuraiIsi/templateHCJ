@@ -1,7 +1,6 @@
 // _buttonsFeatures.scss
-@mixin featureButtons($fontSize, $bgColor, $padding, $maxHeight) {
+@mixin featureButtons($fontSize, $bgColor, $maxHeight) {
     background-color: $bgColor;
-    padding: $padding;
     font-size: $fontSize;
     position: relative;
     max-height: $maxHeight;

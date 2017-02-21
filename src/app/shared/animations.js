@@ -1,14 +1,12 @@
-var toggleBtnMenuIcon, access, i, openTab, tabcontent, classTabContent, classLinkTab, tablinks, closeWrapper2, closeLoginModel, openLoginModal, validateForm, error, onblurLoginInput, closeValidatedModel, searchList, counter, backBtn, openPanel, changeView, panel, textBtn, counterVx = 0;
+var toggleBtnMenuIcon, access, i, openTab, tabcontent, classTabContent, classLinkTab, tablinks, closeWrapper2, closeLoginModel, openLoginModal, validateForm, error, onblurLoginInput, closeValidatedModel, searchList, counter, backBtn, openPanel, changeView, panel, textBtn, counterVx = 0, slideIndex = 1, myTimer, plusSlides, currentSlide, showSlides, stopSlider, reStartSlider;
 toggleBtnMenuIcon = function(toggling) {
     toggling.classList.toggle("change");
     document.getElementById("subHeader").classList.toggle("show");
 };
-
 toogleBtnDropDown = function(toggling) {
     toggling.lastChild.classList.toggle("activecord");
     toggling.nextElementSibling.classList.toggle("show");
 };
-
 openTab = function(evt, tabsName) {
     classTabContent = evt.currentTarget.attributes.class.nodeValue.slice(9, 10);
     tabcontent = document.getElementsByClassName("tabcontent-" + classTabContent);
@@ -28,7 +26,6 @@ openTab = function(evt, tabsName) {
     }
 
 };
-
 openPanel = function(evt, tabsName) {
     panel = document.getElementsByClassName("panel");
     btnMed = document.getElementsByClassName("btnMed");
@@ -49,7 +46,6 @@ openPanel = function(evt, tabsName) {
     evt.currentTarget.className += " activeBtn";
     window.scrollTo(0, 0);
 };
-
 changeView = function(viewName) {
     viewContainer = document.getElementsByClassName("view-container");
     for (i = 0; i < viewContainer.length; i++) {
@@ -57,19 +53,15 @@ changeView = function(viewName) {
     }
     document.getElementById(viewName).style.display = "block";
 };
-
 closeWrapper2 = function() {
     document.getElementById('wrapper2').style.display = 'none';
 };
-
 openLoginModal = function() {
     document.getElementById('loginModal').style.display = 'block';
 };
-
 closeLoginModel = function() {
     document.getElementById('loginModal').style.display = 'none';
 };
-
 validateForm = function() {
     var userName = document.forms["loginForm"]["uname"].value;
     var password = document.forms["loginForm"]["psw"].value;
@@ -86,19 +78,16 @@ validateForm = function() {
         document.getElementById('validatedPopUp').style.display = 'block';
     }
 };
-
 closeValidatedModel = function() {
     document.getElementById('validatedPopUp').style.display = 'none';
     document.forms["loginForm"]["psw"].value = '';
 }
-
 onblurLoginInput = function() {
     error = document.getElementsByClassName("error");
     for (i = 0; i < error.length; i++) {
         error[i].style.display = "none";
     }
 }
-
 searchList = function() {
     var input, filter, containerWrapper, article, a, i;
     input = document.getElementById("searchInput");
@@ -114,7 +103,6 @@ searchList = function() {
         }
     }
 };
-
 counter = function(evt) {
     var counterEl = document.getElementById("counter"),
         btnSelected = document.getElementById(evt.id);
@@ -131,7 +119,6 @@ counter = function(evt) {
 var isBelowPageFold = function() {
     return (window.scrollY || window.pageYOffset) > window.screen.height / 24;
 };
-
 window.onscroll = function() {
     var getClassElement = document.getElementById('btnTopId').className;
     if (isBelowPageFold() || getClassElement == 'btnTopClass fadeIn') {
@@ -142,7 +129,6 @@ window.onscroll = function() {
         }
     }
 };
-
 function currentYPosition() {
     if (self.pageYOffset) return self.pageYOffset;
     if (document.documentElement && document.documentElement.scrollTop)
@@ -150,7 +136,6 @@ function currentYPosition() {
     if (document.body.scrollTop) return document.body.scrollTop;
     return 0;
 }
-
 function elmYPosition(eID) {
     var elm = document.getElementById(eID);
     var y = elm.offsetTop;
@@ -161,7 +146,6 @@ function elmYPosition(eID) {
     }
     return y;
 }
-
 function smoothScroll(eID) {
     var startY = currentYPosition();
     var stopY = elmYPosition(eID);
@@ -192,7 +176,6 @@ function smoothScroll(eID) {
     }
     return false;
 }
-
 var sortTable = function(n) {
     var table, rows, switching, i, antiElem, postElem, shouldSwitch, dir, numx, numy, switchcount = 0;
     table = n.parentNode.parentNode.parentNode;
@@ -289,3 +272,35 @@ var typeEffect = function(){
     };
     startFrame();
 };
+plusSlides = function(n) {
+    return function(){
+        showSlides(slideIndex += n);
+        clearTimeout(myTimer);
+    }
+    
+}
+currentSlide = function(n) {
+    return function(){
+        showSlides(slideIndex = n);
+        clearTimeout(myTimer);
+    }
+}
+stopSlider = function(){
+    clearTimeout(myTimer);
+    slideIndex--;
+}
+reStartSlider = function(){showSlides(slideIndex)}
+showSlides = function(n) {
+    var i, slides, dots;
+    slides = document.getElementsByClassName("slide");
+    dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) { slides[i].style.display = "none";}
+    if (n > slides.length) slideIndex = 1;    
+    if (n < 1) slideIndex = slides.length;
+    if (slideIndex> slides.length) slideIndex = 1;    
+    for (i = 0; i < dots.length; i++) { dots[i].className = dots[i].className.replace(" dot--active", "");}
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " dot--active";
+    slideIndex++;
+    myTimer = setTimeout(showSlides, 4000);
+}

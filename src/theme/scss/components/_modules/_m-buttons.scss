@@ -64,7 +64,11 @@
         @include sizingButtons($standPaddingBtn, 12px, 1.3px, 4px);
     }
 }
-
+.btn--default {
+    &:hover{
+         background-color: #bfbdc1;
+    }
+}
 .btn--big {
     padding: 14px 20px;
     margin: 8px 0;
@@ -126,7 +130,7 @@
 }
 
 .btn--login {
-    @include featureButtons(13px, $colorLogin, 0.4em, 24px);
+    @include featureButtons(13px, $colorLogin, 24px);
     transition: all 0.25s;
     width: 70px;
     &:hover {
@@ -168,8 +172,8 @@
     border: solid 1px #fff;
 }
 
-.btn--join {
-    @include featureButtons(13px, $colorJoin, 0, 24px);
+.btn--green {
+    @include featureButtons(13px, $colorJoin, 24px);
     &:hover {
         background-color: #00ccb1;
     }
@@ -277,10 +281,10 @@ button.btn.btn--primary {
     }
 }
 
-.view-container {
-    button {
-        &:hover {
-            background-color: #bfbdc1;
-        }
-    }
-}
+// .view-container {
+//     button {
+//         &:hover {
+//             background-color: #bfbdc1;
+//         }
+//     }
+// }
