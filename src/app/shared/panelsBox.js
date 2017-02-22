@@ -53,7 +53,8 @@ var panelsBox =  function(){
 		  	divFooter.appendChild(divFooterText);
 		  	divParent.appendChild(divFooter);
 		  	article.appendChild(divParent);
-		  	document.getElementById('wrapper9').appendChild(article); 
+		  	
+		  	document.getElementById(data.wrappersId[i]).appendChild(article); 
 	  	}
 	  	
   	};

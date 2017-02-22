@@ -26,9 +26,9 @@
 		},
 		{
 			"containerId": 5,
-			"wrapperId": [10],
+			"wrapperId": [10, 11],
 			"containerClass": "flex-container-lg flex-container--vertical",
-			"classAmount": ["wrapper-3"]
+			"classAmount": ["wrapper-3", "wrapper-3 flex-container margin-auto"]
 		}
 	]
 }
