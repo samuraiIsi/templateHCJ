@@ -26,7 +26,7 @@ var eventsLists = function() {
                 divEL.setAttribute('id', data.tabs[s].eventsList[i].idDiv);
                 headerEL = document.createElement('header');
                 headerEL.setAttribute('class', data.tabs[s].eventsList[i].headerClass);
-                headerEL.setAttribute('onclick', 'toogleBtnDropDown(this)');
+                headerEL.onclick = (function() { return function() { toogleBtnDropDown(this); }})();
                 h4EL = document.createElement('h4');
                 h4EL.setAttribute('class', data.tabs[s].eventsList[i].h4Class)
                 h4ELText = document.createTextNode(data.tabs[s].eventsList[i].h4Text);
@@ -86,7 +86,12 @@ var eventsLists = function() {
                     aBtn = document.createElement('button');
                     aBtn.setAttribute('href', data.tabs[s].eventsList[i].divBtnListEL[t].aBtnLink);
                     aBtn.setAttribute('class', 'btnMed');
-                    aBtn.setAttribute('onclick', 'openPanel' + '(' + 'event' + ', ' + "'" + data.tabs[s].eventsList[i].divBtnListEL[t].aPanelId + "'" + ')');
+                    aBtn.onclick = (function() {
+                        var currentI = i, currentS = s, currentT = t;
+                        return function() { 
+                            openPanel(event, data.tabs[currentS].eventsList[currentI].divBtnListEL[currentT].aPanelId);
+                        }
+                    })();
                     aBtnText = document.createTextNode(data.tabs[s].eventsList[i].divBtnListEL[t].aBtnText);
                     iconBtn = document.createElement('i');
                     iconBtn.setAttribute('class', data.tabs[s].eventsList[i].divBtnListEL[t].iconBtnClass);

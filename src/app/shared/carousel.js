@@ -72,7 +72,7 @@ var carousel = function(){
 					pTip = document.createElement('p');
 					btn = document.createElement('button');
 					btn.setAttribute('class', data.carousel[i][j].btnClass);
-					btn.setAttribute('onclick', data.carousel[i][j].anchorLink);
+					btn.addEventListener('click', eval(data.carousel[i][j].anchorLink));
 					btnText = document.createTextNode(data.carousel[i][j].btnText);
 					pTipText = document.createTextNode(data.carousel[i][j].pText);
 					pTip.appendChild(pTipText);

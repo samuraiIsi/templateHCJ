@@ -24,7 +24,6 @@ openTab = function(evt, tabsName) {
     } else {
         evt.currentTarget.className += " activetab";
     }
-
 };
 openPanel = function(evt, tabsName) {
     panel = document.getElementsByClassName("panel");
@@ -36,7 +35,7 @@ openPanel = function(evt, tabsName) {
         panel[i].style.display = "none";
     }
     textBtn = evt.currentTarget.childNodes[0];
-    if (tabsName === 'panel-0' && textBtn.data === 'All Races') {
+    if (tabsName === 'panel-0') {
         for (i = 0; i < panel.length; i++) {
             panel[i].style.display = "block";
         }
@@ -47,11 +46,13 @@ openPanel = function(evt, tabsName) {
     window.scrollTo(0, 0);
 };
 changeView = function(viewName) {
-    viewContainer = document.getElementsByClassName("view-container");
-    for (i = 0; i < viewContainer.length; i++) {
-        viewContainer[i].style.display = "none";
-    }
-    document.getElementById(viewName).style.display = "block";
+    return function(){
+        viewContainer = document.getElementsByClassName("view-container");
+        for (i = 0; i < viewContainer.length; i++) {
+            viewContainer[i].style.display = "none";
+        }
+        document.getElementById(viewName).style.display = "block";
+    };
 };
 closeWrapper2 = function() {
     document.getElementById('wrapper2').style.display = 'none';
@@ -63,20 +64,20 @@ closeLoginModel = function() {
     document.getElementById('loginModal').style.display = 'none';
 };
 validateForm = function() {
-    var userName = document.forms["loginForm"]["uname"].value;
-    var password = document.forms["loginForm"]["psw"].value;
-    error = document.getElementsByClassName("error");
-    for (i = 0; i < error.length; i++) {
-        error[i].style.display = "none";
-    }
-    if (userName == null || userName == "") {
-        error[0].style.display = "block";
-    } else if (password == null || password == "") {
-        error[1].style.display = "block";
-    } else {
-        document.getElementById('loginModal').style.display = 'none';
-        document.getElementById('validatedPopUp').style.display = 'block';
-    }
+        var userName = document.forms["loginForm"]["uname"].value;
+        var password = document.forms["loginForm"]["psw"].value;
+        error = document.getElementsByClassName("error");
+        for (i = 0; i < error.length; i++) {
+            error[i].style.display = "none";
+        }
+        if (userName == null || userName == "") {
+            error[0].style.display = "block";
+        } else if (password == null || password == "") {
+            error[1].style.display = "block";
+        } else {
+            document.getElementById('loginModal').style.display = 'none';
+            document.getElementById('validatedPopUp').style.display = 'block';
+        }
 };
 closeValidatedModel = function() {
     document.getElementById('validatedPopUp').style.display = 'none';
@@ -147,34 +148,36 @@ function elmYPosition(eID) {
     return y;
 }
 function smoothScroll(eID) {
-    var startY = currentYPosition();
-    var stopY = elmYPosition(eID);
-    var distance = stopY > startY ? stopY - startY : startY - stopY;
-    if (distance < 100) {
-        scrollTo(0, stopY);
-        return;
-    }
-    var speed = Math.round(distance / 100);
-    if (speed >= 20) speed = 20;
-    var step = Math.round(distance / 25);
-    var leapY = stopY > startY ? startY + step : startY - step;
-    var timer = 0;
-    if (stopY > startY) {
-        for (var i = startY; i < stopY; i += step) {
+    return function() {
+        var startY = currentYPosition();
+        var stopY = elmYPosition(eID);
+        var distance = stopY > startY ? stopY - startY : startY - stopY;
+        if (distance < 100) {
+            scrollTo(0, stopY);
+            return;
+        }
+        var speed = Math.round(distance / 100);
+        if (speed >= 20) speed = 20;
+        var step = Math.round(distance / 25);
+        var leapY = stopY > startY ? startY + step : startY - step;
+        var timer = 0;
+        if (stopY > startY) {
+            for (var i = startY; i < stopY; i += step) {
+                setTimeout("window.scrollTo(0, " + leapY + ")", timer * speed);
+                leapY += step;
+                if (leapY > stopY) leapY = stopY;
+                timer++;
+            }
+            return;
+        }
+        for (var i = startY; i > stopY; i -= step) {
             setTimeout("window.scrollTo(0, " + leapY + ")", timer * speed);
-            leapY += step;
-            if (leapY > stopY) leapY = stopY;
+            leapY -= step;
+            if (leapY < stopY) leapY = stopY;
             timer++;
         }
-        return;
+        return false;
     }
-    for (var i = startY; i > stopY; i -= step) {
-        setTimeout("window.scrollTo(0, " + leapY + ")", timer * speed);
-        leapY -= step;
-        if (leapY < stopY) leapY = stopY;
-        timer++;
-    }
-    return false;
 }
 var sortTable = function(n) {
     var table, rows, switching, i, antiElem, postElem, shouldSwitch, dir, numx, numy, switchcount = 0;

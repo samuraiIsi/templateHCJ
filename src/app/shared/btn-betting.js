@@ -36,9 +36,7 @@ var buttons = function() {
         var btnLogin, iconLinkLogin;
         btnLogin = document.createElement('button');
         btnLogin.setAttribute('class', 'btn btn--login hidden-sm');
-        btnLogin.setAttribute('href', 'javascript:void(0)');
-        btnLogin.setAttribute('onclick', 'openLoginModal()');
-        //btnLoginText = document.createTextNode('Login');
+        btnLogin.addEventListener('click', openLoginModal);
         spanLogin = document.createElement('span');
         spanLoginText = document.createTextNode('Login');
         spanLogin.appendChild(spanLoginText);
@@ -51,19 +49,15 @@ var buttons = function() {
         var btnLoginHead, linkLoginHead, linkLoginHeadText;
         btnLoginHead = document.createElement('button');
         btnLoginHead.setAttribute('class', 'btn--circle btn--circle--sm btn--login--sm hidden-md');
-        btnLoginHead.setAttribute('onclick', 'openLoginModal()');
-        //linkLoginHead = document.createElement('A');
-        btnLoginHead.setAttribute('href', 'javascript:void(0)');
+        btnLoginHead.addEventListener('click', openLoginModal);
         iconLoginHead = document.createElement('i');
         iconLoginHead.setAttribute('class', 'fs11 icon-login-head');
-        //btnLoginHead.appendChild(linkLoginHead);
         btnLoginHead.appendChild(iconLoginHead);
         document.getElementById('loginArea').appendChild(btnLoginHead);
 
         var btnJoin;
         btnJoin = document.createElement('button');
         btnJoin.setAttribute('class', 'btn btn--green');
-        //linkJoin = document.createElement('A');
         btnJoin.setAttribute('href', '#');
         btnJoinText = document.createTextNode('Join');
         btnJoin.appendChild(btnJoinText);
@@ -76,8 +70,6 @@ var buttons = function() {
         divBtBk.setAttribute('class', data.btnBkAr.divClass);
         linkBtBk = document.createElement('button');
         linkBtBk.setAttribute('class', data.btnBkAr.btnClass);
-        linkBtBk.setAttribute('href', data.btnBkAr.linkAtt);
-        linkBtBk.setAttribute('onclick', 'backBtn()');
         iconBtBk = document.createElement('i');
         iconBtBk.setAttribute('class', data.btnBkAr.iconClass);
         linkBtBk.appendChild(iconBtBk);
@@ -90,8 +82,7 @@ var buttons = function() {
         btnHEl = document.createElement('button');
         btnHEl.setAttribute('class', data.btnHorse.btnClass);
         btnHEl.setAttribute('href', data.btnHorse.btnLink);
-        btnHEl.setAttribute('onclick', 'changeView' + '(' + "'" + data.btnHorse.btnMethodValue + "'" + ')');
-
+        btnHEl.addEventListener('click', changeView(data.btnHorse.btnMethodValue));
         iconBtnH = document.createElement('i');
         iconBtnH.setAttribute('class', data.btnHorse.iconClass);
         spanBtnH = document.createElement('span');
@@ -112,7 +103,7 @@ var buttons = function() {
             btnVert = document.createElement('button');
             btnVert.setAttribute('class', data.btnVerticalinf[i].btnClass);
             btnVert.setAttribute('href', data.btnVerticalinf[i].linkAtt);
-            btnVert.setAttribute('onclick', 'changeView' + '(' + "'" + data.btnVerticalinf[i].btnMethodValue + "'" + ')');
+            btnVert.addEventListener('click', changeView(data.btnVerticalinf[i].btnMethodValue));
             spanVert = document.createElement('span');
             spanVert.setAttribute('id', data.btnVerticalinf[i].badgeCounter);
             spanVert.setAttribute('class', data.btnVerticalinf[i].badgeClass);
@@ -125,7 +116,6 @@ var buttons = function() {
             btnVert.appendChild(spanVert);
             btnVert.appendChild(iconBtnVert);
             btnVert.appendChild(pBtnVert);
-            //btnVert.appendChild(linkBtBk);
             btnVertParent.appendChild(btnVert);
         }
         document.getElementById('subHeaderChild').appendChild(btnVertParent);
@@ -140,7 +130,7 @@ var buttons = function() {
             liBC.setAttribute('class', info.listBtnCirclesLiData[i].liClass);
             aBC = document.createElement('a');
             aBC.setAttribute('href', info.listBtnCirclesLiData[i].aLink);
-            aBC.setAttribute('onclick', 'changeView' + '(' + "'" + info.listBtnCirclesLiData[i].aMethod + "'" + ')');
+            aBC.addEventListener('click', changeView(info.listBtnCirclesLiData[i].aMethod));
             divBC = document.createElement('div');
             divBC.setAttribute('class', info.listBtnCirclesLiData[i].divClass)
             iconBC = document.createElement('i');
@@ -163,11 +153,10 @@ var buttons = function() {
         divBtnToTop = document.createElement('button');
         divBtnToTop.setAttribute('class', 'btnTopClass');
         divBtnToTop.setAttribute('id', 'btnTopId');
-        divBtnToTop.setAttribute('onclick', 'smoothScroll('+ '"backTopCall"'+ ')');
+        divBtnToTop.addEventListener('click', smoothScroll('backTopCall'));
         iIconTopBtn = document.createElement('i');
         iIconTopBtn.setAttribute('class', 'icon arrow-left');
         divBtnToTop.appendChild(iIconTopBtn);
-
         document.getElementById('bodyContainer').appendChild(divBtnToTop);
     }
     btnBetting();

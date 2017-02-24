@@ -10,7 +10,7 @@
 			"imgHeight": "320",
 			"divTipClass": "tipBox",
 			"h1Text": "All About Football",
-			"anchorLink": "javascript:changeView('container-wrappers-0');",
+			"anchorLink": "changeView('container-wrappers-0');",
 			"anchorClass": "botoncito"
 		},
 		{
@@ -22,7 +22,7 @@
 			"imgHeight": "320",
 			"divTipClass": "tipBox",
 			"h1Text": "All About Basketball",
-			"anchorLink": "javascript:changeView('container-wrappers-1');",
+			"anchorLink": "changeView('container-wrappers-1');",
 			"anchorClass": "botoncito"
 		},
 		{
@@ -34,7 +34,7 @@
 			"imgHeight": "320",
 			"divTipClass": "tipBox",
 			"h1Text": "Taekwondo",
-			"anchorLink": "javascript:changeView('container-wrappers-2');",
+			"anchorLink": "changeView('container-wrappers-2');",
 			"anchorClass": "botoncito"
 		},
 		{
@@ -46,7 +46,7 @@
 			"imgHeight": "320",
 			"divTipClass": "tipBox",
 			"h1Text": "All About Volleyball",
-			"anchorLink": "javascript:changeView('container-wrappers-4');",
+			"anchorLink": "changeView('container-wrappers-4');",
 			"anchorClass": "botoncito"
 		},
 		{
@@ -58,7 +58,7 @@
 			"imgHeight": "320",
 			"divTipClass": "tipBox",
 			"h1Text": "All About Football",
-			"anchorLink": "javascript:changeView('container-wrappers-5');",
+			"anchorLink": "changeView('container-wrappers-5');",
 			"anchorClass": "botoncito"
 		}
 		],
@@ -75,7 +75,7 @@
 			"pText": "All about football including a glossary of terms, players, rules",
 			"btnClass": "btn btn--green pull-right",
 			"btnText": "Bet Now",
-			"anchorLink": "javascript:changeView('container-wrappers-0');",
+			"anchorLink": "changeView('container-wrappers-0');",
 			"anchorClass": "botoncito"
 		},
 		{
@@ -90,7 +90,7 @@
 			"pText": "Compare basketball betting odds and place your bets with bookmaker that benefits you the most.",
 			"btnClass": "btn btn--green pull-right",
 			"btnText": "Bet Now",
-			"anchorLink": "javascript:changeView('container-wrappers-1');",
+			"anchorLink": "changeView('container-wrappers-1');",
 			"anchorClass": "botoncito"
 		},
 		{
@@ -105,7 +105,7 @@
 			"pText": "Get the best Martial Arts betting and Taekwondo odds from the Home Of Betting.",
 			"btnClass": "btn btn--green pull-right",
 			"btnText": "Bet Now",
-			"anchorLink": "javascript:changeView('container-wrappers-2');",
+			"anchorLink": "changeView('container-wrappers-2');",
 			"anchorClass": "botoncito"
 		},
 		{
@@ -120,7 +120,7 @@
 			"pText": "Volleyball Betting with us, come and experience the thrill of the game with the latest Volleyball Betting Odds. ",
 			"btnClass": "btn btn--green pull-right",
 			"btnText": "Bet Now",
-			"anchorLink": "javascript:changeView('container-wrappers-4');",
+			"anchorLink": "changeView('container-wrappers-4');",
 			"anchorClass": "botoncito"
 		},
 		{
@@ -135,7 +135,7 @@
 			"pText": "Football Betting from Us. Our Elite Football Coupon.",
 			"btnClass": "btn btn--green pull-right",
 			"btnText": "Bet Now",
-			"anchorLink": "javascript:changeView('container-wrappers-5');",
+			"anchorLink": "changeView('container-wrappers-5');",
 			"anchorClass": "botoncito"
 		}
 		]
