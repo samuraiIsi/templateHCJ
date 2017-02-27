@@ -24,7 +24,8 @@ var panelsBox =  function(){
 		  	divBody = document.createElement('div');
 		  	divBody.setAttribute('class', data.panelsBox[i].divBodyClass);
 		  	anchor = document.createElement('a');
-		  	anchor.setAttribute('href', data.panelsBox[i].anchorLink);
+		  	anchor.setAttribute('href', '#');
+		  	anchor.addEventListener('click', changeView(data.panelsBox[i].anchorLink));
 		  	anchor.setAttribute('class', data.panelsBox[i].anchorClass);
 		  	divCaption = document.createElement('div');
 		  	divCaption.setAttribute('class', data.panelsBox[i].divCaptionClass);

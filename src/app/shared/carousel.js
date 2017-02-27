@@ -46,7 +46,8 @@ var carousel = function(){
 				spanDot.setAttribute('class', 'dot');
 				spanDot.addEventListener('click', currentSlide(j + 1), false);
 				anchor = document.createElement('a');
-				anchor.setAttribute('href', data.carousel[i][j].anchorLink);
+				anchor.setAttribute('href', '#');
+				anchor.addEventListener('click', eval(data.carousel[i][j].anchorLink));
 				anchor.setAttribute('class', data.carousel[i][j].anchorClass);
 				imgSlider = document.createElement('img');
 				imgSlider.setAttribute('src', data.carousel[i][j].imgSrc);
@@ -57,11 +58,7 @@ var carousel = function(){
 				divTip.setAttribute('class', data.carousel[i][j].divTipClass);
 				h1Tip =document.createElement('h1');
 				h1TipText = document.createTextNode(data.carousel[i][j].h1Text);
-				anchor = document.createElement('a');
-				anchor.setAttribute('href', data.carousel[i][j].anchorLink);
-				anchor.setAttribute('class', data.carousel[i][j].anchorClass);
 				divPaginationWrapper.appendChild(spanDot);
-				
 				if(data.carousel[i][j].liSliderId != null) {
 					anchor.appendChild(imgSlider);
 					h1Tip.appendChild(h1TipText);

@@ -28,7 +28,7 @@
 		}
 	],
 	"btnLoginType": "button",
-	"btnLoginMethod": "validateForm()",
+	"btnLoginMethod": "validateForm",
 	"btnLoginClass": "btn--big",
 	"inputCheckText": "Remeber Me",
 	"divFooterClass": "container-login pt-0",

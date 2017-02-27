@@ -23,7 +23,12 @@ var tabsComponent = function() {
             aTabsTwo = document.createElement('a');
             aTabsTwo.setAttribute('href', data.navTabsTwoLi[i].aLink);
             aTabsTwo.setAttribute('class', data.navTabsTwoLi[i].aClass);
-            aTabsTwo.setAttribute('onclick', 'openTab' + '(' + 'event' + ', ' + "'" + data.navTabsTwoLi[i].city + "'" + ')');
+            aTabsTwo.onclick =  (function() { 
+                var currentI = i;
+                return function(){
+                    openTab(event, data.navTabsTwoLi[currentI].city);
+                }
+            })();
             aTabsTwoText = document.createTextNode(data.navTabsTwoLi[i].aText);
             aTabsTwo.appendChild(aTabsTwoText);
             liTabsTwo.appendChild(aTabsTwo);
@@ -40,7 +45,12 @@ var tabsComponent = function() {
                 aTabsThree = document.createElement('a');
                 aTabsThree.setAttribute('href', data.navTabsThreeLi[i][j].aLink);
                 aTabsThree.setAttribute('class', data.navTabsThreeLi[i][j].aClass);
-                aTabsThree.setAttribute('onclick', 'openTab' + '(' + 'event' + ', ' + "'" + data.navTabsThreeLi[i][j].city + "'" + ')');
+                aTabsThree.onclick = (function() { 
+                    var currentI = i, currentJ = j;
+                    return function() {
+                        openTab(event, data.navTabsThreeLi[currentI][currentJ].city);
+                    }
+                })();
                 aTabsThreeText = document.createTextNode(data.navTabsThreeLi[i][j].aText);
                 aTabsThree.appendChild(aTabsThreeText);
                 liTabsThree.appendChild(aTabsThree);

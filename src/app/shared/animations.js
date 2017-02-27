@@ -64,20 +64,20 @@ closeLoginModel = function() {
     document.getElementById('loginModal').style.display = 'none';
 };
 validateForm = function() {
-        var userName = document.forms["loginForm"]["uname"].value;
-        var password = document.forms["loginForm"]["psw"].value;
-        error = document.getElementsByClassName("error");
-        for (i = 0; i < error.length; i++) {
-            error[i].style.display = "none";
-        }
-        if (userName == null || userName == "") {
-            error[0].style.display = "block";
-        } else if (password == null || password == "") {
-            error[1].style.display = "block";
-        } else {
-            document.getElementById('loginModal').style.display = 'none';
-            document.getElementById('validatedPopUp').style.display = 'block';
-        }
+    var userName = document.forms["loginForm"]["uname"].value;
+    var password = document.forms["loginForm"]["psw"].value;
+    error = document.getElementsByClassName("error");
+    for (i = 0; i < error.length; i++) {
+        error[i].style.display = "none";
+    }
+    if (userName == null || userName == "") {
+        error[0].style.display = "block";
+    } else if (password == null || password == "") {
+        error[1].style.display = "block";
+    } else {
+        document.getElementById('loginModal').style.display = 'none';
+        document.getElementById('validatedPopUp').style.display = 'block';
+    }
 };
 closeValidatedModel = function() {
     document.getElementById('validatedPopUp').style.display = 'none';

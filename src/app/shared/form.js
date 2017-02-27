@@ -56,7 +56,7 @@ var forms = function() {
         }
         btnLogin = document.createElement('button');
         btnLogin.setAttribute('type', data.btnLoginType);
-        btnLogin.setAttribute('onclick', data.btnLoginMethod);
+        btnLogin.addEventListener('click', eval(data.btnLoginMethod));
         btnLogin.setAttribute('class', data.btnLoginClass);
         btnLoginText = document.createTextNode('Login');
         inputCheck = document.createElement('input');
@@ -71,7 +71,7 @@ var forms = function() {
         btnCancel = document.createElement('button');
         btnCancel.setAttribute('type', data.btnCancelType);
         btnCancel.setAttribute('class', data.btnCancelClass);
-        btnCancel.setAttribute('onclick', data.btnCancelMethod);
+        btnCancel.addEventListener('click', eval(data.spanHeaderMethod));
         btnCancelText = document.createTextNode('Cancel');
         spanForgot = document.createElement('span');
         spanForgot.setAttribute('class', data.spanForgotClass);

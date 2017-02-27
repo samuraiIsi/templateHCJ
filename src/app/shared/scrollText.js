@@ -22,7 +22,8 @@ var scrollText = function() {
 				liList = document.createElement('li');
 				liList.setAttribute('class', data.scrollText[i][j].liListClass);
 				anchor = document.createElement('a');
-				anchor.setAttribute('href', data.scrollText[i][j].anchorLink);
+				anchor.setAttribute('href', '#');
+				anchor.addEventListener('click', changeView(data.scrollText[i][j].anchorLink));
 				anchor.setAttribute('class', data.scrollText[i][j].anchorClass);
 				liListText = document.createTextNode(data.scrollText[i][j].liListText);
 				anchor.appendChild(liListText);
