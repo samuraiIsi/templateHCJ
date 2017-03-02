@@ -9,6 +9,9 @@
     .flag-position {
         margin-left: 0 !important;
     }
+    .slider-img.carouselCss {
+        min-height: 205px;
+    }
 }
 @media only screen and (max-width: 300px) {
   .carousel-caption {font-size: 11px}
@@ -120,8 +123,10 @@
         .wrapper-#{$i} {
             width: ($i * 33%) + 1%;
         }
+    }.wrapper-2--box {
+        width: 67%;
     }
-    .wrapper-1, .wrapper-2 {
+    .wrapper-1, .wrapper-2, .wrapper-2--box {
         margin-right: 1%;
     }
 }

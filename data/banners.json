@@ -22,7 +22,7 @@
 			"divMainId": "sports",
 			"divMainClass": "wrapper-3 margin-auto",
 			"divSecondClass": "bar-title bg-blue-dark-27 uppercaseLetter fs20 text-center letter-space-20",
-			"iClass": "icon-close hidden-lg",
+			"iClass": "",
 			"iMethod": "",
 			"h2Text": "sports",
 			"wrapperId": "wrapper6"

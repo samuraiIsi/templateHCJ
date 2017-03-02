@@ -28,7 +28,7 @@ var bannersComponent = function() {
             iconEl.setAttribute('class', data.bannersMain[i].iClass);
             iconEl.addEventListener('click', eval(data.bannersMain[i].iMethod));
             h2BMText = document.createTextNode(data.bannersMain[i].h2Text);
-            h2BM.appendChild(iconEl);
+            if(data.bannersMain[i].iClass != "") h2BM.appendChild(iconEl);
             h2BM.appendChild(h2BMText);
             divBS.appendChild(h2BM);
             divBM.appendChild(divBS);

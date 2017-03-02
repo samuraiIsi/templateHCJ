@@ -3,26 +3,34 @@
         text-align: #{$align};
     }
 }
-
 @each $alignment in $alignments {
     .alignIt-#{$alignment} {
         align-items: #{$alignment};
     }
 }
-
 @each $fontsStyle in $fontsStyles {
     .fst-#{$fontsStyle} {
         font-style: #{$fontsStyle};
     }
 }
-
 @each $side in $sides {
     .col-container-#{$side} {
         margin-#{$side}: $standardDistance - 5;
         flex-basis: 50%;
     }
 }
-
+@each $screenWidthsAnimation, $leftMove in $screenWidths {
+  @media only screen and (max-width: #{$screenWidthsAnimation}) {
+    $indexAnimation: 1;
+    @while $indexAnimation <= 5 {
+      .slider-img li.animation-#{$indexAnimation} {
+        animation: cycle-#{$indexAnimation}-#{$screenWidthsAnimation} 25s linear infinite;
+      }
+      $indexAnimation: $indexAnimation + 1;
+    }
+    
+  }
+}
 @for $i from 1 through 8 {
     .tabcontent-#{$i} {
         display: none;

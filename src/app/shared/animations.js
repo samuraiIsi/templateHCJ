@@ -52,6 +52,11 @@ changeView = function(viewName) {
             viewContainer[i].style.display = "none";
         }
         document.getElementById(viewName).style.display = "block";
+        if(viewName == 'container-wrappers-3') {
+            var getParentElement = document.getElementById('ulWrapper');
+            var getImgHeight = getParentElement.getElementsByTagName('img')[0].clientHeight;
+            document.getElementById('ulWrapper').style.height = getImgHeight + 'px';
+        }
     };
 };
 closeWrapper2 = function() {

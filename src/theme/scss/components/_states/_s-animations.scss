@@ -109,61 +109,61 @@ section {
     max-width: 650px;
     display: block;
 }
-
-@keyframes cycle {
-   0%  { left: 0px; } 
-   4%  { left: 0px; }
-   16% { left: 0px; opacity:1; z-index:0; }
-   20% { left: -680px; opacity: 0; z-index: 0; }
-   21% { left: 680px; opacity: 0; z-index: -1; }
-   92% { left: 680px; opacity: 0; z-index: 0; }
-   96% { left: 680px; opacity: 0; }
-   100%{ left: 0px; opacity: 1; }
-}
-
-@keyframes cycletwo {
-   0%  { left: 680px; opacity: 0; }
-   16% { left: 680px; opacity: 0; }
-   20% { left: 0px; opacity: 1; }
-   24% { left: 0px; opacity: 1; }
-   36% { left: 0px; opacity: 1; z-index: 0; }
-   40% { left: -680px; opacity: 0; z-index: 0; }
-   41% { left: 680px; opacity: 0; z-index: -1; }
-   100%{ left: 680px; opacity: 0; z-index: -1; }
-}
-
-@keyframes cyclethree {
-   0%  { left:  680px; opacity: 0; }
-   36% { left:  680px; opacity: 0; }
-   40% { left: 0px; opacity: 1; }
-   44% { left: 0px; opacity: 1; }
-   56% { left: 0px; opacity: 1; }
-   60% { left: -680px; opacity: 0; z-index: 0; }
-   61% { left:  680px; opacity: 0; z-index: -1; }
-   100%{ left:  680px; opacity: 0; z-index: -1; }
-}
-
-@keyframes cyclefour {
-   0%  { left: 680px; opacity: 0; }
-   56% { left: 680px; opacity: 0; }
-   60% { left: 0px; opacity: 1; }
-   64% { left: 0px; opacity: 1; }
-   76% { left: 0px; opacity: 1; z-index: 0; }
-   80% { left: -680px; opacity: 0; z-index: 0; }
-   81% { left: 680px; opacity: 0; z-index: -1; }
-   100%{ left: 680px; opacity: 0; z-index: -1; }
-}
-@keyframes cyclefive {
-   0%  { left: 680px; opacity: 0; }
-   76% { left: 680px; opacity: 0; }
-   80% { left: 0px; opacity: 1; }
-   84% { left: 0px; opacity: 1; }
-   96% { left: 0px; opacity: 1; z-index: 0; }
-   100%{ left: -680px; opacity: 0; z-index: 0; }
+@each $screenWidth, $leftMove in $screenWidths {
+    @media only screen and (max-width: #{$screenWidth}) {
+        @keyframes cycle-1-#{$screenWidth} {
+            0%  { left: 0px; } 
+            4%  { left: 0px; }
+            16% { left: 0px; opacity:1; z-index:0; }
+            20% { left: -$leftMove; opacity: 0; z-index: 0; }
+            21% { left: $leftMove; opacity: 0; z-index: -1; }
+            92% { left: $leftMove; opacity: 0; z-index: 0; }
+            96% { left: $leftMove; opacity: 0; }
+            100%{ left: 0px; opacity: 1; }
+        }
+        @keyframes cycle-2-#{$screenWidth} {
+            0%  { left: $leftMove; opacity: 0; }
+            16% { left: $leftMove; opacity: 0; }
+            20% { left: 0px; opacity: 1; }
+            24% { left: 0px; opacity: 1; }
+            36% { left: 0px; opacity: 1; z-index: 0; }
+            40% { left: -$leftMove; opacity: 0; z-index: 0; }
+            41% { left: $leftMove; opacity: 0; z-index: -1; }
+            100%{ left: $leftMove; opacity: 0; z-index: -1; }
+        }
+        @keyframes cycle-3-#{$screenWidth} {
+            0%  { left: $leftMove; opacity: 0; }
+            36% { left: $leftMove; opacity: 0; }
+            40% { left: 0px; opacity: 1; }
+            44% { left: 0px; opacity: 1; }
+            56% { left: 0px; opacity: 1; }
+            60% { left: -$leftMove; opacity: 0; z-index: 0; }
+            61% { left: $leftMove; opacity: 0; z-index: -1; }
+            100%{ left: $leftMove; opacity: 0; z-index: -1; }
+            }
+        @keyframes cycle-4-#{$screenWidth} {
+            0%  { left: $leftMove; opacity: 0; }
+            56% { left: $leftMove; opacity: 0; }
+            60% { left: 0px; opacity: 1; }
+            64% { left: 0px; opacity: 1; }
+            76% { left: 0px; opacity: 1; z-index: 0; }
+            80% { left: -$leftMove; opacity: 0; z-index: 0; }
+            81% { left: $leftMove; opacity: 0; z-index: -1; }
+            100%{ left: $leftMove; opacity: 0; z-index: -1; }
+        }
+        @keyframes cycle-5-#{$screenWidth} {
+            0%  { left: $leftMove; opacity: 0; }
+            76% { left: $leftMove; opacity: 0; }
+            80% { left: 0px; opacity: 1; }
+            84% { left: 0px; opacity: 1; }
+            96% { left: 0px; opacity: 1; z-index: 0; }
+            100%{ left: -$leftMove; opacity: 0; z-index: 0; }
+        }
+    }
 }
 .progress-bar {
-   position: relative;
-   top: -5px;
+   position: absolute;
+   bottom: 0;
    width: 680px;
    height: 5px;
    background: #000;

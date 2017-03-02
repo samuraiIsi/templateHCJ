@@ -14,6 +14,7 @@ var carousel = function(){
     var i;
 	var carouselComponent = function(data){
     	var divContainer, divcontentSlider, divSlider, divSliderWrapper, ulSlider, divBar, liSlider, imgSlider, divTip, h1Tip, pTip, pTipText, btn, btnText, anchor, dot, arrowSlider, paginationWrapper, spanDot, plusSlidesArray= [-2, 1];
+    	var screenWidth = window.screen.width;
 		for(i = 0; i < data.carousel.length; i++) {
 			divContainer = document.createElement('div');
 			divSliderWrapper = document.createElement('div');
@@ -22,12 +23,13 @@ var carousel = function(){
 			divcontentSlider = document.createElement('div');
 			divcontentSlider.setAttribute('class', 'contentSlider');
 			divSlider = document.createElement('div');
-			divSlider.setAttribute('class', 'slider-img');
+			divSlider.setAttribute('class', data.carouselType[i]);
 			divSliderWrapper.setAttribute('class', 'slider-imgWrapper');
 			divSliderWrapper.addEventListener('mouseenter', stopSlider);
 			divSliderWrapper.addEventListener('mouseleave', reStartSlider);
 			divPaginationWrapper.setAttribute('class', 'paginationWrapper')
 			ulSlider = document.createElement('ul');
+			if(data.carouselType[i] == "slider-img carouselCss img-responsive") ulSlider.setAttribute('id', 'ulWrapper');
 			divBar = document.createElement('div');
 			divBar.setAttribute('class', 'progress-bar');
 			for(var h = 0; h < data.arrows[i].length; h++) {
@@ -50,10 +52,11 @@ var carousel = function(){
 				anchor.addEventListener('click', eval(data.carousel[i][j].anchorLink));
 				anchor.setAttribute('class', data.carousel[i][j].anchorClass);
 				imgSlider = document.createElement('img');
-				imgSlider.setAttribute('src', data.carousel[i][j].imgSrc);
+				screenWidth > 567 ? imgSlider.setAttribute('src', data.carousel[i][j].imgSrcDouble) : imgSlider.setAttribute('src', data.carousel[i][j].imgSrcBasic)
 				imgSlider.setAttribute('alt', data.carousel[i][j].imgAlt);
 				imgSlider.setAttribute('width', data.carousel[i][j].imgWidth);
 				imgSlider.setAttribute('height', data.carousel[i][j].imgHeight);
+				imgSlider.setAttribute('class', 'img-responsive');
 				divTip = document.createElement('div');
 				divTip.setAttribute('class', data.carousel[i][j].divTipClass);
 				h1Tip =document.createElement('h1');
