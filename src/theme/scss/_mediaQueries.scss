@@ -16,6 +16,22 @@
 @media only screen and (max-width: 300px) {
   .carousel-caption {font-size: 11px}
 }
+@media only screen and (max-width: 320px) {
+    td, th { padding: 10px !important; }
+    .table-qualification.table--big {
+        td {
+            font-size: 19px;
+            display: flex !important;
+            &:before{
+                justify-content: flex-end !important;
+                width: 80px !important;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 568px) {
+    td {line-height: 1.2}
+}
 @media only screen and (min-width: 320px) and (max-width: 569px) {
     .hidden-sm {
         display: none !important;
@@ -87,6 +103,38 @@
 @media only screen and (min-width: 480px) and (max-width: 567px) {
     header div:nth-child(2).row {
         margin: 10px 5px;
+    }
+}
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+    .table-qualification.table--big {
+        table, thead, tbody, th, td, tr { display: block; }
+        thead tr { 
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+        tr { border: 1px solid #ccc; }
+        td { 
+            border: none;
+            border-bottom: 1px solid #eee; 
+            position: relative;
+            padding-left: 50%; 
+        }
+        
+    }
+}
+@media only screen and (min-width: 360px) and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+    .table-qualification.table--big {
+        td:before { 
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            width: 45%; 
+            padding: 15px; 
+            white-space: nowrap;
+        }
     }
 }
 

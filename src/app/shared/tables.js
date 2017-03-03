@@ -20,7 +20,7 @@ var tables = function() {
         }
         for (var z = 0; z < data.ranking.length; z++) {
             divWrapper = document.createElement('div');
-            divWrapper.setAttribute('class', 'table-qualification');
+            divWrapper.setAttribute('class', data.tableType[z]);
             h2Title = document.createElement('h2');
             rankingTextTitle = document.createTextNode(data.rankingTitles[z]);
             h2Title.appendChild(rankingTextTitle);

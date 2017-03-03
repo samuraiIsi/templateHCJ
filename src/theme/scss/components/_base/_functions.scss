@@ -31,6 +31,15 @@
     
   }
 }
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+    .table-qualification.table--big {
+        @each $headerHorsesCategory in $headerHorsesCategories {
+            $indexHeaderTd: index($headerHorsesCategories, $headerHorsesCategory);
+            td:nth-of-type(#{$indexHeaderTd}):before { content: nth($headerHorsesCategories, $indexHeaderTd); }
+        }
+    }
+}
 @for $i from 1 through 8 {
     .tabcontent-#{$i} {
         display: none;
