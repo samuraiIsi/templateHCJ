@@ -16,4 +16,5 @@ function init() {
 	carousel();
 	panelsBox();
 	footer();
+	setIe10();
 }

@@ -88,7 +88,7 @@ var eventsLists = function() {
                     aBtn.setAttribute('class', 'btnMed');
                     aBtn.onclick = (function() {
                         var currentI = i, currentS = s, currentT = t;
-                        return function() { 
+                        return function(event) { 
                             openPanel(event, data.tabs[currentS].eventsList[currentI].divBtnListEL[currentT].aPanelId);
                         }
                     })();

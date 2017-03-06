@@ -1,4 +1,4 @@
-var toggleBtnMenuIcon, access, i, openTab, tabcontent, classTabContent, classLinkTab, tablinks, closeWrapper2, closeLoginModel, openLoginModal, validateForm, error, onblurLoginInput, closeValidatedModel, searchList, counter, backBtn, openPanel, changeView, panel, textBtn, counterVx = 0, slideIndex = 1, myTimer, plusSlides, currentSlide, showSlides, stopSlider, reStartSlider;
+var toggleBtnMenuIcon, access, i, openTab, tabcontent, classTabContent, classLinkTab, tablinks, closeWrapper2, closeLoginModel, openLoginModal, validateForm, error, onblurLoginInput, closeValidatedModel, searchList, counter, backBtn, openPanel, changeView, panel, textBtn, counterVx = 0, slideIndex = 1, myTimer, plusSlides, currentSlide, showSlides, stopSlider, reStartSlider, setIe10;
 toggleBtnMenuIcon = function(toggling) {
     toggling.classList.toggle("change");
     document.getElementById("subHeader").classList.toggle("show");
@@ -112,7 +112,7 @@ searchList = function() {
 counter = function(evt) {
     var counterEl = document.getElementById("counter"),
         btnSelected = document.getElementById(evt.id);
-    if (evt.classList.value === "btn btn--default btn--sm activeBtn") {
+    if (evt.classList.value === "btn btn--default btn--sm activeBtn" || evt.classList[3] === "activeBtn") {
         btnSelected.className = "btn btn--default btn--sm";
         counterVx--;
     } else {
@@ -311,4 +311,9 @@ showSlides = function(n) {
     dots[slideIndex-1].className += " dot--active";
     slideIndex++;
     myTimer = setTimeout(showSlides, 4000);
+}
+setIe10 = function() {
+    var detectIe10Browser = document.documentElement;
+    detectIe10Browser.setAttribute('data-useragent',  navigator.userAgent);
+    detectIe10Browser.setAttribute('data-platform', navigator.platform );
 }

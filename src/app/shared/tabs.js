@@ -25,7 +25,7 @@ var tabsComponent = function() {
             aTabsTwo.setAttribute('class', data.navTabsTwoLi[i].aClass);
             aTabsTwo.onclick =  (function() { 
                 var currentI = i;
-                return function(){
+                return function(event){
                     openTab(event, data.navTabsTwoLi[currentI].city);
                 }
             })();
@@ -47,7 +47,7 @@ var tabsComponent = function() {
                 aTabsThree.setAttribute('class', data.navTabsThreeLi[i][j].aClass);
                 aTabsThree.onclick = (function() { 
                     var currentI = i, currentJ = j;
-                    return function() {
+                    return function(event) {
                         openTab(event, data.navTabsThreeLi[currentI][currentJ].city);
                     }
                 })();

@@ -128,11 +128,14 @@
     cursor: pointer;
     transition: background-color .25s linear;
 }
-
+html[data-useragent*='MSIE 10.0'], html[data-useragent*='rv:11.0'] {
+    .btnMed{ height: 30px;}
+}
 .btn--login {
     @include featureButtons(13px, $colorLogin, 24px);
     transition: all 0.25s;
     width: 70px;
+    line-height: 12px;
     &:hover {
         background-color: #6cc1e0;
         span {
@@ -171,9 +174,9 @@
 .btn--login--sm {
     border: solid 1px #fff;
 }
-
 .btn--green {
     @include featureButtons(13px, $colorJoin, 24px);
+    line-height: 12px;
     &:hover {
         background-color: #00ccb1;
     }
@@ -203,7 +206,11 @@
         color: #d65a77;
     }
 }
-
+html[data-useragent*='MSIE 10.0'] .btn--circle {
+    p {
+       padding-top: 15px;
+    }
+}
 .btn-back-arrow {
     background-color: rgba(255, 255, 255, 0.1);
     font-size: 20px;

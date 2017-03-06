@@ -97,6 +97,9 @@
     ul {
         overflow-x: scroll;
     }
+    .scrollContainer .pos-rel li {
+        position: relative !important;
+    }
 }
 
 // Extra Small Devices, Phones, Apple iPhone 4
@@ -176,6 +179,9 @@
     }
     .wrapper-1, .wrapper-2, .wrapper-2--box {
         margin-right: 1%;
+    }
+    html[data-useragent*='MSIE 10.0'] .wrapper-2 {
+        width: 65%;
     }
 }
 

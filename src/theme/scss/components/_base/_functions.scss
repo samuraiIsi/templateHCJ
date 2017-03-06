@@ -24,6 +24,7 @@
     $indexAnimation: 1;
     @while $indexAnimation <= 5 {
       .slider-img li.animation-#{$indexAnimation} {
+        -webkit-animation: cycle-#{$indexAnimation}-#{$screenWidthsAnimation} 25s linear infinite;
         animation: cycle-#{$indexAnimation}-#{$screenWidthsAnimation} 25s linear infinite;
       }
       $indexAnimation: $indexAnimation + 1;
