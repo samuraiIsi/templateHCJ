@@ -41,6 +41,13 @@
         }
     }
 }
+@each $scrollTextClass in $scrollTextClasses {
+    $indexScrollText: index($scrollTextClasses, $scrollTextClass);
+    .#{$scrollTextClass} {
+        -webkit-animation: scroll-top-#{$indexScrollText} 20s linear infinite;
+        animation: scroll-top-#{$indexScrollText} 20s linear infinite;
+    }
+}
 @for $i from 1 through 8 {
     .tabcontent-#{$i} {
         display: none;

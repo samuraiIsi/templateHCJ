@@ -5,7 +5,6 @@
     position: relative;
     border-radius: 5px;
 }
-
 .scrollContainer ul li {
     color: white;
     position: absolute;
@@ -17,26 +16,6 @@
     line-height: 50px;
     top: -50px;
 }
-.firstText {
-    -webkit-animation: scroll-top-1 20s linear infinite;
-    animation: scroll-top-1 20s linear infinite;
-}
-
-.secondText {
-    -webkit-animation: scroll-top-2 20s linear infinite;
-    animation: scroll-top-2 20s linear infinite;
-}
-
-.thirdText {
-    -webkit-animation: scroll-top-3 20s linear infinite;
-    animation: scroll-top-3 20s linear infinite;
-}
-
-.fourthText {
-    -webkit-animation: scroll-top-4 20s linear infinite;
-    animation: scroll-top-4 20s linear infinite;
-}
-
 .scrollContainer:hover li {
     -moz-animation-play-state:paused;
     -webkit-animation-play-state:paused;
