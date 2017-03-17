@@ -43,6 +43,18 @@
     .btn--login {
         margin-left: 0 !important;
     }
+    #subHeader {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        div:first-child { display: none;}
+        &.show {
+            max-height: 300px;
+            opacity: 1;
+            transition: opacity max-height 0.3s ease-in-out;
+            div:first-child { display: flex;}
+        }
+    }
 }
 
 @media only screen and (min-width: 640px) {
@@ -69,16 +81,16 @@
             float: left;
         }
     }
-    #subHeader {
-        max-height: 0;
-        opacity: 0;
-        overflow: hidden;
-        &.show {
-            max-height: 300px;
-            opacity: 1;
-            transition: opacity max-height 0.3s ease-in-out;
-        }
-    }
+    // #subHeader {
+    //     max-height: 0;
+    //     opacity: 0;
+    //     overflow: hidden;
+    //     &.show {
+    //         max-height: 300px;
+    //         opacity: 1;
+    //         transition: opacity max-height 0.3s ease-in-out;
+    //     }
+    // }
     .wrapper-2 {
         background-color: #cccace;
         position: absolute;
