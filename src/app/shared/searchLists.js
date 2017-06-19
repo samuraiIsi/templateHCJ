@@ -25,7 +25,7 @@ var searchLists = function() {
         inputEl = document.createElement('input');
         inputEl.setAttribute('type', 'text');
         inputEl.setAttribute('id', 'searchInput');
-        inputEl.setAttribute('onkeyup', 'searchList()');
+        inputEl.addEventListener('keyup', searchList);
         inputEl.setAttribute('placeholder', 'Search for names..');
         inputEl.setAttribute('title', 'Type in a name');
         spanInput.appendChild(iconInput);

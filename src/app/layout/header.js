@@ -12,7 +12,7 @@ function headerFunction() {
 	btnMenuIcon = document.createElement("div");
 	//btnMenuIconText = document.createTextNode("☰");
 	btnMenuIcon.setAttribute("class", "container-btnMenuIcon");
-	btnMenuIcon.setAttribute("onclick", "toggleBtnMenuIcon(this)");
+	btnMenuIcon.onclick = (function() { return function() { toggleBtnMenuIcon(this);}})();
 	for (i = 1; i <= 3; i++) {
 		divBars = document.createElement('div');
 		divBars.setAttribute('class', "bar" + [i]);

@@ -1,13 +1,13 @@
 {
 	"btnBkAr": {
 		"divClass": "first--inlist",
-		"linkAtt": "javascript:void(0)",
+		"linkAtt": "#",
 		"btnClass": "btn btn-back-arrow",
 		"iconClass": "icon-back"
 	},
 	"btnHorse": {
 		"btnClass": "btn btn--primary btn-horizontal",
-		"btnLink": "javascript:void(0)",
+		"btnLink": "#",
 		"btnMethodValue": "container-wrappers-1",
 		"spanClass": "fs0",
 		"spanText": "Horses",
@@ -21,7 +21,7 @@
 		{
 			"btnClass": "btn btn--primary",
 			"pClass": "btn__title sq",
-			"linkAtt": "javascript:void(0)",
+			"linkAtt": "#",
 			"btnMethodValue": "container-wrappers-0",
 			"pText": "Open Bets",
 			"badgeClass": "badge",
@@ -31,7 +31,7 @@
 		{
 			"btnClass": "btn btn--primary",
 			"pClass": "btn__title sq",
-			"linkAtt": "javascript:void(0)",
+			"linkAtt": "#",
 			"btnMethodValue": "container-wrappers-0",
 			"pText": "Bet Slip",
 			"badgeClass": "",
@@ -45,7 +45,7 @@
 	"listBtnCirclesLiData": [
 		{
 			"liClass":"btn--circle first--inlist",  
-			"aLink":"javascript:void(0)",
+			"aLink":"#",
 			"aMethod":"container-wrappers-0",
 			"divClass": "flex-container--vertical",
 			"iconClass": "btn--circleIcon active icon-competitions",
@@ -54,7 +54,7 @@
 		},
 		{
 			"liClass":"btn--circle",  
-			"aLink":"javascript:void(0)",
+			"aLink":"#",
 			"aMethod":"container-wrappers-1",
 			"divClass": "flex-container--vertical",
 			"iconClass": "btn--circleIcon icon-highlights",
@@ -63,7 +63,7 @@
 		},
 		{
 			"liClass":"btn--circle",  
-			"aLink":"javascript:void(0)",
+			"aLink":"#",
 			"aMethod":"container-wrappers-2",
 			"divClass": "flex-container--vertical",
 			"iconClass": "btn--circleIcon icon-antepost",
@@ -72,7 +72,7 @@
 		},
 		{
 			"liClass":"btn--circle",  
-			"aLink":"javascript:void(0)",
+			"aLink":"#",
 			"aMethod":"container-wrappers-3",
 			"divClass": "flex-container--vertical",
 			"iconClass": "btn--circleIcon golden icon-most-popular-bets2",
@@ -81,7 +81,7 @@
 		},
 		{
 			"liClass":"btn--circle",  
-			"aLink":"javascript:void(0)",
+			"aLink":"#",
 			"aMethod":"container-wrappers-4",
 			"divClass": "flex-container--vertical",
 			"iconClass": "btn--circleIcon icon-search",
@@ -90,8 +90,8 @@
 		},
 		{
 			"liClass":"btn--circle",  
-			"aLink":"javascript:void(0)",
-			"aMethod":"container-wrappers-1",
+			"aLink":"#",
+			"aMethod":"container-wrappers-5",
 			"divClass": "flex-container--vertical",
 			"iconClass": "btn--circleIcon icon-specials",
 			"pClass": "btn__title",

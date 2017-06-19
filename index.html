@@ -3,15 +3,16 @@
 
 <head>
     <title>WH-Horse-Racing</title>
+    <script src="vendors/modernizr.js"></script>
     <link rel="icon" href="img/icon-tshirt-blackTs.gif" type="image/gif" sizes="16x16">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA_Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script src="build/modernizr.js"></script>
+    
 </head>
 
-<body onload="init()" id="scrollArea">
+<body id="scrollArea">
     
     <header id="headerContainer"></header>
     <section id="bodyContainer"></section>
@@ -38,6 +39,7 @@
     <script src="src/app/layout/logoHeader.js"></script>
     <script src="src/app/shared/animations.js"></script>
     <script src="src/app/layout/init.js"></script>
+    <script> window.onload = init(); </script>
 </body>
 
 </html>

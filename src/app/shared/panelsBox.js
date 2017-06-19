@@ -13,6 +13,7 @@ var panelsBox =  function(){
     panelsHttps.send();
 	  var panelBox = function(data){
 	  	var article, divParent, divHeader, divHeaderText, divBody, anchor, divCaption,divCaptionContent, iconContent, imgCaption, divFooter;
+	  	var screenSize = window.screen.width;
 	  	for(var i = 0; i < data.panelsBox.length; i++) {
 		  	article = document.createElement('article');
 		  	article.setAttribute('class', data.panelsBox[i].articleClass)
@@ -24,7 +25,8 @@ var panelsBox =  function(){
 		  	divBody = document.createElement('div');
 		  	divBody.setAttribute('class', data.panelsBox[i].divBodyClass);
 		  	anchor = document.createElement('a');
-		  	anchor.setAttribute('href', data.panelsBox[i].anchorLink);
+		  	anchor.setAttribute('href', '#');
+		  	anchor.addEventListener('click', changeView(data.panelsBox[i].anchorLink));
 		  	anchor.setAttribute('class', data.panelsBox[i].anchorClass);
 		  	divCaption = document.createElement('div');
 		  	divCaption.setAttribute('class', data.panelsBox[i].divCaptionClass);
@@ -33,7 +35,13 @@ var panelsBox =  function(){
 		  	iconContent = document.createElement('i');
 		  	iconContent.setAttribute('class', data.panelsBox[i].iconContentClass);
 		  	imgCaption = document.createElement('img');
-		  	imgCaption.setAttribute('src', data.panelsBox[i].imgCaptionSrc);
+		  	if(screenSize > 567 && data.panelsBox[i].articleClass == "wrapper-2--box") {
+	  			imgCaption.setAttribute('src', data.panelsBox[i].imgCaptionSrcDouble);
+	  		}else if(screenSize > 567 &&  screenSize < 1400) {
+	  			imgCaption.setAttribute('src', data.panelsBox[i].imgCaptionSrcDouble);
+	  		}else{
+	  			imgCaption.setAttribute('src', data.panelsBox[i].imgCaptionSrcBasic);
+	  		}
 		  	imgCaption.setAttribute('class', data.panelsBox[i].imgCaptionClass);
 		  	imgCaption.setAttribute('alt', data.panelsBox[i].imgCaptionAlt);
 		  	imgCaption.setAttribute('width', data.panelsBox[i].imgCaptionMaxWidth);
@@ -53,7 +61,8 @@ var panelsBox =  function(){
 		  	divFooter.appendChild(divFooterText);
 		  	divParent.appendChild(divFooter);
 		  	article.appendChild(divParent);
-		  	document.getElementById('wrapper9').appendChild(article); 
+		  	
+		  	document.getElementById(data.wrappersId[i]).appendChild(article); 
 	  	}
 	  	
   	};

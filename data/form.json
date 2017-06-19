@@ -6,7 +6,7 @@
 	"divHeaderClass": "imgcontainer text-center",
 	"spanHeaderClass": "btn-close",
 	"spanHeaderTitle": "Close",
-	"spanHeaderMethod": "closeLoginModel()",
+	"spanHeaderMethod": "closeLoginModel",
 	"imgHeaderSrc": "img/css-3-icon.png",
 	"imgHeaderAlt": "Avatar",
 	"imgHeaderAltClass": "avatar--lg",
@@ -28,7 +28,7 @@
 		}
 	],
 	"btnLoginType": "button",
-	"btnLoginMethod": "validateForm()",
+	"btnLoginMethod": "validateForm",
 	"btnLoginClass": "btn--big",
 	"inputCheckText": "Remeber Me",
 	"divFooterClass": "container-login pt-0",

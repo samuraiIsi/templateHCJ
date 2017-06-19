@@ -26,7 +26,7 @@ var forms = function() {
         spanHeader = document.createElement('span');
         spanHeader.setAttribute('class', data.spanHeaderClass);
         spanHeader.setAttribute('title', data.spanHeaderTitle);
-        spanHeader.setAttribute('onclick', data.spanHeaderMethod);
+        spanHeader.addEventListener('click', eval(data.spanHeaderMethod));
         spanHeaderText = document.createTextNode('X');
         imgHeader = document.createElement('img');
         imgHeader.setAttribute('src', data.imgHeaderSrc);
@@ -43,7 +43,7 @@ var forms = function() {
             inputBox.setAttribute('type', data.inputBoxes[i].inputType);
             inputBox.setAttribute('placeholder', data.inputBoxes[i].inputPlaceHolder);
             inputBox.setAttribute('name', data.inputBoxes[i].inputName);
-            inputBox.setAttribute('onfocus', 'onblurLoginInput()');
+            inputBox.addEventListener('focus', onblurLoginInput);
             pError = document.createElement('p');
             pError.setAttribute('class', 'error');
             pErrorText = document.createTextNode(data.inputBoxes[i].errorText);
@@ -56,7 +56,7 @@ var forms = function() {
         }
         btnLogin = document.createElement('button');
         btnLogin.setAttribute('type', data.btnLoginType);
-        btnLogin.setAttribute('onclick', data.btnLoginMethod);
+        btnLogin.addEventListener('click', eval(data.btnLoginMethod));
         btnLogin.setAttribute('class', data.btnLoginClass);
         btnLoginText = document.createTextNode('Login');
         inputCheck = document.createElement('input');
@@ -71,7 +71,7 @@ var forms = function() {
         btnCancel = document.createElement('button');
         btnCancel.setAttribute('type', data.btnCancelType);
         btnCancel.setAttribute('class', data.btnCancelClass);
-        btnCancel.setAttribute('onclick', data.btnCancelMethod);
+        btnCancel.addEventListener('click', eval(data.spanHeaderMethod));
         btnCancelText = document.createTextNode('Cancel');
         spanForgot = document.createElement('span');
         spanForgot.setAttribute('class', data.spanForgotClass);

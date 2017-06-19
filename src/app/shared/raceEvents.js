@@ -60,11 +60,10 @@ var raceEvents = function() {
 
                     divBtn = document.createElement('button');
                     divBtn.setAttribute('class', data.tabs[s][z].raceEvList[i].divBtnClass);
-                    divBtn.setAttribute('href', data.tabs[s][z].raceEvList[i].aBtnLink);
+                    divBtn.setAttribute('href', '#');
+                    divBtn.onclick =  (function() { return function() {counter(this);}})();
                     divBtn.setAttribute('id', 'raceEventsBtn-' + [s] + [z] + [i]);
-                    divBtn.setAttribute('onclick', 'counter(this)');
                     aBtnText = document.createTextNode(data.tabs[s][z].raceEvList[i].aBtnTxt);
-
                     divDescription = document.createElement('div');
                     divDescription.setAttribute('class', data.tabs[s][z].raceEvList[i].divDescriptionClass);
                     titleDesc = document.createElement('h3');

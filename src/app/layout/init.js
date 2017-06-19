@@ -10,10 +10,11 @@ function init() {
 	raceEvents();
 	searchLists();
 	forms();
+	scrollText();
 	tabsComponent();
 	tables();
 	carousel();
 	panelsBox();
-	scrollText();
 	footer();
+	setIe10();
 }

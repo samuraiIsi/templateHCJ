@@ -14,15 +14,13 @@ var tables = function() {
 
     var tables = function(data) {
         var divWrapper, h2Title, tableParent, tableHead, tableBody, titlesColumns, rowTable, rowTitleTable, cellTable, cellTitleTable, spanTitle, textTitleTable, textCell;
-
         for (var n = 0; n < data.rankingTitles.length; n++) {
             divWrapper = document.createElement('div');
 
         }
-
         for (var z = 0; z < data.ranking.length; z++) {
             divWrapper = document.createElement('div');
-            divWrapper.setAttribute('class', 'table-qualification');
+            divWrapper.setAttribute('class', data.tableType[z]);
             h2Title = document.createElement('h2');
             rankingTextTitle = document.createTextNode(data.rankingTitles[z]);
             h2Title.appendChild(rankingTextTitle);
@@ -36,20 +34,16 @@ var tables = function() {
                 for (var j = 0; j < data.ranking[z][i].length; j++) {
                     cellTable = document.createElement('td');
                     cellTitleTable = document.createElement('th');
-                    if(data.flagTableDynamic[z][j] == "off") {
-                        spanTitle = document.createElement('i');
-                        spanTitle.setAttribute('class', null);
-                        cellTitleTable.setAttribute('onclick', null);
-                    }else{
-                        spanTitle = document.createElement('i');
-                        spanTitle.setAttribute('class', 'arrow-up cursor-pointer');
-                        cellTitleTable.setAttribute('onclick', 'sortTable(this)');
-                    }
+                    spanTitle = document.createElement('i');
+                    spanTitle.setAttribute('class', 'arrow-up cursor-pointer');
+                    cellTitleTable.onclick = (function() { return function() { sortTable(this); }})();
                     textCell = document.createTextNode(data.ranking[z][i][j]);
                     cellTable.appendChild(textCell);
                     textTitleTable = document.createTextNode(data.ranking[z][0][j]);
                     cellTitleTable.appendChild(textTitleTable);
-                    cellTitleTable.appendChild(spanTitle);
+                    if(data.flagTableDynamic[z][j] == "on") {
+                        cellTitleTable.appendChild(spanTitle);
+                    }
                     rowTitleTable.appendChild(cellTitleTable);
                     rowTable.appendChild(cellTable);
                 }

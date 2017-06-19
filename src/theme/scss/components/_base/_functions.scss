@@ -3,26 +3,51 @@
         text-align: #{$align};
     }
 }
-
 @each $alignment in $alignments {
     .alignIt-#{$alignment} {
         align-items: #{$alignment};
     }
 }
-
 @each $fontsStyle in $fontsStyles {
     .fst-#{$fontsStyle} {
         font-style: #{$fontsStyle};
     }
 }
-
 @each $side in $sides {
     .col-container-#{$side} {
         margin-#{$side}: $standardDistance - 5;
         flex-basis: 50%;
     }
 }
-
+@each $screenWidthsAnimation, $leftMove in $screenWidths {
+  @media only screen and (max-width: #{$screenWidthsAnimation}) {
+    $indexAnimation: 1;
+    @while $indexAnimation <= 5 {
+      .slider-img li.animation-#{$indexAnimation} {
+        -webkit-animation: cycle-#{$indexAnimation}-#{$screenWidthsAnimation} 25s linear infinite;
+        animation: cycle-#{$indexAnimation}-#{$screenWidthsAnimation} 25s linear infinite;
+      }
+      $indexAnimation: $indexAnimation + 1;
+    }
+    
+  }
+}
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+    .table-qualification.table--big {
+        @each $headerHorsesCategory in $headerHorsesCategories {
+            $indexHeaderTd: index($headerHorsesCategories, $headerHorsesCategory);
+            td:nth-of-type(#{$indexHeaderTd}):before { content: nth($headerHorsesCategories, $indexHeaderTd); }
+        }
+    }
+}
+@each $scrollTextClass in $scrollTextClasses {
+    $indexScrollText: index($scrollTextClasses, $scrollTextClass);
+    .#{$scrollTextClass} {
+        -webkit-animation: scroll-top-#{$indexScrollText} 20s linear infinite;
+        animation: scroll-top-#{$indexScrollText} 20s linear infinite;
+    }
+}
 @for $i from 1 through 8 {
     .tabcontent-#{$i} {
         display: none;
