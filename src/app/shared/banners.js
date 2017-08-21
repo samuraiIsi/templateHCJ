@@ -15,7 +15,7 @@ var bannersComponent = function() {
     var i;
 
     function bannerMain(data) {
-        var divBM, divBS, h2BM, h2BMText, docId;
+        var divBM, divBS, h2BM, h2BMText, docId, insertBanner;
 
         for (i = 0; i < data.bannersMain.length; i++) {
             divBM = document.createElement('div');
@@ -33,7 +33,8 @@ var bannersComponent = function() {
             divBS.appendChild(h2BM);
             divBM.appendChild(divBS);
 
-            document.getElementById(data.bannersMain[i].wrapperId).appendChild(divBM);
+            insertBanner = document.getElementById(data.bannersMain[i].wrapperId);
+            insertBanner.insertBefore(divBM, insertBanner.childNodes[0]);
         }
     }
 }

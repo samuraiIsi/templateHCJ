@@ -5,16 +5,15 @@ function init() {
 	bodyFunction();
 	buttons();
 	containerWps();
-	bannersComponent();
-	eventsLists();
-	raceEvents();
+	document.addEventListener('DOMContentLoaded', bannersComponent, false);
+	document.addEventListener('DOMContentLoaded', eventsLists, false);
+	document.addEventListener('DOMContentLoaded', raceEvents, false);
 	searchLists();
 	forms();
 	scrollText();
-	tabsComponent();
 	tables();
 	carousel();
 	panelsBox();
-	footer();
 	setIe10();
+	footer();
 }

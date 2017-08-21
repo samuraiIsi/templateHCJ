@@ -16,7 +16,7 @@ var eventsLists = function() {
     var z, s, i, j, k, count;
     var count = 0;
     eventsList = function(data) {
-        var divEL, headerEL, h4EL, h4ELText, aEL, iconEL, aLinkPA, aLinkPAText, sectionEL, headerSEL, h4SEL, h4SELText, asideEL, pAEL, articleEL, ulAr, liAr, liArText, divBtnGroupEL, divSidesRG, divSidesLf, divBtn, aBtn, aBtnText, iconBtn, divSides;
+        var divEL, headerEL, h4EL, h4ELText, aEL, iconEL, aLinkPA, aLinkPAText, sectionEL, headerSEL, h4SEL, h4SELText, asideEL, pAEL, articleEL, ulAr, liAr, liArText, divBtnGroupEL, divSidesRG, divSidesLf, divBtn, aBtn, aBtnText, iconBtn, divSides, insertEventList;
         for (s = 0; s < data.tabs.length; s++) {
             divELVertParent = document.createElement('div');
             divELVertParent.setAttribute('id', data.tabs[s].idDivELVertParent.divId);
@@ -112,7 +112,9 @@ var eventsLists = function() {
                 divEL.appendChild(sectionEL);
                 divELVertParent.appendChild(divEL);
             }
-            document.getElementById('wrapper1').appendChild(divELVertParent);
+            //document.getElementById('wrapper1').appendChild(divELVertParent);
+            insertEventList = document.getElementById('wrapper1');
+            insertEventList.insertBefore(divELVertParent, insertEventList.childNodes[2]);
         }
     };
 };

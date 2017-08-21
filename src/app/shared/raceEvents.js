@@ -6,6 +6,7 @@ var raceEvents = function() {
         if (raceEvListHttps.readyState == 4 && raceEvListHttps.status == 200) {
             var info = JSON.parse(raceEvListHttps.responseText);
             raceEvList(info);
+            tabsComponent();
         }
     };
 
