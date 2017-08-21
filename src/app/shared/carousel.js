@@ -13,7 +13,7 @@ var carousel = function(){
     carouselHttp.send();
     var i;
 	var carouselComponent = function(data){
-    	var divContainer, divcontentSlider, divSlider, divSliderWrapper, ulSlider, divBar, liSlider, imgSlider, divTip, h1Tip, pTip, pTipText, btn, btnText, anchor, dot, arrowSlider, paginationWrapper, spanDot, plusSlidesArray= [-2, 1];
+    	var divContainer, divcontentSlider, divSlider, divSliderWrapper, ulSlider, divBar, liSlider, imgSlider, divTip, h1Tip, pTip, pTipText, btn, btnText, anchor, dot, arrowSlider, paginationWrapper, spanDot, plusSlidesArray= [-2, 0];
     	var screenWidth = window.screen.width;
 		for(i = 0; i < data.carousel.length; i++) {
 			divContainer = document.createElement('div');
