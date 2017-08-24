@@ -7,7 +7,8 @@
 		"attClassV":"pull-left",
 		"crSpan":"span",
 		"attSpanN":"class",
-		"attSpanV":"logo-bg"
+		"attSpanV":"logo-bg",
+		"spanLogoT": "I.M.G."
 	},
 	"infoHeaderL1Ul": {
 			"attClassN":"class",

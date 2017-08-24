@@ -23,6 +23,8 @@ var logoHeader = function() {
         logoLink.setAttribute(info.logoBg.attClassN, info.logoBg.attClassV);
         spanLogo = document.createElement(info.logoBg.crSpan);
         spanLogo.setAttribute(info.logoBg.attSpanN, info.logoBg.attSpanV);
+        spanLogoText = document.createTextNode(info.logoBg.spanLogoT);
+        spanLogo.appendChild(spanLogoText);
         logoLink.appendChild(spanLogo);
         document.getElementById('logoHeader').appendChild(logoLink);
     }
