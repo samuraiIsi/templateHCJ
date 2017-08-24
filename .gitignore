@@ -1,6 +1,8 @@
 build/
+dist/
 css/
 node_modules/
+vendors/
 .sass-cache/
 js/
 wh-horse-racing-gral.json/
