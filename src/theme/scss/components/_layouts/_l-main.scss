@@ -1,11 +1,15 @@
 #bodyContainer {
     background-color: #dad9db;
     padding: $standardDistance;
-    min-height: 800px;
-    height: 100%;
     overflow: auto;
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 260px;
 }
-
+#bodyWrapper {
+    min-height: 100%;
+    position: relative;
+}
 // #scrollArea {
 //     height: 100%;
 //     overflow: auto;
@@ -105,6 +109,10 @@
 }
 .padding-0 {
     padding: 0px;
+}
+
+.padding-5 {
+    padding: 5px;
 }
 
 .padding-all-20 {
